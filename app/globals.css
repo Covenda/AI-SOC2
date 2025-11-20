@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-white text-neutral-900 antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold;
+  }
+}
+
+@layer components {
+  /* Button variants */
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+
+  .btn-primary {
+    @apply bg-brand-blue hover:bg-brand-navy text-white focus:ring-brand-blue;
+  }
+
+  .btn-secondary {
+    @apply bg-white hover:bg-neutral-100 text-brand-navy border-2 border-neutral-200 focus:ring-brand-blue;
+  }
+
+  .btn-accent {
+    @apply bg-gradient-to-r from-brand-cyan to-brand-purple hover:from-brand-purple hover:to-brand-cyan text-white focus:ring-brand-purple;
+  }
+
+  .btn-ghost {
+    @apply bg-transparent hover:bg-neutral-100 text-brand-navy focus:ring-brand-blue;
+  }
+
+  /* Container */
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Card styles */
+  .card {
+    @apply bg-white rounded-xl border border-neutral-200 p-6 hover:shadow-medium transition-shadow duration-300;
+  }
+
+  /* Section padding */
+  .section {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-cyan via-brand-blue to-brand-purple;
+  }
+
+  /* Navigation link */
+  .nav-link {
+    @apply text-neutral-700 hover:text-brand-blue font-medium transition-colors duration-200;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

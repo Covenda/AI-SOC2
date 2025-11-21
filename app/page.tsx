@@ -65,15 +65,15 @@ export default function HomePage() {
       {/* Products Grid */}
       <section className="section bg-neutral-50">
         <div className="container-custom">
-          <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-20">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-navy mb-6">
               How It Works
             </h2>
-            <p className="text-xl text-neutral-600">
+            <p className="text-xl text-neutral-600 leading-relaxed">
               Covenda AI connects threat intelligence, controls, evidence, and automated response in a single ecosystem
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
                 title: 'Examine',
@@ -100,14 +100,14 @@ export default function HomePage() {
               <Link
                 key={product.href}
                 href={product.href}
-                className="card group cursor-pointer hover:border-brand-orange hover:shadow-soft"
+                className="card group cursor-pointer hover:border-brand-orange hover:shadow-lg transition-all duration-300"
               >
-                <div className="text-4xl mb-4">{product.icon}</div>
-                <h3 className="text-xl font-bold text-brand-navy mb-3 group-hover:text-brand-orange transition-colors">
+                <div className="text-4xl mb-6">{product.icon}</div>
+                <h3 className="text-xl md:text-2xl font-bold text-brand-navy mb-4 group-hover:text-brand-orange transition-colors">
                   {product.title}
                 </h3>
-                <p className="text-neutral-600 mb-4">{product.description}</p>
-                <div className="flex items-center text-brand-orange font-semibold">
+                <p className="text-lg text-neutral-600 mb-4 leading-relaxed">{product.description}</p>
+                <div className="flex items-center text-brand-orange font-semibold group-hover:text-brand-navy transition-colors">
                   Learn more
                   <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -130,10 +130,10 @@ export default function HomePage() {
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-navy mb-6">
                 Detection & Automation
               </h2>
-              <p className="text-xl text-neutral-600 mb-8">
+              <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
                 Our Forward-Deployed Security Engineers work alongside your team to build custom detections, automate security workflows, and co-manage your AI-SOC operations.
               </p>
-              <ul className="space-y-4 mb-8">
+              <ul className="space-y-5 mb-10">
                 {[
                   'Custom detection engineering and tuning',
                   'Automated response playbooks and workflows',
@@ -154,7 +154,7 @@ export default function HomePage() {
                         d="M5 13l4 4L19 7"
                       />
                     </svg>
-                    <span className="text-lg text-neutral-700">{feature}</span>
+                    <span className="text-lg text-neutral-700 leading-relaxed">{feature}</span>
                   </li>
                 ))}
               </ul>

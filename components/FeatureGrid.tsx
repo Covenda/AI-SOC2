@@ -30,24 +30,24 @@ export default function FeatureGrid({
     <section className="section bg-neutral-50">
       <div className="container-custom">
         {(title || description) && (
-          <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-20">
             {title && (
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-navy mb-6">
                 {title}
               </h2>
             )}
-            {description && <p className="text-xl text-neutral-600">{description}</p>}
+            {description && <p className="text-xl text-neutral-600 leading-relaxed">{description}</p>}
           </div>
         )}
-        <div className={`grid ${gridCols[columns]} gap-6`}>
+        <div className={`grid ${gridCols[columns]} gap-8`}>
           {features.map((feature, index) => {
             const content = (
               <>
-                {feature.icon && <div className="text-4xl mb-4">{feature.icon}</div>}
-                <h3 className="text-xl font-bold text-brand-navy mb-3 group-hover:text-brand-orange transition-colors">
+                {feature.icon && <div className="text-4xl mb-6">{feature.icon}</div>}
+                <h3 className="text-xl md:text-2xl font-bold text-brand-navy mb-4 group-hover:text-brand-orange transition-colors">
                   {feature.title}
                 </h3>
-                <p className="text-neutral-600 mb-4">{feature.description}</p>
+                <p className="text-lg text-neutral-600 mb-4 leading-relaxed">{feature.description}</p>
                 {feature.href && (
                   <div className="flex items-center text-brand-orange font-semibold">
                     Learn more
@@ -74,7 +74,7 @@ export default function FeatureGrid({
                 <Link
                   key={index}
                   href={feature.href}
-                  className="card group cursor-pointer hover:border-brand-orange hover:shadow-soft"
+                  className="card group cursor-pointer hover:border-brand-orange hover:shadow-lg"
                 >
                   {content}
                 </Link>

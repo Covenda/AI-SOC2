@@ -12,22 +12,22 @@ export default function WhyRecordedFuturePage() {
 
       <section className="section bg-white">
         <div className="container-custom">
-          <div className="max-w-4xl mx-auto space-y-12">
+          <div className="max-w-4xl mx-auto space-y-16">
             <div>
-              <h2 className="text-3xl font-bold text-brand-navy mb-4">Forward-Deployed Security Engineers</h2>
-              <p className="text-lg text-neutral-600">
+              <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-6">Forward-Deployed Security Engineers</h2>
+              <p className="text-lg text-neutral-700 leading-relaxed">
                 Our security engineers embed directly with your team to understand your environment, build custom detections, and automate security workflows tailored to your needs.
               </p>
             </div>
             <div>
-              <h2 className="text-3xl font-bold text-brand-navy mb-4">Measurable Outcomes</h2>
-              <p className="text-lg text-neutral-600">
+              <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-6">Measurable Outcomes</h2>
+              <p className="text-lg text-neutral-700 leading-relaxed">
                 Organizations using Covenda AI achieve 70% faster mean time to detect, 24/7 coverage, and production-ready detections in 2-4 weeks.
               </p>
             </div>
             <div>
-              <h2 className="text-3xl font-bold text-brand-navy mb-4">Co-Managed AI-SOC Operations</h2>
-              <p className="text-lg text-neutral-600">
+              <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-6">Co-Managed AI-SOC Operations</h2>
+              <p className="text-lg text-neutral-700 leading-relaxed">
                 We co-manage your security operations with defined SLOs, ensuring continuous improvement and measurable security outcomes.
               </p>
             </div>

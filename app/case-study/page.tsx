@@ -29,23 +29,23 @@ export default function CaseStudyPage() {
         description="See how organizations use Covenda to build and operate effective AI-SOC capabilities with Forward-Deployed Security Engineers."
       />
 
-      <section className="section bg-neutral-50">
+      <section className="section bg-white">
         <div className="container-custom">
           <div className="max-w-5xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-8">
               {caseStudies.map((study, index) => (
                 <Link
                   key={index}
                   href={study.href}
-                  className="card group hover:border-brand-orange"
+                  className="card group hover:border-brand-orange hover:shadow-lg transition-all duration-300"
                 >
-                  <span className="inline-block px-3 py-1 rounded-full bg-brand-orange/10 text-brand-orange text-sm font-semibold mb-3">
+                  <span className="inline-block px-3 py-1.5 rounded-full bg-brand-orange/10 text-brand-orange text-sm font-semibold mb-4">
                     {study.industry}
                   </span>
-                  <h3 className="text-xl font-bold text-brand-navy mb-3 group-hover:text-brand-orange transition-colors">
+                  <h3 className="text-xl md:text-2xl font-bold text-brand-navy mb-4 group-hover:text-brand-orange transition-colors">
                     {study.title}
                   </h3>
-                  <div className="flex items-center text-brand-orange font-semibold">
+                  <div className="flex items-center text-brand-orange font-semibold group-hover:text-brand-navy transition-colors">
                     Read Case Study
                     <svg
                       className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"

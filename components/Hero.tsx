@@ -35,7 +35,7 @@ export default function Hero({
     >
       {isGradient && <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10"></div>}
       <div className="container-custom relative">
-        <div className="py-24 md:py-32 lg:py-40 max-w-4xl mx-auto text-center">
+        <div className={`${isGradient ? 'py-24 md:py-32 lg:py-40' : 'py-16 md:py-20 lg:py-24'} max-w-4xl mx-auto text-center`}>
           {badge && (
             <div className="mb-6 flex justify-center">
               <span

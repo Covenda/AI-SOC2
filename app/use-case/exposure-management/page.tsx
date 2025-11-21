@@ -8,7 +8,7 @@ export default function ExposureManagementPage() {
         badge="Use Case"
         title="Exposure Management"
         description="Discover, assess, and reduce security exposures across your attack surface with continuous monitoring."
-        primaryCTA={{ text: 'Book a Demo', href: '/get-started#book-demo' }}
+        primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
       <FeatureGrid

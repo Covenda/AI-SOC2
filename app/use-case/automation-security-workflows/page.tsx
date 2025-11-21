@@ -7,32 +7,32 @@ export default function AutomationSecurityWorkflowsPage() {
       <Hero
         badge="Use Case"
         title="Security Workflow Automation"
-        description="Automate security workflows with intelligence-driven orchestration to reduce response times and analyst workload."
-        primaryCTA={{ text: 'Book a Demo', href: '/get-started#book-demo' }}
+        description="Our Forward-Deployed Security Engineers help you automate security workflows, build custom detections, and orchestrate responses to reduce mean time to respond."
+        primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
       <FeatureGrid
         title="Automation Capabilities"
         features={[
           {
-            icon: '⚡',
-            title: 'Alert Enrichment',
-            description: 'Automatically enrich alerts with threat intelligence context.',
+            icon: '🔍',
+            title: 'Detection Engineering',
+            description: 'Build and tune custom detections tailored to your environment and threat landscape.',
           },
           {
             icon: '🤖',
-            title: 'SOAR Integration',
-            description: 'Seamlessly integrate with SOAR platforms for automated response.',
+            title: 'Automated Response',
+            description: 'Create automated response playbooks to reduce mean time to respond.',
+          },
+          {
+            icon: '⚡',
+            title: 'Workflow Automation',
+            description: 'Automate security workflows across your SIEM, SOAR, and ticketing systems.',
           },
           {
             icon: '📊',
-            title: 'Threat Prioritization',
-            description: 'Automatically prioritize threats based on risk and relevance.',
-          },
-          {
-            icon: '🔄',
-            title: 'Workflow Orchestration',
-            description: 'Orchestrate complex security workflows across tools.',
+            title: 'Continuous Improvement',
+            description: 'Co-manage operations with defined SLOs and continuous tuning.',
           },
         ]}
       />

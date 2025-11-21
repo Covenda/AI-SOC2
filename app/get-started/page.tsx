@@ -6,8 +6,8 @@ export default function GetStartedPage() {
     <div>
       <Hero
         variant="gradient"
-        title="Get Started with Recorded Future"
-        description="Choose how you want to experience the Intelligence Cloud Platform"
+        title="Get Started with Covenda"
+        description="Start with a 2-4 week assessment to understand your current state and build a prioritized roadmap. No long-term commitment required."
       />
 
       {/* Book a Demo Section */}
@@ -19,8 +19,7 @@ export default function GetStartedPage() {
                 Book a Live Demo
               </h2>
               <p className="text-xl text-neutral-600 mb-8">
-                See how Recorded Future can transform your security operations with a personalized
-                demo from our experts.
+                See how Covenda can help build and operate your AI-SOC with Forward-Deployed Security Engineers.
               </p>
               <div className="bg-neutral-50 rounded-2xl p-8 md:p-12">
                 <div className="space-y-6">
@@ -64,7 +63,7 @@ export default function GetStartedPage() {
                     <div className="text-left">
                       <h3 className="font-semibold text-brand-navy mb-2">Expert Guidance</h3>
                       <p className="text-neutral-600">
-                        Learn from our threat intelligence experts
+                        Learn from our Forward-Deployed Security Engineers
                       </p>
                     </div>
                   </div>
@@ -107,30 +106,38 @@ export default function GetStartedPage() {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-6">
-                Try Our Free Tools
+                Start with an Assessment
               </h2>
               <p className="text-xl text-neutral-600 mb-8">
-                Experience Recorded Future intelligence with our free tools and resources
+                Begin with a comprehensive security posture evaluation to understand your current state
               </p>
             </div>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="card">
-                <h3 className="text-xl font-bold text-brand-navy mb-3">Browser Extension</h3>
+                <h3 className="text-xl font-bold text-brand-navy mb-3">Security Posture Assessment</h3>
                 <p className="text-neutral-600 mb-4">
-                  Get instant threat intelligence context for IPs, domains, and URLs directly in
-                  your browser.
+                  Comprehensive evaluation of your current security posture with actionable roadmap.
                 </p>
-                <Link href="/platform/browser-extension" className="text-brand-blue font-semibold">
-                  Download Extension →
+                <Link href="/book-demo" className="text-brand-orange font-semibold">
+                  Request Assessment →
                 </Link>
               </div>
               <div className="card">
-                <h3 className="text-xl font-bold text-brand-navy mb-3">Threat Intelligence Feeds</h3>
+                <h3 className="text-xl font-bold text-brand-navy mb-3">Forward-Deployed Engineers</h3>
                 <p className="text-neutral-600 mb-4">
-                  Access free threat intelligence feeds to enhance your security tools.
+                  Embed security engineers with your team to build detections and automate responses.
                 </p>
-                <Link href="/resources" className="text-brand-blue font-semibold">
-                  Explore Feeds →
+                <Link href="/work-with-us" className="text-brand-orange font-semibold">
+                  Learn More →
+                </Link>
+              </div>
+              <div className="card">
+                <h3 className="text-xl font-bold text-brand-navy mb-3">Co-Managed Operations</h3>
+                <p className="text-neutral-600 mb-4">
+                  Co-manage your AI-SOC operations with defined SLOs and measurable outcomes.
+                </p>
+                <Link href="/platform" className="text-brand-orange font-semibold">
+                  Explore Platform →
                 </Link>
               </div>
               <div className="card">
@@ -138,17 +145,8 @@ export default function GetStartedPage() {
                 <p className="text-neutral-600 mb-4">
                   Explore self-guided demos of our platform capabilities at your own pace.
                 </p>
-                <Link href="/platform/demo-center" className="text-brand-blue font-semibold">
+                <Link href="/platform/demo-center" className="text-brand-orange font-semibold">
                   View Demos →
-                </Link>
-              </div>
-              <div className="card">
-                <h3 className="text-xl font-bold text-brand-navy mb-3">Vulnerability Database</h3>
-                <p className="text-neutral-600 mb-4">
-                  Search our comprehensive vulnerability database with exploitation context.
-                </p>
-                <Link href="/vulnerability-database" className="text-brand-blue font-semibold">
-                  Search Database →
                 </Link>
               </div>
             </div>

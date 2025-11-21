@@ -29,7 +29,7 @@ export default function Hero({
     <section
       className={`relative ${
         isGradient
-          ? 'bg-gradient-to-br from-brand-navy via-brand-blue to-brand-purple'
+          ? 'bg-gradient-to-br from-brand-navy via-brand-orange to-brand-orange'
           : 'bg-neutral-50'
       } overflow-hidden`}
     >
@@ -42,7 +42,7 @@ export default function Hero({
                 className={`inline-flex items-center px-4 py-2 rounded-full text-sm font-medium ${
                   isGradient
                     ? 'bg-white/10 backdrop-blur-sm text-white'
-                    : 'bg-brand-blue/10 text-brand-blue'
+                    : 'bg-brand-orange/10 text-brand-orange'
                 }`}
               >
                 {badge}

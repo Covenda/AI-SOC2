@@ -6,8 +6,8 @@ export default function IntelligenceGraphPage() {
       <Hero
         badge="Intelligence Graph"
         title="The Intelligence Graph"
-        description="Our proprietary Intelligence Graph analyzes billions of data points from millions of sources to deliver actionable threat intelligence."
-        primaryCTA={{ text: 'Book a Demo', href: '/get-started#book-demo' }}
+        description="Covenda AI connects threat intelligence, controls, evidence, and automated response in a single ecosystem."
+        primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
         secondaryCTA={{ text: 'Learn More', href: '/platform' }}
       />
 
@@ -15,27 +15,25 @@ export default function IntelligenceGraphPage() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-8">
-              How the Intelligence Graph Works
+              How Covenda AI Works
             </h2>
             <div className="space-y-8">
-              <div className="border-l-4 border-brand-blue pl-6">
-                <h3 className="text-2xl font-bold text-brand-navy mb-3">Data Collection</h3>
+              <div className="border-l-4 border-brand-orange pl-6">
+                <h3 className="text-2xl font-bold text-brand-navy mb-3">Threat Intelligence</h3>
                 <p className="text-lg text-neutral-600">
-                  Automated collection from 1M+ sources including open web, dark web, technical
-                  sources, and more.
+                  Real-time threat intelligence to identify and prioritize threats before they impact your organization.
                 </p>
               </div>
               <div className="border-l-4 border-brand-cyan pl-6">
-                <h3 className="text-2xl font-bold text-brand-navy mb-3">AI Analysis</h3>
+                <h3 className="text-2xl font-bold text-brand-navy mb-3">Detection Engineering</h3>
                 <p className="text-lg text-neutral-600">
-                  Machine learning and natural language processing to identify patterns,
-                  relationships, and threats.
+                  Forward-Deployed Security Engineers build and tune custom detections tailored to your environment.
                 </p>
               </div>
-              <div className="border-l-4 border-brand-purple pl-6">
-                <h3 className="text-2xl font-bold text-brand-navy mb-3">Actionable Intelligence</h3>
+              <div className="border-l-4 border-brand-orange pl-6">
+                <h3 className="text-2xl font-bold text-brand-navy mb-3">Automated Response</h3>
                 <p className="text-lg text-neutral-600">
-                  Context-rich intelligence delivered to your security tools for immediate action.
+                  Automate security workflows and response playbooks to reduce mean time to respond.
                 </p>
               </div>
             </div>

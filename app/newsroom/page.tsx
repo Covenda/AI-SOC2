@@ -8,7 +8,7 @@ export default function NewsroomPage() {
         variant="simple"
         badge="Newsroom"
         title="Latest News"
-        description="The latest news, press releases, and company announcements from Recorded Future."
+        description="The latest news, press releases, and company announcements from Covenda AI."
       />
 
       <section className="section bg-neutral-50">
@@ -16,7 +16,7 @@ export default function NewsroomPage() {
           <div className="max-w-4xl mx-auto">
             <div className="card mb-6">
               <h3 className="text-xl font-bold text-brand-navy mb-4">Press Releases</h3>
-              <Link href="/newsroom/press-releases" className="text-brand-blue font-semibold">
+              <Link href="/newsroom/press-releases" className="text-brand-orange font-semibold">
                 View All Press Releases →
               </Link>
             </div>

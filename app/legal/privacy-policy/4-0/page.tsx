@@ -18,7 +18,7 @@ export default function PrivacyPolicyPage() {
               </p>
               <h2 className="text-2xl font-bold text-brand-navy mt-8 mb-4">Introduction</h2>
               <p className="text-neutral-600">
-                This Privacy Policy describes how Recorded Future collects, uses, and protects your
+                This Privacy Policy describes how Covenda AI collects, uses, and protects your
                 personal information.
               </p>
               <h2 className="text-2xl font-bold text-brand-navy mt-8 mb-4">

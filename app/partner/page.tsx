@@ -7,7 +7,7 @@ export default function PartnerPage() {
       <Hero
         badge="Partners"
         title="Partner Ecosystem"
-        description="Join our global partner network to deliver world-class threat intelligence solutions to your customers."
+        description="Partner with Covenda to deliver AI-SOC services with Forward-Deployed Security Engineers to your customers."
         primaryCTA={{ text: 'Become a Partner', href: '/contact' }}
       />
 
@@ -17,31 +17,31 @@ export default function PartnerPage() {
           {
             icon: '🤝',
             title: 'Channel Partners (VAR)',
-            description: 'Resell Recorded Future solutions and grow your security practice.',
+            description: 'Resell Covenda AI-SOC services and grow your security practice.',
             href: '/partner/var',
           },
           {
             icon: '🔌',
             title: 'Technology Partners',
-            description: 'Integrate Recorded Future intelligence into your products.',
+            description: 'Integrate Covenda AI platform capabilities into your products.',
             href: '/partner/tech',
           },
           {
             icon: '🛡️',
             title: 'MSSP Partners',
-            description: 'Enhance your managed security services with threat intelligence.',
+            description: 'Enhance your managed security services with Forward-Deployed Security Engineers.',
             href: '/partner/mssp',
           },
           {
             icon: '⚙️',
             title: 'OEM Partners',
-            description: 'Embed Recorded Future intelligence into your solutions.',
+            description: 'Embed Covenda AI platform capabilities into your solutions.',
             href: '/partner/oem',
           },
           {
             icon: '🎯',
             title: 'MDR Partners',
-            description: 'Power your managed detection and response with intelligence.',
+            description: 'Power your managed detection and response with Forward-Deployed Security Engineers.',
             href: '/partner/managed-detection-response',
           },
         ]}

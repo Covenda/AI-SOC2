@@ -7,7 +7,7 @@ export default function OurStoryPage() {
         variant="simple"
         badge="About Us"
         title="Our Story"
-        description="Founded to help organizations make better security decisions through real-time threat intelligence."
+        description="We embed Forward-Deployed Security Engineers with your team to build detections, automate responses, and co-manage operations."
       />
 
       <section className="section bg-neutral-50">
@@ -15,12 +15,10 @@ export default function OurStoryPage() {
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-neutral-600 mb-8">
-                Recorded Future was founded with a simple mission: to empower organizations to
-                proactively defend against cyber threats through real-time intelligence.
+                Covenda was founded with a simple mission: to help organizations build and operate effective AI-SOC capabilities by embedding Forward-Deployed Security Engineers directly with their teams.
               </p>
               <p className="text-lg text-neutral-600">
-                Today, we serve over 1,900 organizations across 75 countries, providing the
-                intelligence they need to protect their people, assets, and operations.
+                We combine security engineering expertise with the Covenda AI platform to deliver measurable outcomes—faster detection, automated response, and co-managed operations with defined SLOs.
               </p>
             </div>
           </div>

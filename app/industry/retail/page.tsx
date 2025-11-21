@@ -8,7 +8,7 @@ export default function RetailPage() {
         badge="Industry"
         title="Intelligence for Retail"
         description="Protect your retail business from payment fraud, brand abuse, and cyber threats targeting e-commerce."
-        primaryCTA={{ text: 'Book a Demo', href: '/get-started#book-demo' }}
+        primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
       <FeatureGrid

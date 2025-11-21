@@ -8,7 +8,7 @@ export default function AttackSurfaceIntelligencePage() {
         badge="Product"
         title="Attack Surface Intelligence"
         description="Discover, monitor, and reduce your external attack surface with continuous asset discovery and risk assessment."
-        primaryCTA={{ text: 'Book a Demo', href: '/get-started#book-demo' }}
+        primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
       <FeatureGrid

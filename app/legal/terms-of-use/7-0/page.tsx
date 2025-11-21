@@ -6,7 +6,7 @@ export default function TermsOfUsePage() {
       <Hero
         variant="simple"
         title="Terms of Use"
-        description="Terms and conditions for using Recorded Future services."
+        description="Terms and conditions for using Covenda AI services."
       />
 
       <section className="section bg-neutral-50">
@@ -20,7 +20,7 @@ export default function TermsOfUsePage() {
                 Acceptance of Terms
               </h2>
               <p className="text-neutral-600">
-                By accessing and using Recorded Future services, you accept and agree to be bound by
+                By accessing and using Covenda AI services, you accept and agree to be bound by
                 the terms and conditions of this agreement.
               </p>
               <h2 className="text-2xl font-bold text-brand-navy mt-8 mb-4">Use of Services</h2>

@@ -8,7 +8,7 @@ export default function CriticalInfrastructurePage() {
         badge="Industry"
         title="Critical Infrastructure Protection"
         description="Protect critical infrastructure from sophisticated cyber threats, nation-state actors, and operational disruption."
-        primaryCTA={{ text: 'Book a Demo', href: '/get-started#book-demo' }}
+        primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
       <FeatureGrid

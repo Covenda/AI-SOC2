@@ -8,7 +8,7 @@ export default function RansomwarePage() {
         badge="Use Case"
         title="Ransomware Defense"
         description="Detect and defend against ransomware threats with real-time intelligence on ransomware groups, campaigns, and TTPs."
-        primaryCTA={{ text: 'Book a Demo', href: '/get-started#book-demo' }}
+        primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
       <FeatureGrid

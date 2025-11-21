@@ -4,15 +4,15 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Recorded Future - Intelligence Cloud for Cybersecurity',
+  title: 'Covenda - AI-SOC Services with Forward-Deployed Security Engineers',
   description:
-    'The world\'s largest provider of intelligence for enterprise security. Real-time threat intelligence to protect your organization.',
+    'We embed Forward-Deployed Security Engineers with your team to build detections, automate responses, and co-manage operations on Covenda AI.',
   keywords: [
     'threat intelligence',
     'cybersecurity',
     'security intelligence',
     'cyber threat intelligence',
-    'recorded future',
+    'covenda ai',
   ],
 };
 
@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="flex flex-col min-h-screen font-sans">
+      <body className="flex flex-col min-h-screen font-sans" suppressHydrationWarning>
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

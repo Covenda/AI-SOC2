@@ -8,7 +8,7 @@ export default function DigitalRiskPage() {
         badge="Use Case"
         title="Digital Risk Protection"
         description="Protect your organization from digital risks including brand abuse, executive impersonation, and data leakage."
-        primaryCTA={{ text: 'Book a Demo', href: '/get-started#book-demo' }}
+        primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
       <FeatureGrid

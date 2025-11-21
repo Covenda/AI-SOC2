@@ -1,51 +1,65 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { navigationData, type NavItem } from '@/lib/navigation';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
-  const handleDropdownEnter = (label: string) => {
-    setActiveDropdown(label);
+  const handleDropdownClick = (label: string) => {
+    setActiveDropdown(activeDropdown === label ? null : label);
   };
 
-  const handleDropdownLeave = () => {
-    setActiveDropdown(null);
-  };
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    if (!activeDropdown) return;
+
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as Node;
+      if (dropdownRef.current && !dropdownRef.current.contains(target)) {
+        setActiveDropdown(null);
+      }
+    };
+
+    // Use capture phase to catch clicks before they bubble
+    document.addEventListener('mousedown', handleClickOutside, true);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside, true);
+    };
+  }, [activeDropdown]);
 
   return (
     <nav className="sticky top-0 z-50 bg-white border-b border-neutral-200">
       <div className="container-custom">
-        <div className="flex items-center justify-between h-16 lg:h-20">
-          {/* Logo */}
+        <div className="flex items-center justify-between h-16 lg:h-20 gap-6 lg:gap-8">
+          {/* Brand Name */}
           <div className="flex-shrink-0">
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-brand-blue to-brand-purple rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">RF</span>
-              </div>
-              <span className="hidden sm:block text-xl font-bold text-brand-navy">
-                Recorded Future
+            <Link href="/" className="flex items-center">
+              <span className="text-xl font-bold text-brand-orange">
+                Covenda AI
               </span>
             </Link>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex lg:items-center lg:space-x-1">
+          <div className="hidden lg:flex lg:items-center lg:flex-1 lg:justify-center lg:gap-0.5" ref={dropdownRef}>
             {navigationData.map((item) => (
               <div
                 key={item.label}
                 className="relative"
-                onMouseEnter={() => item.children && handleDropdownEnter(item.label)}
-                onMouseLeave={handleDropdownLeave}
               >
                 {item.children ? (
-                  <button className="nav-link px-4 py-2 rounded-lg flex items-center space-x-1">
+                  <button 
+                    onClick={() => handleDropdownClick(item.label)}
+                    className="nav-link px-5 py-2.5 rounded-lg flex items-center space-x-1.5"
+                  >
                     <span>{item.label}</span>
                     <svg
-                      className="w-4 h-4 transition-transform"
+                      className={`w-4 h-4 transition-transform ${activeDropdown === item.label ? 'rotate-180' : ''}`}
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -59,19 +73,29 @@ export default function Navbar() {
                     </svg>
                   </button>
                 ) : (
-                  <Link href={item.href} className="nav-link px-4 py-2 rounded-lg block">
+                  <Link 
+                    href={item.href} 
+                    className="nav-link px-5 py-2.5 rounded-lg block"
+                    onClick={() => setActiveDropdown(null)}
+                  >
                     {item.label}
                   </Link>
                 )}
 
                 {/* Dropdown Menu */}
                 {item.children && activeDropdown === item.label && (
-                  <div className="absolute left-0 mt-2 w-64 bg-white rounded-xl shadow-medium border border-neutral-200 py-2 animate-slide-down">
+                  <div 
+                    className="absolute left-0 mt-2 w-64 bg-white rounded-xl shadow-lg border border-neutral-200 py-2 origin-top z-50"
+                    style={{
+                      animation: 'fadeInDown 0.2s ease-out forwards'
+                    }}
+                  >
                     {item.children.map((child) => (
                       <Link
                         key={child.href}
                         href={child.href}
-                        className="block px-4 py-2.5 text-sm text-neutral-700 hover:bg-neutral-50 hover:text-brand-blue transition-colors"
+                        className="block px-4 py-2.5 text-sm text-neutral-700 hover:bg-neutral-50 hover:text-brand-orange transition-colors duration-150"
+                        onClick={() => setActiveDropdown(null)}
                       >
                         {child.label}
                       </Link>
@@ -83,11 +107,11 @@ export default function Navbar() {
           </div>
 
           {/* CTA Buttons */}
-          <div className="hidden lg:flex lg:items-center lg:space-x-4">
-            <Link href="/get-started" className="btn btn-secondary text-sm">
+          <div className="hidden lg:flex lg:items-center lg:space-x-3">
+            <Link href="/get-started" className="btn btn-secondary text-sm px-5 py-2.5">
               Get Started
             </Link>
-            <Link href="/get-started#book-demo" className="btn btn-primary text-sm">
+            <Link href="/book-demo" className="btn btn-primary text-sm px-5 py-2.5">
               Book a Demo
             </Link>
           </div>
@@ -137,7 +161,7 @@ export default function Navbar() {
                 Get Started
               </Link>
               <Link
-                href="/get-started#book-demo"
+                href="/book-demo"
                 className="btn btn-primary w-full text-sm"
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -158,7 +182,7 @@ function MobileNavItem({ item }: { item: NavItem }) {
     return (
       <Link
         href={item.href}
-        className="block px-4 py-3 text-neutral-700 hover:bg-neutral-50 hover:text-brand-blue rounded-lg transition-colors"
+        className="block px-4 py-3 text-neutral-700 hover:bg-neutral-50 hover:text-brand-orange rounded-lg transition-colors"
       >
         {item.label}
       </Link>
@@ -187,7 +211,7 @@ function MobileNavItem({ item }: { item: NavItem }) {
             <Link
               key={child.href}
               href={child.href}
-              className="block px-4 py-2.5 text-sm text-neutral-600 hover:text-brand-blue hover:bg-neutral-50 rounded-lg transition-colors"
+              className="block px-4 py-2.5 text-sm text-neutral-600 hover:text-brand-orange hover:bg-neutral-50 rounded-lg transition-colors"
             >
               {child.label}
             </Link>

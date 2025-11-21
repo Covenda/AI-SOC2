@@ -8,7 +8,7 @@ export default function ThirdPartyIntelligencePage() {
         badge="Product"
         title="Third-Party Intelligence"
         description="Assess and monitor security risks across your vendor ecosystem and supply chain."
-        primaryCTA={{ text: 'Book a Demo', href: '/get-started#book-demo' }}
+        primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
       <FeatureGrid

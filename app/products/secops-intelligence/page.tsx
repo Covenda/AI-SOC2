@@ -8,7 +8,7 @@ export default function SecOpsIntelligencePage() {
         badge="Product"
         title="SecOps Intelligence"
         description="Streamline security operations with automated threat detection, investigation, and response capabilities."
-        primaryCTA={{ text: 'Book a Demo', href: '/get-started#book-demo' }}
+        primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
       <FeatureGrid

@@ -8,7 +8,7 @@ export default function ThreatIntelligencePage() {
         badge="Product"
         title="Threat Intelligence"
         description="Real-time threat intelligence to identify, investigate, and respond to cyber threats before they impact your organization."
-        primaryCTA={{ text: 'Book a Demo', href: '/get-started#book-demo' }}
+        primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
         secondaryCTA={{ text: 'Learn More', href: '/platform' }}
       />
 

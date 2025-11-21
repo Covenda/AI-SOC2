@@ -7,9 +7,9 @@ export default function DemoCenterPage() {
       <Hero
         variant="simple"
         badge="Demo Center"
-        title="Experience the Intelligence Cloud"
-        description="Explore interactive demos and see how Recorded Future transforms security operations."
-        primaryCTA={{ text: 'Book a Live Demo', href: '/get-started#book-demo' }}
+        title="Experience the Covenda AI Platform"
+        description="Explore interactive demos and see how Covenda helps build and operate effective AI-SOC capabilities."
+        primaryCTA={{ text: 'Book a Live Demo', href: '/book-demo' }}
       />
 
       <FeatureGrid
@@ -17,24 +17,24 @@ export default function DemoCenterPage() {
         description="Explore our platform capabilities through guided demonstrations"
         features={[
           {
-            icon: '🛡️',
-            title: 'Threat Intelligence Demo',
-            description: 'See how we identify and prioritize threats in real-time.',
-          },
-          {
             icon: '🔍',
-            title: 'Vulnerability Management',
-            description: 'Explore our approach to vulnerability prioritization.',
+            title: 'Security Posture Assessment',
+            description: 'See how we evaluate your current security posture and build a prioritized roadmap.',
           },
           {
-            icon: '👤',
-            title: 'Identity Monitoring',
-            description: 'Learn how we detect credential compromise and exposure.',
+            icon: '🤖',
+            title: 'Detection Engineering',
+            description: 'Explore how Forward-Deployed Engineers build custom detections for your environment.',
           },
           {
-            icon: '🌐',
-            title: 'Attack Surface Discovery',
-            description: 'Discover and monitor your external attack surface.',
+            icon: '⚙️',
+            title: 'Automated Response',
+            description: 'Learn how we automate security workflows and response playbooks.',
+          },
+          {
+            icon: '📊',
+            title: 'Co-Managed Operations',
+            description: 'See how we co-manage AI-SOC operations with defined SLOs.',
           },
         ]}
       />

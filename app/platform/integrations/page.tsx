@@ -6,9 +6,9 @@ export default function IntegrationsPage() {
     <div>
       <Hero
         badge="Integrations"
-        title="1,000+ Security Integrations"
-        description="Connect Recorded Future with your existing security tools for seamless intelligence enrichment."
-        primaryCTA={{ text: 'Book a Demo', href: '/get-started#book-demo' }}
+        title="50+ Security Integrations"
+        description="Connect Covenda AI with your existing security tools including SIEM, SOAR, and ticketing systems."
+        primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
       <FeatureGrid

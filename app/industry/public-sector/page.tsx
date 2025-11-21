@@ -8,7 +8,7 @@ export default function PublicSectorPage() {
         badge="Industry"
         title="Intelligence for Public Sector"
         description="Protect government agencies and critical infrastructure from nation-state threats and cyber attacks."
-        primaryCTA={{ text: 'Book a Demo', href: '/get-started#book-demo' }}
+        primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
       <FeatureGrid

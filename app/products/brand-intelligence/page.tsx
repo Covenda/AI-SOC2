@@ -8,7 +8,7 @@ export default function BrandIntelligencePage() {
         badge="Product"
         title="Brand Intelligence"
         description="Protect your brand from digital threats including phishing, fraud, impersonation, and domain abuse."
-        primaryCTA={{ text: 'Book a Demo', href: '/get-started#book-demo' }}
+        primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
       <FeatureGrid

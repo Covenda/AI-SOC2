@@ -7,32 +7,32 @@ export default function HealthcarePage() {
       <Hero
         badge="Industry"
         title="Intelligence for Healthcare"
-        description="Protect patient data, medical devices, and healthcare infrastructure from cyber threats and ransomware."
-        primaryCTA={{ text: 'Book a Demo', href: '/get-started#book-demo' }}
+        description="Compliance & Detection: How Forward-Deployed Security Engineers help healthcare organizations build and operate effective AI-SOC capabilities."
+        primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
       <FeatureGrid
-        title="Healthcare Security Solutions"
+        title="Compliance & Detection for Healthcare"
         features={[
           {
-            icon: '🏥',
-            title: 'Ransomware Defense',
-            description: 'Protect against ransomware targeting healthcare organizations.',
+            icon: '🔍',
+            title: 'Security Posture Assessment',
+            description: 'Comprehensive evaluation of your current security posture with actionable roadmap.',
           },
           {
-            icon: '🔒',
-            title: 'Patient Data Protection',
-            description: 'Monitor for PHI exposure and data breaches.',
+            icon: '🚀',
+            title: 'Forward-Deployed Engineers',
+            description: 'Embed security engineers with your team to build detections and automate responses.',
           },
           {
-            icon: '⚕️',
-            title: 'Medical Device Security',
-            description: 'Identify vulnerabilities in medical devices and IoT.',
+            icon: '⚙️',
+            title: 'Co-Managed Operations',
+            description: 'Co-manage your AI-SOC operations with defined SLOs and measurable outcomes.',
           },
           {
-            icon: '📋',
-            title: 'HIPAA Compliance',
-            description: 'Support compliance with HIPAA and healthcare regulations.',
+            icon: '📊',
+            title: 'Compliance Support',
+            description: 'Build detections and workflows that support HIPAA and healthcare compliance requirements.',
           },
         ]}
       />

@@ -1,10 +1,10 @@
-# Recorded Future Website Clone
+# Covenda AI Website
 
-A production-quality front-end clone of the Recorded Future website built with Next.js, TypeScript, and Tailwind CSS.
+A production-quality front-end website for Covenda AI built with Next.js, TypeScript, and Tailwind CSS.
 
 ## Overview
 
-This project recreates the information architecture, routing structure, and UI/UX of the Recorded Future website. It includes:
+This project recreates the information architecture, routing structure, and UI/UX of a modern cybersecurity intelligence platform. It includes:
 
 - **59 routes** covering all major sections: Platform, Products, Use Cases, Industries, Resources, Company, Partners, and Legal
 - **Responsive design** with mobile, tablet, and desktop breakpoints
@@ -76,7 +76,7 @@ npm start
 - `/platform` - Platform overview
 - `/platform/intelligence-graph` - Intelligence Graph
 - `/platform/integrations` - Integrations
-- `/platform/recorded-future-ai` - AI capabilities
+- `/platform/recorded-future-ai` - AI capabilities (Covenda AI)
 
 ### Products
 - `/products/threat-intelligence` - Threat Intelligence
@@ -105,7 +105,7 @@ npm start
 - `/research` - Threat research
 
 ### Company
-- `/why-recorded-future` - Why choose us
+- `/why-recorded-future` - Why choose us (Covenda AI)
 - `/our-story` - Company story
 - `/careers` - Careers
 - `/contact` - Contact
@@ -169,7 +169,7 @@ To rebrand this site:
 
 ## Future Enhancements
 
-- Add actual content from the live Recorded Future site
+- Add actual content from live sources
 - Implement case study detail pages
 - Add blog post detail pages
 - Integrate with a CMS for content management
@@ -179,4 +179,4 @@ To rebrand this site:
 
 ## License
 
-This is a clone project for internal use. All Recorded Future branding and content belongs to Recorded Future, Inc.
+This is a project for Covenda AI. All branding and content belongs to Covenda AI.

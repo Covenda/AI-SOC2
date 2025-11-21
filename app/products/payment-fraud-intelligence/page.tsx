@@ -8,7 +8,7 @@ export default function PaymentFraudIntelligencePage() {
         badge="Product"
         title="Payment Fraud Intelligence"
         description="Detect and prevent payment fraud with real-time intelligence on fraud schemes, compromised cards, and threat actors."
-        primaryCTA={{ text: 'Book a Demo', href: '/get-started#book-demo' }}
+        primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
       <FeatureGrid

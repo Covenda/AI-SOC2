@@ -4,34 +4,19 @@ import Link from 'next/link';
 export default function CaseStudyPage() {
   const caseStudies = [
     {
-      title: 'Citizens Financial Group Banks on Threat Intelligence',
+      title: 'Financial Services: SOC Modernization',
       industry: 'Financial Services',
-      href: '/case-study/citizens-financial-group-banks-on-threat-intelligence',
+      href: '/case-study',
     },
     {
-      title: 'Allied Bank Limited Adopts a Proactive Security Strategy',
-      industry: 'Financial Services',
-      href: '/case-study/allied-bank-limited-adopts-a-proactive-security-strategy-with-recorded-future-intelligence',
-    },
-    {
-      title: 'InvestBank Enhances Security Posture',
-      industry: 'Financial Services',
-      href: '/case-study/investbank',
-    },
-    {
-      title: 'Recorded Future Doubles the Power of Credit Union Security Team',
-      industry: 'Financial Services',
-      href: '/case-study/recorded-future-more-than-doubles-the-power-of-credit-union-security-team',
-    },
-    {
-      title: 'NOV Uses Intelligence Cloud to Defend Against Nation-States',
-      industry: 'Energy',
-      href: '/case-study/nov-uses-the-recorded-future-intelligence-cloud-to-defend-against-nation-states-and-adopt-zero-trust',
-    },
-    {
-      title: 'Kyriba Relies on Threat Intelligence to Grow and Protect',
+      title: 'Technology: SaaS Platform Supply Chain Security',
       industry: 'Technology',
-      href: '/case-study/kyriba-relies-on-threat-intelligence-to-grow-and-protect',
+      href: '/case-study',
+    },
+    {
+      title: 'Healthcare: Compliance & Detection',
+      industry: 'Healthcare',
+      href: '/case-study',
     },
   ];
 
@@ -41,7 +26,7 @@ export default function CaseStudyPage() {
         variant="simple"
         badge="Case Studies"
         title="Customer Success Stories"
-        description="See how organizations use Recorded Future to protect against cyber threats."
+        description="See how organizations use Covenda to build and operate effective AI-SOC capabilities with Forward-Deployed Security Engineers."
       />
 
       <section className="section bg-neutral-50">
@@ -52,15 +37,15 @@ export default function CaseStudyPage() {
                 <Link
                   key={index}
                   href={study.href}
-                  className="card group hover:border-brand-blue"
+                  className="card group hover:border-brand-orange"
                 >
-                  <span className="inline-block px-3 py-1 rounded-full bg-brand-blue/10 text-brand-blue text-sm font-semibold mb-3">
+                  <span className="inline-block px-3 py-1 rounded-full bg-brand-orange/10 text-brand-orange text-sm font-semibold mb-3">
                     {study.industry}
                   </span>
-                  <h3 className="text-xl font-bold text-brand-navy mb-3 group-hover:text-brand-blue transition-colors">
+                  <h3 className="text-xl font-bold text-brand-navy mb-3 group-hover:text-brand-orange transition-colors">
                     {study.title}
                   </h3>
-                  <div className="flex items-center text-brand-blue font-semibold">
+                  <div className="flex items-center text-brand-orange font-semibold">
                     Read Case Study
                     <svg
                       className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"

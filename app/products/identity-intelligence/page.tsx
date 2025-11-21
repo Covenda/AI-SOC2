@@ -8,7 +8,7 @@ export default function IdentityIntelligencePage() {
         badge="Product"
         title="Identity Intelligence"
         description="Monitor and protect against identity compromise, credential exposure, and account takeover across the web and dark web."
-        primaryCTA={{ text: 'Book a Demo', href: '/get-started#book-demo' }}
+        primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
       <FeatureGrid

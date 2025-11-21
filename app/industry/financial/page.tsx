@@ -7,32 +7,32 @@ export default function FinancialPage() {
       <Hero
         badge="Industry"
         title="Intelligence for Financial Services"
-        description="Protect financial institutions from cyber threats, fraud, and regulatory risks with comprehensive threat intelligence."
-        primaryCTA={{ text: 'Book a Demo', href: '/get-started#book-demo' }}
+        description="SOC Modernization: How Forward-Deployed Security Engineers help financial institutions build and operate effective AI-SOC capabilities."
+        primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
       <FeatureGrid
-        title="Solutions for Financial Services"
+        title="SOC Modernization for Financial Services"
         features={[
           {
-            icon: '💳',
-            title: 'Fraud Prevention',
-            description: 'Detect and prevent payment fraud, account takeover, and financial crimes.',
+            icon: '🔍',
+            title: 'Security Posture Assessment',
+            description: 'Comprehensive evaluation of your current security posture with actionable roadmap.',
           },
           {
-            icon: '🛡️',
-            title: 'Cyber Threat Intelligence',
-            description: 'Protect against targeted attacks on financial infrastructure.',
+            icon: '🚀',
+            title: 'Forward-Deployed Engineers',
+            description: 'Embed security engineers with your team to build detections and automate responses.',
+          },
+          {
+            icon: '⚙️',
+            title: 'Co-Managed Operations',
+            description: 'Co-manage your AI-SOC operations with defined SLOs and measurable outcomes.',
           },
           {
             icon: '📊',
-            title: 'Third-Party Risk',
-            description: 'Monitor vendor and supply chain security risks.',
-          },
-          {
-            icon: '⚖️',
-            title: 'Compliance',
-            description: 'Meet regulatory requirements with comprehensive intelligence.',
+            title: 'Measurable Results',
+            description: 'Achieve 70% faster MTTD, 24/7 coverage, and production-ready detections in 2-4 weeks.',
           },
         ]}
       />

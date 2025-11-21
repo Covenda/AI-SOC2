@@ -13,7 +13,7 @@ export const navigationData: NavItem[] = [
       { label: 'Intelligence Graph', href: '/platform/intelligence-graph' },
       { label: 'Collective Insights', href: '/platform/collective-insights' },
       { label: 'Integrations', href: '/platform/integrations' },
-      { label: 'Recorded Future AI', href: '/platform/recorded-future-ai' },
+      { label: 'Covenda AI', href: '/platform/recorded-future-ai' },
       { label: 'Browser Extension', href: '/platform/browser-extension' },
     ],
   },
@@ -43,18 +43,6 @@ export const navigationData: NavItem[] = [
     ],
   },
   {
-    label: 'Industries',
-    href: '/industry',
-    children: [
-      { label: 'Financial', href: '/industry/financial' },
-      { label: 'Healthcare', href: '/industry/healthcare' },
-      { label: 'Public Sector', href: '/industry/public-sector' },
-      { label: 'Critical Infrastructure', href: '/industry/critical-infrastructure' },
-      { label: 'Technology', href: '/industry/technology' },
-      { label: 'Retail', href: '/industry/retail' },
-    ],
-  },
-  {
     label: 'Resources',
     href: '/resources',
     children: [
@@ -71,7 +59,7 @@ export const navigationData: NavItem[] = [
     label: 'Company',
     href: '/why-recorded-future',
     children: [
-      { label: 'Why Recorded Future', href: '/why-recorded-future' },
+      { label: 'Why Covenda', href: '/why-recorded-future' },
       { label: 'Our Story', href: '/our-story' },
       { label: 'Careers', href: '/careers' },
       { label: 'Partners', href: '/partner' },
@@ -88,7 +76,7 @@ export const footerSections = [
       { label: 'Intelligence Graph', href: '/platform/intelligence-graph' },
       { label: 'Collective Insights', href: '/platform/collective-insights' },
       { label: 'Integrations', href: '/platform/integrations' },
-      { label: 'Recorded Future AI', href: '/platform/recorded-future-ai' },
+      { label: 'Covenda AI', href: '/platform/recorded-future-ai' },
     ],
   },
   {
@@ -99,15 +87,6 @@ export const footerSections = [
       { label: 'SecOps Intelligence', href: '/products/secops-intelligence' },
       { label: 'Identity Intelligence', href: '/products/identity-intelligence' },
       { label: 'Vulnerability Intelligence', href: '/products/vulnerability-intelligence' },
-    ],
-  },
-  {
-    title: 'Industries',
-    links: [
-      { label: 'Financial', href: '/industry/financial' },
-      { label: 'Healthcare', href: '/industry/healthcare' },
-      { label: 'Public Sector', href: '/industry/public-sector' },
-      { label: 'Technology', href: '/industry/technology' },
     ],
   },
   {
@@ -123,7 +102,7 @@ export const footerSections = [
   {
     title: 'Company',
     links: [
-      { label: 'Why Recorded Future', href: '/why-recorded-future' },
+      { label: 'Why Covenda', href: '/why-recorded-future' },
       { label: 'Our Story', href: '/our-story' },
       { label: 'Careers', href: '/careers' },
       { label: 'Contact', href: '/contact' },

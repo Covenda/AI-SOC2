@@ -44,12 +44,12 @@ export default function FeatureGrid({
             const content = (
               <>
                 {feature.icon && <div className="text-4xl mb-4">{feature.icon}</div>}
-                <h3 className="text-xl font-bold text-brand-navy mb-3 group-hover:text-brand-blue transition-colors">
+                <h3 className="text-xl font-bold text-brand-navy mb-3 group-hover:text-brand-orange transition-colors">
                   {feature.title}
                 </h3>
                 <p className="text-neutral-600 mb-4">{feature.description}</p>
                 {feature.href && (
-                  <div className="flex items-center text-brand-blue font-semibold">
+                  <div className="flex items-center text-brand-orange font-semibold">
                     Learn more
                     <svg
                       className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"
@@ -74,7 +74,7 @@ export default function FeatureGrid({
                 <Link
                   key={index}
                   href={feature.href}
-                  className="card group cursor-pointer hover:border-brand-blue hover:shadow-soft"
+                  className="card group cursor-pointer hover:border-brand-orange hover:shadow-soft"
                 >
                   {content}
                 </Link>

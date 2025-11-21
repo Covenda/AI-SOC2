@@ -46,7 +46,7 @@ export default function ResourcesPage() {
           {
             icon: '💼',
             title: 'Case Studies',
-            description: 'See how organizations use Recorded Future intelligence.',
+            description: 'See how organizations use Covenda AI intelligence.',
             href: '/case-study',
           },
         ]}

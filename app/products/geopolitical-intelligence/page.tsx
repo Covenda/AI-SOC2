@@ -8,7 +8,7 @@ export default function GeopoliticalIntelligencePage() {
         badge="Product"
         title="Geopolitical Intelligence"
         description="Understand how geopolitical events impact your security posture and make informed risk decisions."
-        primaryCTA={{ text: 'Book a Demo', href: '/get-started#book-demo' }}
+        primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
       <FeatureGrid

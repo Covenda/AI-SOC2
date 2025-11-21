@@ -8,7 +8,7 @@ export default function ContactPage() {
         variant="simple"
         badge="Contact"
         title="Get in Touch"
-        description="Connect with our team to learn how Recorded Future can help protect your organization."
+        description="Connect with our team to learn how Covenda can help build and operate your AI-SOC."
       />
 
       <section className="section bg-neutral-50">
@@ -18,18 +18,16 @@ export default function ContactPage() {
               <div className="card">
                 <h3 className="text-2xl font-bold text-brand-navy mb-4">Book a Demo</h3>
                 <p className="text-neutral-600 mb-6">
-                  Schedule a personalized demo to see how Recorded Future can address your specific
-                  security challenges.
+                  Schedule a personalized demo to see how Covenda can help build and operate your AI-SOC.
                 </p>
-                <Link href="/get-started#book-demo" className="btn btn-primary">
+                <Link href="/book-demo" className="btn btn-primary">
                   Schedule Demo
                 </Link>
               </div>
               <div className="card">
                 <h3 className="text-2xl font-bold text-brand-navy mb-4">Sales Inquiry</h3>
                 <p className="text-neutral-600 mb-6">
-                  Contact our sales team to discuss pricing, licensing, and custom solutions for
-                  your organization.
+                  Contact our team to discuss how Forward-Deployed Security Engineers can help your organization.
                 </p>
                 <Link href="/get-started" className="btn btn-secondary">
                   Contact Sales
@@ -40,14 +38,9 @@ export default function ContactPage() {
                 <p className="text-neutral-600 mb-6">
                   Existing customers can access our support portal for technical assistance.
                 </p>
-                <a
-                  href="https://support.recordedfuture.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-secondary"
-                >
-                  Support Portal
-                </a>
+                <Link href="/contact" className="btn btn-secondary">
+                  Contact Support
+                </Link>
               </div>
               <div className="card">
                 <h3 className="text-2xl font-bold text-brand-navy mb-4">Partnership Opportunities</h3>

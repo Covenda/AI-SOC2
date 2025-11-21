@@ -7,32 +7,32 @@ export default function TechnologyPage() {
       <Hero
         badge="Industry"
         title="Intelligence for Technology Companies"
-        description="Protect your technology infrastructure, intellectual property, and customers from cyber threats."
-        primaryCTA={{ text: 'Book a Demo', href: '/get-started#book-demo' }}
+        description="SaaS Platform Supply Chain Security: How Forward-Deployed Security Engineers help technology companies build and operate effective AI-SOC capabilities."
+        primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
       <FeatureGrid
-        title="Technology Security Solutions"
+        title="Supply Chain Security for Technology"
         features={[
           {
-            icon: '🔐',
-            title: 'IP Protection',
-            description: 'Protect intellectual property from theft and exposure.',
+            icon: '🔍',
+            title: 'Security Posture Assessment',
+            description: 'Comprehensive evaluation of your current security posture with actionable roadmap.',
           },
           {
-            icon: '🌐',
-            title: 'Cloud Security',
-            description: 'Monitor cloud infrastructure for exposures and threats.',
+            icon: '🚀',
+            title: 'Forward-Deployed Engineers',
+            description: 'Embed security engineers with your team to build detections and automate responses.',
           },
           {
-            icon: '📦',
+            icon: '⚙️',
+            title: 'Co-Managed Operations',
+            description: 'Co-manage your AI-SOC operations with defined SLOs and measurable outcomes.',
+          },
+          {
+            icon: '📊',
             title: 'Supply Chain Security',
-            description: 'Secure your software supply chain from attacks.',
-          },
-          {
-            icon: '👥',
-            title: 'Customer Protection',
-            description: 'Protect customers from targeted attacks and fraud.',
+            description: 'Build detections and workflows to secure your software supply chain.',
           },
         ]}
       />

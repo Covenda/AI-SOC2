@@ -17,10 +17,10 @@ export default function ResearchPage() {
             <div className="card mb-8">
               <h2 className="text-2xl font-bold text-brand-navy mb-4">Insikt Group</h2>
               <p className="text-lg text-neutral-600 mb-4">
-                Insikt Group is Recorded Future's threat research division, providing strategic
+                Insikt Group is Covenda AI's threat research division, providing strategic
                 and tactical intelligence to inform security decisions.
               </p>
-              <Link href="/research/insikt-group" className="text-brand-blue font-semibold">
+              <Link href="/research/insikt-group" className="text-brand-orange font-semibold">
                 Learn More About Insikt Group →
               </Link>
             </div>

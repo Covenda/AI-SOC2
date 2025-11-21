@@ -7,7 +7,7 @@ export default function CollectiveInsightsPage() {
         badge="Collective Insights"
         title="Collective Insights"
         description="Leverage the power of our global security community. Access anonymized insights from thousands of organizations worldwide."
-        primaryCTA={{ text: 'Learn More', href: '/get-started#book-demo' }}
+        primaryCTA={{ text: 'Learn More', href: '/book-demo' }}
       />
 
       <section className="section bg-neutral-50">

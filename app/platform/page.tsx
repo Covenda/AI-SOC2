@@ -6,51 +6,51 @@ export default function PlatformPage() {
   return (
     <div>
       <Hero
-        badge="Intelligence Cloud Platform"
-        title="The Intelligence Cloud Platform"
-        description="A unified platform to collect, analyze, and operationalize threat intelligence across your entire security ecosystem."
-        primaryCTA={{ text: 'Book a Demo', href: '/get-started#book-demo' }}
+        badge="AI-SOC Platform"
+        title="Covenda AI Platform"
+        description="A unified platform that connects threat intelligence, controls, evidence, and automated response in a single ecosystem."
+        primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
         secondaryCTA={{ text: 'View Demo Center', href: '/platform/demo-center' }}
       />
 
       <FeatureGrid
         title="Platform Capabilities"
-        description="Comprehensive intelligence capabilities built for modern security teams"
+        description="Comprehensive AI-SOC capabilities built for modern security teams"
         features={[
           {
-            icon: '🧠',
-            title: 'Intelligence Graph',
+            icon: '🔍',
+            title: 'Threat Intelligence',
             description:
-              'Our proprietary Intelligence Graph connects billions of data points to provide context-rich intelligence.',
-            href: '/platform/intelligence-graph',
-          },
-          {
-            icon: '👥',
-            title: 'Collective Insights',
-            description:
-              'Leverage anonymized insights from our global community of security professionals.',
-            href: '/platform/collective-insights',
+              'Real-time threat intelligence to identify and prioritize threats before they impact your organization.',
+            href: '/products/threat-intelligence',
           },
           {
             icon: '🤖',
-            title: 'Recorded Future AI',
+            title: 'Detection Engineering',
             description:
-              'AI-powered analysis to automate threat detection and prioritization at scale.',
-            href: '/platform/recorded-future-ai',
+              'Build, tune, and deploy custom detections tailored to your environment and threat landscape.',
+            href: '/use-case/automation-security-workflows',
+          },
+          {
+            icon: '⚙️',
+            title: 'Automated Response',
+            description:
+              'Automate security workflows and response playbooks to reduce mean time to respond.',
+            href: '/use-case/automation-security-workflows',
           },
           {
             icon: '🔌',
             title: 'Integrations',
             description:
-              'Seamlessly integrate with 1,000+ security tools in your existing tech stack.',
+              'Seamlessly integrate with 50+ security tools including SIEM, SOAR, and ticketing systems.',
             href: '/platform/integrations',
           },
           {
-            icon: '🌐',
-            title: 'Browser Extension',
+            icon: '📊',
+            title: 'Co-Managed Operations',
             description:
-              'Access intelligence directly in your browser for real-time threat context.',
-            href: '/platform/browser-extension',
+              'Co-manage your AI-SOC operations with defined SLOs and continuous improvement.',
+            href: '/platform',
           },
           {
             icon: '🎯',
@@ -70,7 +70,7 @@ export default function PlatformPage() {
               Seamless Integration with Your Security Stack
             </h2>
             <p className="text-xl text-neutral-600 mb-8">
-              Connect Recorded Future with your existing SIEM, SOAR, TIP, and other security tools
+              Connect Covenda AI with your existing SIEM, SOAR, ticketing systems, and other security tools
             </p>
             <Link href="/platform/integrations" className="btn btn-primary">
               Explore Integrations

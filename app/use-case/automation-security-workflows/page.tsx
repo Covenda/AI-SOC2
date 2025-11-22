@@ -6,7 +6,7 @@ export default function AutomationSecurityWorkflowsPage() {
     <div>
       <Hero
         badge="Use Case"
-        title="Security Workflow Automation with Covenda's AI-SOC"
+        title="Security Workflow Automation with Covenda AI-SOC"
         description="Forward-Deployed Engineers wire the Covenda Technology System into your environment, building detections, automations, and workflows that accelerate AI-SOC operations and reduce time to value."
         primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
@@ -15,7 +15,7 @@ export default function AutomationSecurityWorkflowsPage() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
-              Covenda's AI-SOC automates security workflows through Forward-Deployed Engineers who wire the Covenda Technology System into your environment. They build detections, automations, and workflows that accelerate threat operations and reduce time from first meeting to first meaningful win.
+              Covenda AI-SOC automates security workflows through Forward-Deployed Engineers who wire the Covenda Technology System into your environment. They build detections, automations, and workflows that accelerate threat operations and reduce time from first meeting to first meaningful win.
             </p>
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
               FDEs integrate the platform with your existing tools (SIEM, SOAR, ticketing, CI/CD), build custom solutions as needed, then feed those patterns back into the Covenda Technology System so they become reusable. This YC-style approach means we "do things that don't scale" early, then scale what works.

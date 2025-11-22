@@ -19,7 +19,7 @@ export default function GuidesPage() {
                   Understanding AI-SOC Operations
                 </h3>
                 <p className="text-neutral-600">
-                  Everything you need to know about how Covenda's AI-SOC works, powered by the Covenda Technology System and Forward-Deployed Engineers.
+                  Everything you need to know about how Covenda AI-SOC works, powered by the Covenda Technology System and Forward-Deployed Engineers.
                 </p>
               </div>
               <div className="card">

@@ -7,7 +7,7 @@ export default function PublicSectorPage() {
       <Hero
         badge="Industry"
         title="AI-SOC for Public Sector"
-        description="Covenda's AI-SOC for government agencies: preemptive threat intelligence, risk-based vulnerability management, and Forward-Deployed Engineers tuned for nation-state threats and public sector security requirements."
+        description="Covenda AI-SOC for government agencies: preemptive threat intelligence, risk-based vulnerability management, and Forward-Deployed Engineers tuned for nation-state threats and public sector security requirements."
         primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
@@ -15,7 +15,7 @@ export default function PublicSectorPage() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
-              Covenda's AI-SOC is designed for government agencies facing sophisticated nation-state threats and public sector security requirements. The Covenda Technology System delivers preemptive threat intelligence and risk-based vulnerability management tuned for geopolitical threats and government operations.
+              Covenda AI-SOC is designed for government agencies facing sophisticated nation-state threats and public sector security requirements. The Covenda Technology System delivers preemptive threat intelligence and risk-based vulnerability management tuned for geopolitical threats and government operations.
             </p>
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
               Forward-Deployed Engineers embed with your team to wire the platform into your environment, building detections and automations tuned for public sector threats (nation-state attacks, election security, critical infrastructure) and the operational realities of government agencies.
@@ -25,7 +25,7 @@ export default function PublicSectorPage() {
       </section>
 
       <FeatureGrid
-        title="How Covenda's AI-SOC Serves Public Sector"
+        title="How Covenda AI-SOC Serves Public Sector"
         features={[
           {
             icon: '🏛️',

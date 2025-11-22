@@ -18,10 +18,10 @@ export default function ExplorePlatformPage() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-6">
-              The Platform That Powers Covenda's AI-SOC
+              The Platform That Powers Covenda AI-SOC
             </h2>
             <p className="text-xl text-neutral-600 mb-8">
-              The Covenda Technology System is the core AI-native fabric that powers Covenda's AI-SOC. It includes Lucid AI for threat modeling, preemptive intelligence, and risk-based vulnerability management. Forward-Deployed Engineers wire it into your environment.
+              The Covenda Technology System is the core AI-native fabric that powers Covenda AI-SOC. It includes Lucid AI for threat modeling, preemptive intelligence, and risk-based vulnerability management. Forward-Deployed Engineers wire it into your environment.
             </p>
           </div>
         </div>

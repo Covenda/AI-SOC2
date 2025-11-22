@@ -24,7 +24,7 @@ export default function OurStoryPage() {
                 This product-first → FDEs in the field → we become the AI-SOC approach means customers don't have to build and operate a SOC from scratch. They turn on Covenda as their AI-SOC, powered by the Covenda Technology System and Forward-Deployed Engineers.
               </p>
               <p className="text-lg text-neutral-700 leading-relaxed">
-                Today, Covenda's AI-SOC continuously performs threat modeling, threat hunting, threat intelligence, threat monitoring, and threat assessment—all through the Covenda Technology System, integrated with customer tools, and tuned by FDEs who ensure the platform works in complex, regulated environments.
+                Today, Covenda AI-SOC continuously performs threat modeling, threat hunting, threat intelligence, threat monitoring, and threat assessment—all through the Covenda Technology System, integrated with customer tools, and tuned by FDEs who ensure the platform works in complex, regulated environments.
               </p>
             </div>
           </div>

@@ -7,7 +7,7 @@ export default function GeopoliticalIntelligencePage() {
       <Hero
         badge="AI-SOC Capability"
         title="Geopolitical Intelligence"
-        description="Geopolitical intelligence that powers threat modeling and assessment within Covenda's AI-SOC. Understands how geopolitical events impact security posture and feeds threat operations with regional risk context."
+        description="Geopolitical intelligence that powers threat modeling and assessment within Covenda AI-SOC. Understands how geopolitical events impact security posture and feeds threat operations with regional risk context."
         primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
@@ -15,7 +15,7 @@ export default function GeopoliticalIntelligencePage() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
-              Geopolitical Intelligence is a capability domain within Covenda's AI-SOC that focuses on how geopolitical events impact security. It feeds threat modeling (nation-state attack scenarios), threat intelligence (geopolitical threat context), and threat assessment (regional risk prioritization).
+              Geopolitical Intelligence is a capability domain within Covenda AI-SOC that focuses on how geopolitical events impact security. It feeds threat modeling (nation-state attack scenarios), threat intelligence (geopolitical threat context), and threat assessment (regional risk prioritization).
             </p>
           </div>
         </div>

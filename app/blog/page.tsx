@@ -32,7 +32,7 @@ export default function BlogPage() {
         variant="simple"
         badge="Blog"
         title="Insights & Research"
-        description="Stay informed with the latest insights on Covenda's AI-SOC, the Covenda Technology System, Forward-Deployed Engineering, and threat operations."
+        description="Stay informed with the latest insights on Covenda AI-SOC, the Covenda Technology System, Forward-Deployed Engineering, and threat operations."
       />
 
       <section className="section bg-white">

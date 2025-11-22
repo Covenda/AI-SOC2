@@ -8,7 +8,7 @@ export default function PlatformPage() {
       <Hero
         badge="AI-SOC Platform"
         title="The Covenda Technology System"
-        description="The core AI-native fabric that powers Covenda's AI-SOC. Includes Lucid AI for threat modeling, preemptive intelligence, and risk-based vulnerability management."
+        description="The core AI-native fabric that powers Covenda AI-SOC. Includes Lucid AI for threat modeling, preemptive intelligence, and risk-based vulnerability management."
         primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
         secondaryCTA={{ text: 'View Demo Center', href: '/platform/demo-center' }}
       />

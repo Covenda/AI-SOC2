@@ -14,7 +14,7 @@ export default function RecordedFutureAIPage() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-8">
-              The Platform That Powers Covenda's AI-SOC
+              The Platform That Powers Covenda AI-SOC
             </h2>
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
               The <strong>Covenda Technology System</strong> is our AI-native security fabric. It includes <strong>Lucid AI</strong>, our engine for spec-driven, preemptive, event-agnostic threat intelligence and risk-based vulnerability management.

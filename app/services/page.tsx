@@ -7,14 +7,14 @@ export default function ServicesPage() {
     <div>
       <Hero
         badge="Services"
-        title="How You Engage with Covenda's AI-SOC"
+        title="How You Engage with Covenda AI-SOC"
         description="Covenda runs security operations as a product. These are the three main ways customers engage with our AI-SOC: Security Engineering, Forward-Deployed Engineering, and AI-SOC Co-Management."
         primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
       <FeatureGrid
-        title="Three Ways to Engage with Covenda's AI-SOC"
-        description="These aren't standalone consulting services—they're engagement models for how Covenda's AI-SOC operates with your team"
+        title="Three Ways to Engage with Covenda AI-SOC"
+        description="These aren't standalone consulting services—they're engagement models for how Covenda AI-SOC operates with your team"
         features={[
           {
             icon: '🔍',
@@ -45,7 +45,7 @@ export default function ServicesPage() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-6">
-              How Covenda's AI-SOC Works
+              How Covenda AI-SOC Works
             </h2>
             <div className="grid md:grid-cols-3 gap-8 mt-12">
               <div>

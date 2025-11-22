@@ -66,7 +66,7 @@ export default function BookDemoPage() {
                 </div>
                 <h3 className="text-xl font-bold text-brand-navy mb-3">Expert Guidance</h3>
                 <p className="text-neutral-600">
-                  Learn from our Forward-Deployed Engineers and get answers about how Covenda's AI-SOC works
+                  Learn from our Forward-Deployed Engineers and get answers about how Covenda AI-SOC works
                 </p>
               </div>
               <div className="card text-center">

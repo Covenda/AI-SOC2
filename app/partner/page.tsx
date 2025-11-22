@@ -17,7 +17,7 @@ export default function PartnerPage() {
           {
             icon: '🤝',
             title: 'Channel Partners (VAR)',
-            description: 'Resell Covenda's AI-SOC and grow your security practice with the Covenda Technology System.',
+            description: 'Resell Covenda AI-SOC and grow your security practice with the Covenda Technology System.',
             href: '/partner/var',
           },
           {
@@ -29,7 +29,7 @@ export default function PartnerPage() {
           {
             icon: '🛡️',
             title: 'MSSP Partners',
-            description: 'Enhance your managed security services with Covenda's AI-SOC and Forward-Deployed Engineers.',
+            description: 'Enhance your managed security services with Covenda AI-SOC and Forward-Deployed Engineers.',
             href: '/partner/mssp',
           },
           {
@@ -41,7 +41,7 @@ export default function PartnerPage() {
           {
             icon: '🎯',
             title: 'MDR Partners',
-            description: 'Power your managed detection and response with Covenda's AI-SOC and Forward-Deployed Engineers.',
+            description: 'Power your managed detection and response with Covenda AI-SOC and Forward-Deployed Engineers.',
             href: '/partner/managed-detection-response',
           },
         ]}

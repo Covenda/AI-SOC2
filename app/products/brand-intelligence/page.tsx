@@ -7,7 +7,7 @@ export default function BrandIntelligencePage() {
       <Hero
         badge="AI-SOC Capability"
         title="Brand Intelligence"
-        description="Brand-focused intelligence that powers threat modeling, hunting, and assessment within Covenda's AI-SOC. Monitors phishing, fraud, impersonation, and domain abuse to feed threat operations."
+        description="Brand-focused intelligence that powers threat modeling, hunting, and assessment within Covenda AI-SOC. Monitors phishing, fraud, impersonation, and domain abuse to feed threat operations."
         primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
@@ -15,7 +15,7 @@ export default function BrandIntelligencePage() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
-              Brand Intelligence is a capability domain within Covenda's AI-SOC that focuses on brand-related threats. It feeds threat modeling (how brands can be impersonated), threat hunting (looking for brand abuse), and threat assessment (prioritizing brand risks).
+              Brand Intelligence is a capability domain within Covenda AI-SOC that focuses on brand-related threats. It feeds threat modeling (how brands can be impersonated), threat hunting (looking for brand abuse), and threat assessment (prioritizing brand risks).
             </p>
           </div>
         </div>

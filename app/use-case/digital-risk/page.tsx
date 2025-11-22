@@ -6,8 +6,8 @@ export default function DigitalRiskPage() {
     <div>
       <Hero
         badge="Use Case"
-        title="Digital Risk Protection with Covenda's AI-SOC"
-        description="How Covenda's AI-SOC protects against digital risks: threat modeling maps how brands and executives can be targeted, threat intelligence monitors for brand abuse and impersonation, and threat assessment prioritizes digital risks based on business impact."
+        title="Digital Risk Protection with Covenda AI-SOC"
+        description="How Covenda AI-SOC protects against digital risks: threat modeling maps how brands and executives can be targeted, threat intelligence monitors for brand abuse and impersonation, and threat assessment prioritizes digital risks based on business impact."
         primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
@@ -15,7 +15,7 @@ export default function DigitalRiskPage() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
-              Covenda's AI-SOC protects against digital risks through continuous threat operations. The Covenda Technology System models how brands and executives can be targeted (threat modeling), monitors for brand abuse and impersonation (threat intelligence), and hunts for signs of digital risk in your environment (threat hunting).
+              Covenda AI-SOC protects against digital risks through continuous threat operations. The Covenda Technology System models how brands and executives can be targeted (threat modeling), monitors for brand abuse and impersonation (threat intelligence), and hunts for signs of digital risk in your environment (threat hunting).
             </p>
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
               The AI-SOC continuously assesses digital risks, prioritizing based on business impact. Forward-Deployed Engineers wire detections and automations specific to digital risk, integrating with your existing tools.
@@ -25,7 +25,7 @@ export default function DigitalRiskPage() {
       </section>
 
       <FeatureGrid
-        title="How Covenda's AI-SOC Protects Against Digital Risk"
+        title="How Covenda AI-SOC Protects Against Digital Risk"
         features={[
           {
             icon: '🎯',

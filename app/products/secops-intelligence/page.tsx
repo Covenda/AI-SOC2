@@ -7,7 +7,7 @@ export default function SecOpsIntelligencePage() {
       <Hero
         badge="AI-SOC Capability"
         title="SecOps Intelligence"
-        description="Intelligence that powers security operations within Covenda's AI-SOC. Feeds threat hunting, monitoring, and assessment with context-rich intelligence that reduces noise and accelerates response."
+        description="Intelligence that powers security operations within Covenda AI-SOC. Feeds threat hunting, monitoring, and assessment with context-rich intelligence that reduces noise and accelerates response."
         primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
@@ -15,7 +15,7 @@ export default function SecOpsIntelligencePage() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
-              SecOps Intelligence is a capability domain within Covenda's AI-SOC that powers security operations. It delivers context-rich intelligence that feeds threat hunting, monitoring, and assessment operations, reducing noise and accelerating response.
+              SecOps Intelligence is a capability domain within Covenda AI-SOC that powers security operations. It delivers context-rich intelligence that feeds threat hunting, monitoring, and assessment operations, reducing noise and accelerating response.
             </p>
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
               This intelligence integrates with your existing SecOps tools (SIEM, SOAR, EDR) and the Covenda Technology System to enrich alerts, automate triage, and power threat hunting operations that look for signs of modeled threats.

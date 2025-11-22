@@ -7,7 +7,7 @@ export default function PaymentFraudIntelligencePage() {
       <Hero
         badge="AI-SOC Capability"
         title="Payment Fraud Intelligence"
-        description="Payment fraud intelligence that powers threat modeling, hunting, and assessment within Covenda's AI-SOC. Monitors fraud schemes, compromised cards, and threat actors to feed threat operations."
+        description="Payment fraud intelligence that powers threat modeling, hunting, and assessment within Covenda AI-SOC. Monitors fraud schemes, compromised cards, and threat actors to feed threat operations."
         primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
@@ -15,7 +15,7 @@ export default function PaymentFraudIntelligencePage() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
-              Payment Fraud Intelligence is a capability domain within Covenda's AI-SOC that focuses on payment-related threats. It feeds threat modeling (how payment systems can be attacked), threat hunting (looking for fraud indicators), and threat assessment (prioritizing payment risks).
+              Payment Fraud Intelligence is a capability domain within Covenda AI-SOC that focuses on payment-related threats. It feeds threat modeling (how payment systems can be attacked), threat hunting (looking for fraud indicators), and threat assessment (prioritizing payment risks).
             </p>
           </div>
         </div>

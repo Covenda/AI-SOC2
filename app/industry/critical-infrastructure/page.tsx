@@ -7,7 +7,7 @@ export default function CriticalInfrastructurePage() {
       <Hero
         badge="Industry"
         title="AI-SOC for Critical Infrastructure"
-        description="Covenda's AI-SOC for critical infrastructure: preemptive threat intelligence, risk-based vulnerability management, and Forward-Deployed Engineers tuned for OT/ICS security and nation-state threats."
+        description="Covenda AI-SOC for critical infrastructure: preemptive threat intelligence, risk-based vulnerability management, and Forward-Deployed Engineers tuned for OT/ICS security and nation-state threats."
         primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
@@ -15,7 +15,7 @@ export default function CriticalInfrastructurePage() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
-              Covenda's AI-SOC is designed for critical infrastructure organizations facing sophisticated nation-state threats and operational disruption risks. The Covenda Technology System delivers preemptive threat intelligence and risk-based vulnerability management tuned for OT/ICS security and geopolitical threats.
+              Covenda AI-SOC is designed for critical infrastructure organizations facing sophisticated nation-state threats and operational disruption risks. The Covenda Technology System delivers preemptive threat intelligence and risk-based vulnerability management tuned for OT/ICS security and geopolitical threats.
             </p>
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
               Forward-Deployed Engineers embed with your team to wire the platform into your environment, building detections and automations tuned for critical infrastructure threats (nation-state attacks, OT/ICS security, supply chain risks) and the operational realities of power, water, transportation, and other critical systems.
@@ -25,7 +25,7 @@ export default function CriticalInfrastructurePage() {
       </section>
 
       <FeatureGrid
-        title="How Covenda's AI-SOC Serves Critical Infrastructure"
+        title="How Covenda AI-SOC Serves Critical Infrastructure"
         features={[
           {
             icon: '⚡',

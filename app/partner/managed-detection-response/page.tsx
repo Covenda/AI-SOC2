@@ -7,7 +7,7 @@ export default function MDRPartnerPage() {
         variant="simple"
         badge="Partner Program"
         title="MDR Partner Program"
-        description="Power your managed detection and response services with Covenda's AI-SOC, powered by the Covenda Technology System and Forward-Deployed Engineers."
+        description="Power your managed detection and response services with Covenda AI-SOC, powered by the Covenda Technology System and Forward-Deployed Engineers."
         primaryCTA={{ text: 'Apply Now', href: '/contact' }}
       />
     </div>

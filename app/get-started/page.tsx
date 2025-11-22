@@ -7,7 +7,7 @@ export default function GetStartedPage() {
       <Hero
         variant="gradient"
         title="Get Started with Covenda"
-        description="Turn on Covenda's AI-SOC. Forward-Deployed Engineers embed with your team to wire the Covenda Technology System into your environment. Get started with a demo or assessment."
+        description="Turn on Covenda AI-SOC. Forward-Deployed Engineers embed with your team to wire the Covenda Technology System into your environment. Get started with a demo or assessment."
       />
 
       {/* Book a Demo Section */}
@@ -63,7 +63,7 @@ export default function GetStartedPage() {
                     <div className="text-left">
                       <h3 className="font-semibold text-brand-navy mb-2">Expert Guidance</h3>
                       <p className="text-neutral-600">
-                        Learn from our Forward-Deployed Engineers about Covenda's AI-SOC
+                        Learn from our Forward-Deployed Engineers about Covenda AI-SOC
                       </p>
                     </div>
                   </div>
@@ -116,7 +116,7 @@ export default function GetStartedPage() {
               <div className="card">
                 <h3 className="text-xl font-bold text-brand-navy mb-3">AI-SOC Assessment</h3>
                 <p className="text-neutral-600 mb-4">
-                  Understand how Covenda's AI-SOC can work in your environment. Forward-Deployed Engineers assess your current state and wire the Covenda Technology System.
+                  Understand how Covenda AI-SOC can work in your environment. Forward-Deployed Engineers assess your current state and wire the Covenda Technology System.
                 </p>
                 <Link href="/book-demo" className="text-brand-orange font-semibold">
                   Request Assessment →

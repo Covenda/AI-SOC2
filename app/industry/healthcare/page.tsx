@@ -7,7 +7,7 @@ export default function HealthcarePage() {
       <Hero
         badge="Industry"
         title="AI-SOC for Healthcare"
-        description="Covenda's AI-SOC for healthcare organizations: preemptive threat intelligence, risk-based vulnerability management, and Forward-Deployed Engineers tuned for HIPAA compliance and healthcare-specific threats."
+        description="Covenda AI-SOC for healthcare organizations: preemptive threat intelligence, risk-based vulnerability management, and Forward-Deployed Engineers tuned for HIPAA compliance and healthcare-specific threats."
         primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
@@ -15,7 +15,7 @@ export default function HealthcarePage() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
-              Covenda's AI-SOC is designed for healthcare organizations operating under HIPAA and other healthcare regulations. The Covenda Technology System delivers preemptive threat intelligence and risk-based vulnerability management that prioritizes based on business risk and PHI protection requirements.
+              Covenda AI-SOC is designed for healthcare organizations operating under HIPAA and other healthcare regulations. The Covenda Technology System delivers preemptive threat intelligence and risk-based vulnerability management that prioritizes based on business risk and PHI protection requirements.
             </p>
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
               Forward-Deployed Engineers embed with your team to wire the platform into your environment, building detections and automations tuned for healthcare-specific threats (ransomware targeting hospitals, PHI breaches, medical device security) and HIPAA compliance requirements.
@@ -25,7 +25,7 @@ export default function HealthcarePage() {
       </section>
 
       <FeatureGrid
-        title="How Covenda's AI-SOC Serves Healthcare"
+        title="How Covenda AI-SOC Serves Healthcare"
         features={[
           {
             icon: '🔍',

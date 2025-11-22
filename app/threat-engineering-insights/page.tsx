@@ -29,7 +29,7 @@ export default function ThreatEngineeringInsightsPage() {
         variant="simple"
         badge="Insights"
         title="Threat Engineering Insights"
-        description="Covenda's perspective on threat engineering, AI-SOC design, and the Covenda Technology System. Insights from Forward-Deployed Engineers and the core product team on how we run security operations as a product."
+        description="Covenda perspective on threat engineering, AI-SOC design, and the Covenda Technology System. Insights from Forward-Deployed Engineers and the core product team on how we run security operations as a product."
       />
 
       <section className="section bg-white">

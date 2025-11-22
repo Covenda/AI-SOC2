@@ -6,17 +6,17 @@ export default function InsiktGroupPage() {
       <Hero
         badge="Research"
         title="Covenda Threat Research"
-        description="Covenda's threat research team providing strategic intelligence and in-depth analysis on threat engineering, AI-SOC operations, and global cyber threats."
+        description="Covenda threat research team providing strategic intelligence and in-depth analysis on threat engineering, AI-SOC operations, and global cyber threats."
       />
 
       <section className="section bg-white">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-brand-navy mb-6">
-              Covenda's Threat Research Team
+              Covenda Threat Research Team
             </h2>
             <p className="text-lg text-neutral-600 mb-8">
-              Covenda's threat research team analyzes global cyber threats, nation-state activity, threat actor campaigns, and emerging attack trends to provide actionable intelligence that feeds the Covenda Technology System and AI-SOC operations.
+              Covenda threat research team analyzes global cyber threats, nation-state activity, threat actor campaigns, and emerging attack trends to provide actionable intelligence that feeds the Covenda Technology System and AI-SOC operations.
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="card">

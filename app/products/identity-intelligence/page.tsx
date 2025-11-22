@@ -7,7 +7,7 @@ export default function IdentityIntelligencePage() {
       <Hero
         badge="AI-SOC Capability"
         title="Identity Intelligence"
-        description="Identity-focused intelligence that powers threat modeling, hunting, and assessment within Covenda's AI-SOC. Monitors identity compromise, credential exposure, and account takeover to feed threat operations."
+        description="Identity-focused intelligence that powers threat modeling, hunting, and assessment within Covenda AI-SOC. Monitors identity compromise, credential exposure, and account takeover to feed threat operations."
         primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
@@ -15,7 +15,7 @@ export default function IdentityIntelligencePage() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
-              Identity Intelligence is a capability domain within Covenda's AI-SOC that focuses on identity-related threats. It feeds threat modeling (how identity can be compromised), threat hunting (looking for signs of identity compromise), and threat assessment (prioritizing identity risks).
+              Identity Intelligence is a capability domain within Covenda AI-SOC that focuses on identity-related threats. It feeds threat modeling (how identity can be compromised), threat hunting (looking for signs of identity compromise), and threat assessment (prioritizing identity risks).
             </p>
           </div>
         </div>

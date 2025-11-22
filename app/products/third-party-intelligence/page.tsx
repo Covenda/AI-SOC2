@@ -7,7 +7,7 @@ export default function ThirdPartyIntelligencePage() {
       <Hero
         badge="AI-SOC Capability"
         title="Third-Party Intelligence"
-        description="Third-party and supply chain intelligence that powers threat modeling and assessment within Covenda's AI-SOC. Monitors vendor risks and supply chain threats to feed threat operations."
+        description="Third-party and supply chain intelligence that powers threat modeling and assessment within Covenda AI-SOC. Monitors vendor risks and supply chain threats to feed threat operations."
         primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
@@ -15,7 +15,7 @@ export default function ThirdPartyIntelligencePage() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
-              Third-Party Intelligence is a capability domain within Covenda's AI-SOC that focuses on vendor and supply chain risks. It feeds threat modeling (how third parties can be attacked), threat assessment (prioritizing third-party risks), and threat monitoring (watching for third-party incidents).
+              Third-Party Intelligence is a capability domain within Covenda AI-SOC that focuses on vendor and supply chain risks. It feeds threat modeling (how third parties can be attacked), threat assessment (prioritizing third-party risks), and threat monitoring (watching for third-party incidents).
             </p>
           </div>
         </div>

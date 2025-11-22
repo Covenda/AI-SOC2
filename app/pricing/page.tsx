@@ -6,7 +6,7 @@ export default function PricingPage() {
     {
       name: 'Starter',
       price: 'Free',
-      description: 'For teams exploring Covenda's AI-SOC capabilities',
+      description: 'For teams exploring Covenda AI-SOC capabilities',
       features: [
         'AI-SOC assessment',
         'Basic threat intelligence access',
@@ -62,7 +62,7 @@ export default function PricingPage() {
         variant="simple"
         badge="Pricing"
         title="Simple, Transparent Pricing"
-        description="Pricing for Covenda's AI-SOC. All plans include the Covenda Technology System, Forward-Deployed Engineers, and continuous threat operations."
+        description="Pricing for Covenda AI-SOC. All plans include the Covenda Technology System, Forward-Deployed Engineers, and continuous threat operations."
         primaryCTA={{ text: 'Contact Sales', href: '/contact' }}
       />
 

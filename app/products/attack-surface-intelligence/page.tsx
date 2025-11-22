@@ -15,7 +15,7 @@ export default function AttackSurfaceIntelligencePage() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
-              Attack Surface Intelligence is a capability domain within Covenda's AI-SOC that maps your external exposure to feed threat modeling and hunting operations. It identifies the gap between your intended security posture and what's actually exposed.
+              Attack Surface Intelligence is a capability domain within Covenda AI-SOC that maps your external exposure to feed threat modeling and hunting operations. It identifies the gap between your intended security posture and what's actually exposed.
             </p>
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
               This intelligence powers threat modeling by showing how attackers can reach your systems, feeds threat hunting by identifying exposed assets that need monitoring, and supports threat assessment by prioritizing exposures based on business risk.

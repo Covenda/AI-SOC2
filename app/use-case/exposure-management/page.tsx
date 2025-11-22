@@ -6,8 +6,8 @@ export default function ExposureManagementPage() {
     <div>
       <Hero
         badge="Use Case"
-        title="Exposure Management with Covenda's AI-SOC"
-        description="How Covenda's AI-SOC manages exposures: threat modeling maps how exposed assets can be attacked, attack surface intelligence discovers exposures, and risk-based vulnerability management prioritizes remediation based on business risk."
+        title="Exposure Management with Covenda AI-SOC"
+        description="How Covenda AI-SOC manages exposures: threat modeling maps how exposed assets can be attacked, attack surface intelligence discovers exposures, and risk-based vulnerability management prioritizes remediation based on business risk."
         primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
@@ -15,7 +15,7 @@ export default function ExposureManagementPage() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
-              Covenda's AI-SOC manages exposures through continuous threat operations. Attack Surface Intelligence discovers exposed assets, threat modeling maps how those exposures can be attacked, and risk-based vulnerability management (powered by Lucid AI) prioritizes remediation based on the gap between your security specifications and actual systems.
+              Covenda AI-SOC manages exposures through continuous threat operations. Attack Surface Intelligence discovers exposed assets, threat modeling maps how those exposures can be attacked, and risk-based vulnerability management (powered by Lucid AI) prioritizes remediation based on the gap between your security specifications and actual systems.
             </p>
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
               The AI-SOC continuously monitors exposures, correlates them with vulnerability intelligence, and feeds threat assessment operations that prioritize based on business risk, not just CVSS scores.
@@ -25,7 +25,7 @@ export default function ExposureManagementPage() {
       </section>
 
       <FeatureGrid
-        title="How Covenda's AI-SOC Manages Exposures"
+        title="How Covenda AI-SOC Manages Exposures"
         features={[
           {
             icon: '🌐',

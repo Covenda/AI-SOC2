@@ -7,7 +7,7 @@ export default function ThreatIntelligencePage() {
       <Hero
         badge="AI-SOC Capability"
         title="Threat Intelligence"
-        description="Event-agnostic, spec-driven threat intelligence for Covenda's AI-SOC. Models threats before incidents happen, delivering preemptive intelligence that powers threat modeling, hunting, and assessment."
+        description="Event-agnostic, spec-driven threat intelligence for Covenda AI-SOC. Models threats before incidents happen, delivering preemptive intelligence that powers threat modeling, hunting, and assessment."
         primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
         secondaryCTA={{ text: 'Learn More', href: '/platform' }}
       />
@@ -16,7 +16,7 @@ export default function ThreatIntelligencePage() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
-              Threat Intelligence is a core capability domain within Covenda's AI-SOC. It's delivered through the Covenda Technology System as event-agnostic, spec-driven intelligence that models threats before incidents occur.
+              Threat Intelligence is a core capability domain within Covenda AI-SOC. It's delivered through the Covenda Technology System as event-agnostic, spec-driven intelligence that models threats before incidents occur.
             </p>
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
               This intelligence powers threat modeling (mapping how systems can be attacked), threat hunting (proactively looking for signs of modeled threats), and threat assessment (prioritizing risk based on business impact). It's preemptive and event-agnostic—not reactive to specific incidents.

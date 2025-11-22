@@ -8,7 +8,7 @@ export default function ResourcesPage() {
         variant="simple"
         badge="Resources"
         title="Resources"
-        description="Access guides, reports, and tools to understand how Covenda's AI-SOC works and how it can serve your organization."
+        description="Access guides, reports, and tools to understand how Covenda AI-SOC works and how it can serve your organization."
       />
 
       <FeatureGrid
@@ -22,7 +22,7 @@ export default function ResourcesPage() {
           {
             icon: '📊',
             title: 'Research Reports',
-            description: 'In-depth research from Covenda's threat research team on threat engineering and AI-SOC operations.',
+            description: 'In-depth research from Covenda threat research team on threat engineering and AI-SOC operations.',
             href: '/research',
           },
           {
@@ -34,19 +34,19 @@ export default function ResourcesPage() {
           {
             icon: '📈',
             title: 'Maturity Assessment',
-            description: 'Assess your security operations maturity and understand how Covenda's AI-SOC can serve your organization.',
+            description: 'Assess your security operations maturity and understand how Covenda AI-SOC can serve your organization.',
             href: '/resources/maturity-assessment',
           },
           {
             icon: '🗄️',
             title: 'Vulnerability Database',
-            description: 'Search vulnerability intelligence powered by Lucid AI, part of Covenda's risk-based vulnerability management.',
+            description: 'Search vulnerability intelligence powered by Lucid AI, part of Covenda risk-based vulnerability management.',
             href: '/vulnerability-database',
           },
           {
             icon: '💼',
             title: 'Case Studies',
-            description: 'See how organizations use Covenda's AI-SOC, powered by the Covenda Technology System and Forward-Deployed Engineers.',
+            description: 'See how organizations use Covenda AI-SOC, powered by the Covenda Technology System and Forward-Deployed Engineers.',
             href: '/case-study',
           },
         ]}

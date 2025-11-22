@@ -18,10 +18,10 @@ export default function AISOCCoManagementPage() {
               Co-Managing AI-SOC Operations with Your Team
             </h2>
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
-              If you already have a SOC team, Covenda's AI-SOC Co-Management model lets you leverage the Covenda Technology System and Forward-Deployed Engineers while keeping your team in the loop. We co-manage threat operations—threat modeling, hunting, intelligence, monitoring, and assessment—with defined Service Level Objectives (SLOs) and continuous improvement.
+              If you already have a SOC team, Covenda AI-SOC Co-Management model lets you leverage the Covenda Technology System and Forward-Deployed Engineers while keeping your team in the loop. We co-manage threat operations—threat modeling, hunting, intelligence, monitoring, and assessment—with defined Service Level Objectives (SLOs) and continuous improvement.
             </p>
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
-              The Covenda Technology System runs the AI-SOC operations, Forward-Deployed Engineers tune and integrate it into your environment, and your team provides domain knowledge and context. This shared model means you get the benefits of Covenda's AI-SOC without replacing your existing team—instead, we augment and accelerate what you're already doing.
+              The Covenda Technology System runs the AI-SOC operations, Forward-Deployed Engineers tune and integrate it into your environment, and your team provides domain knowledge and context. This shared model means you get the benefits of Covenda AI-SOC without replacing your existing team—instead, we augment and accelerate what you're already doing.
             </p>
           </div>
         </div>

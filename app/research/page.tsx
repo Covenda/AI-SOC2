@@ -8,7 +8,7 @@ export default function ResearchPage() {
         variant="simple"
         badge="Research"
         title="Threat Research"
-        description="In-depth threat research and analysis from Covenda's threat research team on threat engineering, AI-SOC operations, and the Covenda Technology System."
+        description="In-depth threat research and analysis from Covenda threat research team on threat engineering, AI-SOC operations, and the Covenda Technology System."
       />
 
       <section className="section bg-neutral-50">
@@ -17,7 +17,7 @@ export default function ResearchPage() {
             <div className="card mb-8">
               <h2 className="text-2xl font-bold text-brand-navy mb-4">Covenda Threat Research</h2>
               <p className="text-lg text-neutral-600 mb-4">
-                Covenda's threat research team provides strategic and tactical intelligence on threat engineering, AI-SOC operations, and how the Covenda Technology System powers security operations.
+                Covenda threat research team provides strategic and tactical intelligence on threat engineering, AI-SOC operations, and how the Covenda Technology System powers security operations.
               </p>
               <Link href="/research/insikt-group" className="text-brand-orange font-semibold">
                 Learn More About Covenda Threat Research →

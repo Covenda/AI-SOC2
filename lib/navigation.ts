@@ -6,6 +6,15 @@ export interface NavItem {
 
 export const navigationData: NavItem[] = [
   {
+    label: 'Services',
+    href: '/services',
+    children: [
+      { label: 'Security Engineering', href: '/services/security-engineering' },
+      { label: 'Forward-Deployed Engineering', href: '/services/forward-deployed-engineering' },
+      { label: 'AI-SOC Co-Management', href: '/services/ai-soc-co-management' },
+    ],
+  },
+  {
     label: 'Platform',
     href: '/platform',
     children: [
@@ -59,11 +68,25 @@ export const navigationData: NavItem[] = [
     label: 'Company',
     href: '/why-recorded-future',
     children: [
+      { label: 'About', href: '/about' },
+      { label: 'Case Studies', href: '/case-study' },
+      { label: 'Pricing', href: '/pricing' },
+      { label: 'Threat Engineering Insights', href: '/threat-engineering-insights' },
       { label: 'Why Covenda', href: '/why-recorded-future' },
       { label: 'Our Story', href: '/our-story' },
       { label: 'Careers', href: '/careers' },
       { label: 'Partners', href: '/partner' },
       { label: 'Contact', href: '/contact' },
+    ],
+  },
+  {
+    label: 'Legal',
+    href: '/legal/privacy-policy/4-0',
+    children: [
+      { label: 'Privacy Policy', href: '/legal/privacy-policy/4-0' },
+      { label: 'Terms of Service', href: '/legal/terms-of-use/7-0' },
+      { label: 'Cookie Policy', href: '/legal/privacy-policy/3-0/cookies' },
+      { label: 'FAQ', href: '/legal/faq' },
     ],
   },
 ];
@@ -100,12 +123,29 @@ export const footerSections = [
     ],
   },
   {
+    title: 'Services',
+    links: [
+      { label: 'Security Engineering', href: '/services/security-engineering' },
+      { label: 'Forward-Deployed Engineering', href: '/services/forward-deployed-engineering' },
+      { label: 'AI-SOC Co-Management', href: '/services/ai-soc-co-management' },
+    ],
+  },
+  {
     title: 'Company',
     links: [
+      { label: 'About', href: '/about' },
+      { label: 'Case Studies', href: '/case-study' },
+      { label: 'Pricing', href: '/pricing' },
       { label: 'Why Covenda', href: '/why-recorded-future' },
-      { label: 'Our Story', href: '/our-story' },
-      { label: 'Careers', href: '/careers' },
       { label: 'Contact', href: '/contact' },
+    ],
+  },
+  {
+    title: 'Legal',
+    links: [
+      { label: 'Privacy Policy', href: '/legal/privacy-policy/4-0' },
+      { label: 'Terms of Service', href: '/legal/terms-of-use/7-0' },
+      { label: 'Cookie Policy', href: '/legal/privacy-policy/3-0/cookies' },
     ],
   },
 ];

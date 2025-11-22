@@ -42,14 +42,28 @@ export default function ContactPage() {
                           d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                         />
                       </svg>
-                      Address
+                      Offices
                     </h3>
-                    <p className="text-lg text-neutral-700 leading-relaxed">
-                      167-169 Great Portland Street<br />
-                      5th Floor<br />
-                      London, England<br />
-                      W1W 5PF
-                    </p>
+                    <div className="space-y-6">
+                      <div>
+                        <p className="font-semibold text-brand-navy mb-2">London Office</p>
+                        <p className="text-lg text-neutral-700 leading-relaxed">
+                          167-169 Great Portland Street<br />
+                          5th Floor<br />
+                          London, England<br />
+                          W1W 5PF
+                        </p>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-brand-navy mb-2">Woburn Office</p>
+                        <p className="text-lg text-neutral-700 leading-relaxed">
+                          Covenda Labs<br />
+                          299 Washington St.<br />
+                          Woburn, MA 01801<br />
+                          United States
+                        </p>
+                      </div>
+                    </div>
                   </div>
 
                   <div>

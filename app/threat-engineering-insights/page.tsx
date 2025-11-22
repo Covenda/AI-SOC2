@@ -4,21 +4,21 @@ import Link from 'next/link';
 export default function ThreatEngineeringInsightsPage() {
   const insights = [
     {
-      title: 'Detection Engineering Best Practices',
+      title: 'Detection Engineering in the Covenda Technology System',
       category: 'Detection Engineering',
-      excerpt: 'How Forward-Deployed Security Engineers build and tune custom detections for your environment.',
+      excerpt: 'How Forward-Deployed Engineers build and tune detections in the Covenda Technology System, feeding threat hunting and monitoring operations.',
       href: '/blog/detection-engineering-best-practices',
     },
     {
-      title: 'Building Effective AI-SOC Operations',
+      title: 'Running Security Operations as a Product',
       category: 'AI-SOC',
-      excerpt: 'Key strategies for building and operating effective AI-SOC capabilities with measurable outcomes.',
+      excerpt: 'How Covenda runs security operations as a product through the Covenda Technology System and Forward-Deployed Engineers, not just a tool or consulting.',
       href: '/blog/building-effective-ai-soc-operations',
     },
     {
-      title: 'Security Automation and Workflow Orchestration',
-      category: 'Automation',
-      excerpt: 'How to automate security workflows and response playbooks to reduce mean time to respond.',
+      title: 'Preemptive Threat Intelligence and Risk-Based Vulnerability Management',
+      category: 'Platform',
+      excerpt: 'How the Covenda Technology System and Lucid AI deliver preemptive, event-agnostic intelligence and risk-based vulnerability management.',
       href: '/blog/security-automation-workflow-orchestration',
     },
   ];
@@ -29,7 +29,7 @@ export default function ThreatEngineeringInsightsPage() {
         variant="simple"
         badge="Insights"
         title="Threat Engineering Insights"
-        description="Expert insights on detection engineering, security automation, and AI-SOC operations from our Forward-Deployed Security Engineers."
+        description="Covenda's perspective on threat engineering, AI-SOC design, and the Covenda Technology System. Insights from Forward-Deployed Engineers and the core product team on how we run security operations as a product."
       />
 
       <section className="section bg-white">

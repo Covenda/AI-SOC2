@@ -7,7 +7,7 @@ export default function GuidesPage() {
         variant="simple"
         badge="Resources"
         title="Guides & eBooks"
-        description="Comprehensive guides to help you build and optimize your security program."
+        description="Comprehensive guides on AI-SOC operations, the Covenda Technology System, threat intelligence, and security best practices."
       />
 
       <section className="section bg-neutral-50">
@@ -16,18 +16,18 @@ export default function GuidesPage() {
             <div className="grid gap-6">
               <div className="card">
                 <h3 className="text-xl font-bold text-brand-navy mb-3">
-                  The Intelligence Buyer's Guide
+                  Understanding AI-SOC Operations
                 </h3>
                 <p className="text-neutral-600">
-                  Everything you need to know when evaluating threat intelligence solutions.
+                  Everything you need to know about how Covenda's AI-SOC works, powered by the Covenda Technology System and Forward-Deployed Engineers.
                 </p>
               </div>
               <div className="card">
                 <h3 className="text-xl font-bold text-brand-navy mb-3">
-                  Building a Threat Intelligence Program
+                  Preemptive Threat Intelligence Guide
                 </h3>
                 <p className="text-neutral-600">
-                  Step-by-step guide to establishing an effective threat intelligence capability.
+                  Step-by-step guide to understanding event-agnostic, spec-driven threat intelligence and risk-based vulnerability management.
                 </p>
               </div>
             </div>

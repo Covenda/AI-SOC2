@@ -4,17 +4,17 @@ import Link from 'next/link';
 export default function CaseStudyPage() {
   const caseStudies = [
     {
-      title: 'Financial Services: SOC Modernization',
+      title: 'Financial Services: AI-SOC Operations',
       industry: 'Financial Services',
       href: '/case-study',
     },
     {
-      title: 'Technology: SaaS Platform Supply Chain Security',
+      title: 'Technology: AI-SOC for SaaS Platforms',
       industry: 'Technology',
       href: '/case-study',
     },
     {
-      title: 'Healthcare: Compliance & Detection',
+      title: 'Healthcare: AI-SOC for HIPAA Compliance',
       industry: 'Healthcare',
       href: '/case-study',
     },
@@ -26,7 +26,7 @@ export default function CaseStudyPage() {
         variant="simple"
         badge="Case Studies"
         title="Customer Success Stories"
-        description="See how organizations use Covenda to build and operate effective AI-SOC capabilities with Forward-Deployed Security Engineers."
+        description="See how organizations use Covenda's AI-SOC, powered by the Covenda Technology System and Forward-Deployed Engineers, to run security operations as a product."
       />
 
       <section className="section bg-white">

@@ -6,10 +6,10 @@ export default function PricingPage() {
     {
       name: 'Starter',
       price: 'Free',
-      description: 'For early teams validating security workflows',
+      description: 'For teams exploring Covenda's AI-SOC capabilities',
       features: [
-        'Security posture assessment',
-        'Basic threat intelligence',
+        'AI-SOC assessment',
+        'Basic threat intelligence access',
         'Community support',
         'Limited integrations',
       ],
@@ -21,11 +21,12 @@ export default function PricingPage() {
       name: 'Plus',
       price: '$320',
       period: '/month',
-      description: 'Advanced threat modeling and team collaboration',
+      description: 'AI-SOC operations with Forward-Deployed Engineers',
       features: [
         'Everything in Starter',
-        'Forward-Deployed Security Engineers',
-        'Custom detection engineering',
+        'Forward-Deployed Engineers',
+        'Covenda Technology System access',
+        'Threat modeling, hunting, intelligence, monitoring, assessment',
         'Workflow automation',
         'Priority support',
         'Advanced integrations',
@@ -38,12 +39,13 @@ export default function PricingPage() {
       name: 'Premium',
       price: '$1,300',
       period: '/month',
-      description: 'End-to-end automation, compliance, and support',
+      description: 'Full AI-SOC operations with co-management',
       features: [
         'Everything in Plus',
         'AI-SOC Co-Management',
-        '24/7 coverage',
-        'Dedicated support team',
+        '24/7 threat operations',
+        'Dedicated Forward-Deployed Engineers',
+        'Full Covenda Technology System access',
         'Compliance support',
         'Custom integrations',
         'SLA guarantees',
@@ -60,7 +62,7 @@ export default function PricingPage() {
         variant="simple"
         badge="Pricing"
         title="Simple, Transparent Pricing"
-        description="Choose the plan that fits your organization's security needs. All plans include our core AI-SOC services."
+        description="Pricing for Covenda's AI-SOC. All plans include the Covenda Technology System, Forward-Deployed Engineers, and continuous threat operations."
         primaryCTA={{ text: 'Contact Sales', href: '/contact' }}
       />
 

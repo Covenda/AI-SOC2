@@ -5,22 +5,22 @@ export default function BlogPage() {
   const blogPosts = [
     {
       slug: 'detection-engineering-best-practices',
-      title: 'Detection Engineering Best Practices',
-      excerpt: 'How Forward-Deployed Security Engineers build and tune custom detections for your environment.',
+      title: 'Detection Engineering in the Covenda Technology System',
+      excerpt: 'How Forward-Deployed Engineers build and tune detections in the Covenda Technology System, feeding threat hunting and monitoring operations.',
       date: '2025-01-15',
       category: 'Detection Engineering',
     },
     {
       slug: 'building-effective-ai-soc-operations',
-      title: 'Building Effective AI-SOC Operations',
-      excerpt: 'Key strategies for building and operating effective AI-SOC capabilities with measurable outcomes.',
+      title: 'Running Security Operations as a Product',
+      excerpt: 'How Covenda runs security operations as a product through the Covenda Technology System and Forward-Deployed Engineers.',
       date: '2025-01-10',
       category: 'AI-SOC',
     },
     {
       slug: 'security-automation-workflow-orchestration',
-      title: 'Security Automation and Workflow Orchestration',
-      excerpt: 'How to automate security workflows and response playbooks to reduce mean time to respond.',
+      title: 'Preemptive Threat Intelligence and Risk-Based Vulnerability Management',
+      excerpt: 'How the Covenda Technology System and Lucid AI deliver preemptive, event-agnostic intelligence and risk-based vulnerability management.',
       date: '2025-01-05',
       category: 'Automation',
     },
@@ -32,7 +32,7 @@ export default function BlogPage() {
         variant="simple"
         badge="Blog"
         title="Insights & Research"
-        description="Stay informed with the latest insights on AI-SOC operations, detection engineering, and security automation."
+        description="Stay informed with the latest insights on Covenda's AI-SOC, the Covenda Technology System, Forward-Deployed Engineering, and threat operations."
       />
 
       <section className="section bg-white">

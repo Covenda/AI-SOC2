@@ -7,7 +7,7 @@ export default function PartnerPage() {
       <Hero
         badge="Partners"
         title="Partner Ecosystem"
-        description="Partner with Covenda to deliver AI-SOC services with Forward-Deployed Security Engineers to your customers."
+        description="Partner with Covenda to deliver AI-SOC operations powered by the Covenda Technology System and Forward-Deployed Engineers to your customers."
         primaryCTA={{ text: 'Become a Partner', href: '/contact' }}
       />
 
@@ -17,31 +17,31 @@ export default function PartnerPage() {
           {
             icon: '🤝',
             title: 'Channel Partners (VAR)',
-            description: 'Resell Covenda AI-SOC services and grow your security practice.',
+            description: 'Resell Covenda's AI-SOC and grow your security practice with the Covenda Technology System.',
             href: '/partner/var',
           },
           {
             icon: '🔌',
             title: 'Technology Partners',
-            description: 'Integrate Covenda AI platform capabilities into your products.',
+            description: 'Integrate the Covenda Technology System capabilities into your products.',
             href: '/partner/tech',
           },
           {
             icon: '🛡️',
             title: 'MSSP Partners',
-            description: 'Enhance your managed security services with Forward-Deployed Security Engineers.',
+            description: 'Enhance your managed security services with Covenda's AI-SOC and Forward-Deployed Engineers.',
             href: '/partner/mssp',
           },
           {
             icon: '⚙️',
             title: 'OEM Partners',
-            description: 'Embed Covenda AI platform capabilities into your solutions.',
+            description: 'Embed the Covenda Technology System capabilities into your solutions.',
             href: '/partner/oem',
           },
           {
             icon: '🎯',
             title: 'MDR Partners',
-            description: 'Power your managed detection and response with Forward-Deployed Security Engineers.',
+            description: 'Power your managed detection and response with Covenda's AI-SOC and Forward-Deployed Engineers.',
             href: '/partner/managed-detection-response',
           },
         ]}

@@ -7,7 +7,7 @@ export default function WorkWithUsPage() {
         variant="simple"
         badge="Work With Us"
         title="Forward-Deployed Security Engineers"
-        description="We embed Forward-Deployed Security Engineers with your team to build detections, automate responses, and co-manage operations."
+        description="Forward-Deployed Engineers embed with your team to wire the Covenda Technology System into your environment. They accelerate value by doing things that don't scale, then feed patterns back into the platform."
       />
 
       <section className="section bg-neutral-50">
@@ -15,13 +15,13 @@ export default function WorkWithUsPage() {
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-neutral-600 mb-8">
-                Our Forward-Deployed Security Engineers work directly with your team to understand your environment, build custom detections, and automate security workflows.
+                Forward-Deployed Engineers are product engineers who embed with your team to bridge the Covenda Technology System and your environment. They wire detections, automations, and workflows that matter immediately, accelerating time from first meeting to first meaningful win.
               </p>
               <p className="text-lg text-neutral-600 mb-8">
-                We start with a 2-4 week assessment to understand your current state and build a prioritized roadmap. Then we embed engineers with your team to implement detections, automate responses, and co-manage operations with defined SLOs.
+                FDEs work closely with customers (virtually or on-site) to understand unique, complex security challenges. They build custom or unscalable solutions as needed, then feed those patterns back into the Covenda Technology System so they become reusable. This YC-style approach means we "do things that don't scale" early to discover product–market fit, then scale what works.
               </p>
               <p className="text-lg text-neutral-600">
-                Ready to build your AI-SOC? Start with a free assessment—no long-term commitment required.
+                Ready to turn on your AI-SOC? Forward-Deployed Engineers embed with your team to wire the Covenda Technology System into your environment. Get started with a demo or assessment.
               </p>
             </div>
           </div>

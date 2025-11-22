@@ -7,7 +7,7 @@ export default function TechPartnerPage() {
         variant="simple"
         badge="Partner Program"
         title="Technology Partner Program"
-        description="Integrate Covenda AI intelligence into your security products and platforms."
+        description="Integrate the Covenda Technology System capabilities into your security products and platforms."
         primaryCTA={{ text: 'Apply Now', href: '/contact' }}
       />
     </div>

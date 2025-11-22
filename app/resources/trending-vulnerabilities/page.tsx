@@ -8,7 +8,7 @@ export default function TrendingVulnerabilitiesPage() {
         variant="simple"
         badge="Resources"
         title="Trending Vulnerabilities"
-        description="Track the most exploited and trending vulnerabilities based on real-world intelligence."
+        description="Track the most exploited and trending vulnerabilities, prioritized by risk-based vulnerability management powered by Lucid AI."
       />
 
       <section className="section bg-neutral-50">
@@ -16,11 +16,10 @@ export default function TrendingVulnerabilitiesPage() {
           <div className="max-w-4xl mx-auto">
             <div className="card">
               <h3 className="text-xl font-bold text-brand-navy mb-4">
-                Stay Ahead of Emerging Threats
+                Risk-Based Vulnerability Prioritization
               </h3>
               <p className="text-neutral-600 mb-6">
-                Monitor vulnerabilities that are actively being exploited in the wild and trending
-                across threat actor communities.
+                Monitor vulnerabilities prioritized by Lucid AI based on business risk and the gap between your security specifications and actual systems, not just CVSS scores.
               </p>
               <Link href="/vulnerability-database" className="btn btn-primary">
                 Search Vulnerability Database

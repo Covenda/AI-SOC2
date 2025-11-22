@@ -33,6 +33,37 @@ export default function ContactPage() {
                           strokeLinecap="round"
                           strokeLinejoin="round"
                           strokeWidth={2}
+                          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                        />
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                        />
+                      </svg>
+                      Address
+                    </h3>
+                    <p className="text-lg text-neutral-700 leading-relaxed">
+                      167-169 Great Portland Street<br />
+                      5th Floor<br />
+                      London, England<br />
+                      W1W 5PF
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-bold text-brand-navy mb-3 flex items-center">
+                      <svg
+                        className="w-6 h-6 text-brand-orange mr-3"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
                           d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                         />
                       </svg>
@@ -46,8 +77,19 @@ export default function ContactPage() {
                         support@covenda.ai
                       </a>
                     </p>
-                    <p className="text-neutral-600">
+                    <p className="text-neutral-600 mb-2">
                       For general inquiries, support, and partnership opportunities
+                    </p>
+                    <p className="text-lg text-neutral-700 mb-2">
+                      <a
+                        href="mailto:hiring@covenda.ai"
+                        className="text-brand-orange hover:text-brand-navy transition-colors"
+                      >
+                        hiring@covenda.ai
+                      </a>
+                    </p>
+                    <p className="text-neutral-600">
+                      For career and hiring inquiries
                     </p>
                   </div>
 

@@ -7,7 +7,7 @@ export default function GuidesPage() {
         variant="simple"
         badge="Resources"
         title="Guides & eBooks"
-        description="Comprehensive guides on AI-SOC operations, the Covenda Technology System, threat intelligence, and security best practices."
+        description="Comprehensive guides on AI-SOC operations, the Covenda AI, threat intelligence, and security best practices."
       />
 
       <section className="section bg-neutral-50">
@@ -19,7 +19,7 @@ export default function GuidesPage() {
                   Understanding AI-SOC Operations
                 </h3>
                 <p className="text-neutral-600">
-                  Everything you need to know about how Covenda AI-SOC works, powered by the Covenda Technology System and Forward-Deployed Engineers.
+                  Everything you need to know about how Covenda AI-SOC works,  and Forward-Deployed Engineers.
                 </p>
               </div>
               <div className="card">

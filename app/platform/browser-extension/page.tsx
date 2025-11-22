@@ -7,7 +7,7 @@ export default function BrowserExtensionPage() {
         variant="simple"
         badge="Browser Extension"
         title="Threat Intelligence at Your Fingertips"
-        description="Access the Covenda Technology System's threat intelligence directly in your browser. Get instant context on IPs, domains, URLs, and indicators while you work."
+        description="Access the Covenda AI's threat intelligence directly in your browser. Get instant context on IPs, domains, URLs, and indicators while you work."
         primaryCTA={{ text: 'Download Extension', href: '/get-started' }}
       />
 
@@ -19,7 +19,7 @@ export default function BrowserExtensionPage() {
             </h2>
             <div className="space-y-6">
               {[
-                'Real-time IOC lookup and enrichment from the Covenda Technology System',
+                'Real-time IOC lookup and enrichment from the Covenda AI',
                 'One-click threat intelligence for IPs, domains, URLs, and indicators',
                 'Instant risk scoring and context based on preemptive threat modeling',
                 'Seamless integration with your workflow—get intelligence without leaving your browser',

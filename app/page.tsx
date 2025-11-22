@@ -15,7 +15,7 @@ export default function HomePage() {
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 text-balance">
-              Your AI-SOC, powered by the Covenda Technology System
+              Your AI-SOC
             </h1>
             <p className="text-xl md:text-2xl text-neutral-200 mb-8 max-w-3xl text-balance">
               Covenda runs security operations as a product. We deliver threat modeling, hunting, intelligence, monitoring, and assessment—continuously, preemptively, and risk-based—through our platform and Forward-Deployed Engineers.
@@ -70,7 +70,7 @@ export default function HomePage() {
               How Our AI-SOC Works
             </h2>
             <p className="text-xl text-neutral-600 leading-relaxed">
-              The Covenda Technology System powers continuous threat operations. Forward-Deployed Engineers embed with your team to wire it into your environment and accelerate value.
+              Covenda AI powers continuous threat operations. Forward-Deployed Engineers embed with your team to wire it into your environment and accelerate value.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -78,7 +78,7 @@ export default function HomePage() {
               {
                 title: 'Threat Modeling & Intelligence',
                 description:
-                  'The Covenda Technology System models threats before incidents happen. Event-agnostic, spec-driven intelligence maps the gap between your security posture and actual systems.',
+                  'Covenda AI models threats before incidents happen. Event-agnostic, spec-driven intelligence maps the gap between your security posture and actual systems.',
                 href: '/platform',
                 icon: '🔍',
               },
@@ -125,13 +125,13 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <div className="inline-block px-4 py-2 rounded-full bg-brand-orange/10 text-brand-orange text-sm font-semibold mb-6">
-                Covenda Technology System
+                Covenda AI
               </div>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-navy mb-6">
                 The Platform That Powers Your AI-SOC
               </h2>
               <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
-                The Covenda Technology System—including Lucid AI—delivers preemptive threat intelligence and risk-based vulnerability management. It models threats, maps specifications to systems, and drives continuous security operations.
+                Covenda AI delivers preemptive threat intelligence and risk-based vulnerability management. It models threats, maps specifications to systems, and drives continuous security operations.
               </p>
               <ul className="space-y-5 mb-10">
                 {[
@@ -171,7 +171,7 @@ export default function HomePage() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                       </svg>
                     </div>
-                    <div className="text-brand-navy font-semibold text-lg">Covenda Technology System</div>
+                    <div className="text-brand-navy font-semibold text-lg">Covenda AI</div>
                   </div>
                 </div>
               </div>
@@ -188,7 +188,7 @@ export default function HomePage() {
             Turn on your AI-SOC
           </h2>
           <p className="text-xl text-neutral-200 mb-8 max-w-2xl mx-auto">
-            Covenda runs security operations as a product. Forward-Deployed Engineers embed with your team to wire the Covenda Technology System into your environment. Get started with a demo or assessment.
+            Covenda runs security operations as a product. Forward-Deployed Engineers embed with your team to wire it into your environment. Get started with a demo or assessment.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

@@ -22,7 +22,7 @@ export default function TermsOfUsePage() {
                 By accessing and using Covenda AI's services, website, platform, and related services (collectively, the "Services"), you accept and agree to be bound by these Terms of Use ("Terms"). If you do not agree to these Terms, you may not use our Services.
               </p>
               <p className="text-lg text-neutral-700 mb-6 leading-relaxed">
-                These Terms constitute a legally binding agreement between you and Covenda AI ("we," "our," or "us"). If you are using the Services on behalf of an organization, you represent that you have authority to bind that organization to these Terms.
+                These Terms constitute a legally binding agreement between you ("we," "our," or "us"). If you are using the Services on behalf of an organization, you represent that you have authority to bind that organization to these Terms.
               </p>
 
               <h2 className="text-3xl font-bold text-brand-navy mt-12 mb-6">2. Description of Services</h2>

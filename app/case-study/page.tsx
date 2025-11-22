@@ -26,7 +26,7 @@ export default function CaseStudyPage() {
         variant="simple"
         badge="Case Studies"
         title="Customer Success Stories"
-        description="See how organizations use Covenda AI-SOC, powered by the Covenda Technology System and Forward-Deployed Engineers, to run security operations as a product."
+        description="See how organizations use Covenda AI-SOC,  and Forward-Deployed Engineers, to run security operations as a product."
       />
 
       <section className="section bg-white">

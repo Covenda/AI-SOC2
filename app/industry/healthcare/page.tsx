@@ -15,7 +15,7 @@ export default function HealthcarePage() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
-              Covenda AI-SOC is designed for healthcare organizations operating under HIPAA and other healthcare regulations. The Covenda Technology System delivers preemptive threat intelligence and risk-based vulnerability management that prioritizes based on business risk and PHI protection requirements.
+              Covenda AI-SOC is designed for healthcare organizations operating under HIPAA and other healthcare regulations. Covenda AI delivers preemptive threat intelligence and risk-based vulnerability management that prioritizes based on business risk and PHI protection requirements.
             </p>
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
               Forward-Deployed Engineers embed with your team to wire the platform into your environment, building detections and automations tuned for healthcare-specific threats (ransomware targeting hospitals, PHI breaches, medical device security) and HIPAA compliance requirements.
@@ -35,7 +35,7 @@ export default function HealthcarePage() {
           {
             icon: '🚀',
             title: 'Forward-Deployed Engineering',
-            description: 'FDEs embed with your team to wire the Covenda Technology System into healthcare environments, accelerating time to value in complex clinical systems.',
+            description: 'FDEs embed with your team to wire it into healthcare environments, accelerating time to value in complex clinical systems.',
           },
           {
             icon: '⚙️',
@@ -45,7 +45,7 @@ export default function HealthcarePage() {
           {
             icon: '📊',
             title: '24/7 AI-SOC Operations',
-            description: 'Continuous threat operations through the Covenda Technology System, co-managed with your team and aligned with healthcare sector SLOs.',
+            description: 'Continuous threat operations through the Covenda AI, co-managed with your team and aligned with healthcare sector SLOs.',
           },
         ]}
       />

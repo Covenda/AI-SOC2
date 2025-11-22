@@ -4,9 +4,9 @@ export default function RecordedFutureAIPage() {
   return (
     <div>
       <Hero
-        badge="Covenda Technology System"
-        title="Covenda Technology System & Lucid AI"
-        description="The deep dive: how the Covenda Technology System—including Lucid AI—models threats, maps specifications to systems, and drives the AI-SOC through preemptive intelligence and risk-based vulnerability management."
+        badge="Covenda AI"
+        title="Covenda AI & Lucid AI"
+        description="The deep dive: how the Covenda AI models threats, maps specifications to systems, and drives the AI-SOC through preemptive intelligence and risk-based vulnerability management."
         primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
@@ -17,10 +17,10 @@ export default function RecordedFutureAIPage() {
               The Platform That Powers Covenda AI-SOC
             </h2>
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
-              The <strong>Covenda Technology System</strong> is our AI-native security fabric. It includes <strong>Lucid AI</strong>, our engine for spec-driven, preemptive, event-agnostic threat intelligence and risk-based vulnerability management.
+              The <strong>Covenda AI</strong> is our AI-native security fabric. It includes <strong>Lucid AI</strong>, our engine for spec-driven, preemptive, event-agnostic threat intelligence and risk-based vulnerability management.
             </p>
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
-              The core insight: the real vulnerability is the <strong>gap between your security specifications and your actual systems</strong>. The Covenda Technology System continuously maps and closes that gap by modeling threats before incidents happen, prioritizing based on business risk (not just CVSS scores), and delivering intelligence that's especially suited for AI/AGI systems and highly regulated industries.
+              The core insight: the real vulnerability is the <strong>gap between your security specifications and your actual systems</strong>. Covenda AI continuously maps and closes that gap by modeling threats before incidents happen, prioritizing based on business risk (not just CVSS scores), and delivering intelligence that's especially suited for AI/AGI systems and highly regulated industries.
             </p>
             <div className="grid md:grid-cols-2 gap-8 mt-12">
               <div className="card">

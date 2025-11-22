@@ -7,7 +7,7 @@ export default function VARPartnerPage() {
         variant="simple"
         badge="Partner Program"
         title="Channel Partner (VAR) Program"
-        description="Become a Covenda reseller and help organizations turn on AI-SOC operations powered by the Covenda Technology System."
+        description="Become a Covenda reseller and help organizations turn on AI-SOC operations ."
         primaryCTA={{ text: 'Apply Now', href: '/contact' }}
       />
     </div>

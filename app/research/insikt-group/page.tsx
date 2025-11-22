@@ -16,7 +16,7 @@ export default function InsiktGroupPage() {
               Covenda Threat Research Team
             </h2>
             <p className="text-lg text-neutral-600 mb-8">
-              Covenda threat research team analyzes global cyber threats, nation-state activity, threat actor campaigns, and emerging attack trends to provide actionable intelligence that feeds the Covenda Technology System and AI-SOC operations.
+              Covenda threat research team analyzes global cyber threats, nation-state activity, threat actor campaigns, and emerging attack trends to provide actionable intelligence that feeds the Covenda AI and AI-SOC operations.
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="card">

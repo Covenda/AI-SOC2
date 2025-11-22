@@ -8,7 +8,7 @@ export default function ContactPage() {
         variant="simple"
         badge="Contact"
         title="Get in Touch"
-        description="Connect with our team to learn how Covenda can be your AI-SOC, powered by the Covenda Technology System and Forward-Deployed Engineers."
+        description="Connect with our team to learn how Covenda can be your AI-SOC,  and Forward-Deployed Engineers."
       />
 
       <section className="section bg-white">
@@ -131,7 +131,7 @@ export default function ContactPage() {
                       Schedule a Demo
                     </h3>
                     <p className="text-lg text-neutral-700 mb-4">
-                      Book a personalized demo to see how Covenda can be your AI-SOC, powered by the Covenda Technology System.
+                      Book a personalized demo to see how Covenda can be your AI-SOC, .
                 </p>
                 <Link href="/book-demo" className="btn btn-primary">
                       Request Demo

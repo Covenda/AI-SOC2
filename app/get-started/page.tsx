@@ -7,7 +7,7 @@ export default function GetStartedPage() {
       <Hero
         variant="gradient"
         title="Get Started with Covenda"
-        description="Turn on Covenda AI-SOC. Forward-Deployed Engineers embed with your team to wire the Covenda Technology System into your environment. Get started with a demo or assessment."
+        description="Turn on Covenda AI-SOC. Forward-Deployed Engineers embed with your team to wire it into your environment. Get started with a demo or assessment."
       />
 
       {/* Book a Demo Section */}
@@ -19,7 +19,7 @@ export default function GetStartedPage() {
                 Book a Live Demo
               </h2>
               <p className="text-xl text-neutral-600 mb-8">
-                See how Covenda can be your AI-SOC, powered by the Covenda Technology System and Forward-Deployed Engineers.
+                See how Covenda can be your AI-SOC,  and Forward-Deployed Engineers.
               </p>
               <div className="bg-neutral-50 rounded-2xl p-8 md:p-12">
                 <div className="space-y-6">
@@ -116,7 +116,7 @@ export default function GetStartedPage() {
               <div className="card">
                 <h3 className="text-xl font-bold text-brand-navy mb-3">AI-SOC Assessment</h3>
                 <p className="text-neutral-600 mb-4">
-                  Understand how Covenda AI-SOC can work in your environment. Forward-Deployed Engineers assess your current state and wire the Covenda Technology System.
+                  Understand how Covenda AI-SOC can work in your environment. Forward-Deployed Engineers assess your current state and wire Covenda AI.
                 </p>
                 <Link href="/book-demo" className="text-brand-orange font-semibold">
                   Request Assessment →
@@ -125,7 +125,7 @@ export default function GetStartedPage() {
               <div className="card">
                 <h3 className="text-xl font-bold text-brand-navy mb-3">Forward-Deployed Engineers</h3>
                 <p className="text-neutral-600 mb-4">
-                  Product engineers embed with your team to wire the Covenda Technology System into your environment, accelerating time to value.
+                  Product engineers embed with your team to wire it into your environment, accelerating time to value.
                 </p>
                 <Link href="/work-with-us" className="text-brand-orange font-semibold">
                   Learn More →
@@ -134,7 +134,7 @@ export default function GetStartedPage() {
               <div className="card">
                 <h3 className="text-xl font-bold text-brand-navy mb-3">AI-SOC Operations</h3>
                 <p className="text-neutral-600 mb-4">
-                  Covenda runs security operations as a product. Co-manage with your team through the Covenda Technology System and Forward-Deployed Engineers.
+                  Covenda runs security operations as a product. Co-manage with your team through the Covenda AI and Forward-Deployed Engineers.
                 </p>
                 <Link href="/platform" className="text-brand-orange font-semibold">
                   Explore Platform →

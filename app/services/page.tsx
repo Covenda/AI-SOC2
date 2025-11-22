@@ -20,21 +20,21 @@ export default function ServicesPage() {
             icon: '🔍',
             title: 'Security Engineering',
             description:
-              'Designing and tuning controls, detections, and automations in the Covenda Technology System. Configuring the platform and your existing tools for optimal threat operations.',
+              'Designing and tuning controls, detections, and automations in the Covenda AI. Configuring the platform and your existing tools for optimal threat operations.',
             href: '/services/security-engineering',
           },
           {
             icon: '🚀',
             title: 'Forward-Deployed Engineering',
             description:
-              'Product engineers embed with your team to bridge the Covenda Technology System and your environment. They accelerate value by wiring detections and automations that matter immediately.',
+              'Product engineers embed with your team to bridge the Covenda AI and your environment. They accelerate value by wiring detections and automations that matter immediately.',
             href: '/services/forward-deployed-engineering',
           },
           {
             icon: '⚙️',
             title: 'AI-SOC Co-Management',
             description:
-              'For organizations with existing SOC teams: Covenda co-manages AI-SOC operations with your staff. Covenda Technology System + FDEs + your team = shared outcomes.',
+              'For organizations with existing SOC teams: Covenda co-manages AI-SOC operations with your staff. Covenda AI + FDEs + your team = shared outcomes.',
             href: '/services/ai-soc-co-management',
           },
         ]}
@@ -54,7 +54,7 @@ export default function ServicesPage() {
                 </div>
                 <h3 className="text-xl font-bold text-brand-navy mb-4">Threat Modeling & Intelligence</h3>
                 <p className="text-lg text-neutral-700 leading-relaxed">
-                  The Covenda Technology System models threats before incidents happen. Event-agnostic, spec-driven intelligence maps the gap between your security posture and actual systems.
+                  Covenda AI models threats before incidents happen. Event-agnostic, spec-driven intelligence maps the gap between your security posture and actual systems.
                 </p>
               </div>
               <div>
@@ -63,7 +63,7 @@ export default function ServicesPage() {
                 </div>
                 <h3 className="text-xl font-bold text-brand-navy mb-4">Forward-Deployed Engineering</h3>
                 <p className="text-lg text-neutral-700 leading-relaxed">
-                  Product engineers embed with your team to wire the Covenda Technology System into your environment. They bridge the platform and your reality, accelerating time to value.
+                  Product engineers embed with your team to wire it into your environment. They bridge the platform and your reality, accelerating time to value.
                 </p>
               </div>
               <div>

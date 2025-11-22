@@ -7,7 +7,7 @@ export default function OEMPartnerPage() {
         variant="simple"
         badge="Partner Program"
         title="OEM Partner Program"
-        description="Embed the Covenda Technology System capabilities directly into your products and solutions."
+        description="Embed the Covenda AI capabilities directly into your products and solutions."
         primaryCTA={{ text: 'Apply Now', href: '/contact' }}
       />
     </div>

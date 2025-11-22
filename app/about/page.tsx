@@ -8,7 +8,7 @@ export default function AboutPage() {
         variant="simple"
         badge="About"
         title="About Covenda"
-        description="Covenda is your AI-SOC, powered by the Covenda Technology System and Forward-Deployed Engineers. We run security operations as a product."
+        description="Covenda is your AI-SOC. We run security operations as a product."
       />
 
       <section className="section bg-white">
@@ -22,14 +22,14 @@ export default function AboutPage() {
                 Covenda is an AI-SOC. We run security operations as a product, not just a tool and not generic consulting. Instead of helping you build an AI-SOC from scratch, we are the AI-SOC you turn on.
               </p>
               <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
-                Our AI-SOC is powered by the <strong>Covenda Technology System</strong>—our AI-native security platform that includes <strong>Lucid AI</strong>—and a <strong>Forward-Deployed Engineering (FDE)</strong> model where product engineers embed with customers to make the platform work in real, complex environments.
+                Our AI-SOC uses <strong>Covenda AI</strong>—our AI-native security platform that includes <strong>Lucid AI</strong>—and a <strong>Forward-Deployed Engineering (FDE)</strong> model where product engineers embed with customers to make the platform work in real, complex environments.
               </p>
 
               <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-6 mt-12">
                 What Our AI-SOC Does
               </h2>
               <p className="text-lg text-neutral-700 mb-6 leading-relaxed">
-                The Covenda AI-SOC continuously performs five core threat operations:
+                Covenda AI-SOC continuously performs five core threat operations:
               </p>
               <ul className="list-disc list-inside space-y-3 mb-8 text-lg text-neutral-700">
                 <li><strong>Threat modeling</strong> – mapping how systems can be attacked, including AI-/AGI-specific threat scenarios</li>
@@ -39,14 +39,14 @@ export default function AboutPage() {
                 <li><strong>Threat assessment</strong> – prioritizing and scoring risk, deciding what actually matters to the business</li>
               </ul>
               <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
-                All of this runs through the Covenda Technology System, integrated with your existing tools (SIEM, EDR, cloud, identity, ticketing, CI/CD), and tuned by Forward-Deployed Engineers so you don't have to build and operate a SOC from scratch.
+                All of this runs through the Covenda AI, integrated with your existing tools (SIEM, EDR, cloud, identity, ticketing, CI/CD), and tuned by Forward-Deployed Engineers so you don't have to build and operate a SOC from scratch.
               </p>
 
               <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-6 mt-12">
-                The Covenda Technology System
+                Covenda AI
               </h2>
               <p className="text-lg text-neutral-700 mb-6 leading-relaxed">
-                The Covenda Technology System is our AI-native security fabric. It includes Lucid AI, our engine for spec-driven, preemptive, event-agnostic threat intelligence and risk-based vulnerability management.
+                Covenda AI is our AI-native security fabric. It includes Lucid AI, our engine for spec-driven, preemptive, event-agnostic threat intelligence and risk-based vulnerability management.
               </p>
               <p className="text-lg text-neutral-700 mb-6 leading-relaxed">
                 The core insight: the real vulnerability is the <strong>gap between your security specifications and your actual systems</strong>. Our platform continuously maps and closes that gap by modeling threats before incidents happen, prioritizing based on business risk (not just CVSS scores), and delivering intelligence that's especially suited for AI/AGI systems and highly regulated industries.

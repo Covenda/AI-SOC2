@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Covenda - Your AI-SOC, Powered by the Covenda Technology System',
+  title: 'Covenda - Your AI-SOC',
   description:
     'Covenda runs security operations as a product. Turn on your AI-SOC with preemptive threat intelligence, risk-based vulnerability management, and Forward-Deployed Engineers.',
   keywords: [
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     'threat modeling',
     'threat hunting',
     'covenda',
-    'covenda technology system',
+    'covenda ai',
     'lucid ai',
   ],
 };

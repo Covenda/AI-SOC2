@@ -15,7 +15,7 @@ export default function PublicSectorPage() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
-              Covenda AI-SOC is designed for government agencies facing sophisticated nation-state threats and public sector security requirements. The Covenda Technology System delivers preemptive threat intelligence and risk-based vulnerability management tuned for geopolitical threats and government operations.
+              Covenda AI-SOC is designed for government agencies facing sophisticated nation-state threats and public sector security requirements. Covenda AI delivers preemptive threat intelligence and risk-based vulnerability management tuned for geopolitical threats and government operations.
             </p>
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
               Forward-Deployed Engineers embed with your team to wire the platform into your environment, building detections and automations tuned for public sector threats (nation-state attacks, election security, critical infrastructure) and the operational realities of government agencies.
@@ -45,7 +45,7 @@ export default function PublicSectorPage() {
           {
             icon: '⚡',
             title: '24/7 AI-SOC Operations',
-            description: 'Continuous threat operations through the Covenda Technology System, co-managed with your team and aligned with public sector SLOs.',
+            description: 'Continuous threat operations through the Covenda AI, co-managed with your team and aligned with public sector SLOs.',
           },
         ]}
       />

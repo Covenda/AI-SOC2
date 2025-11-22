@@ -15,7 +15,7 @@ export default function TechnologyPage() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
-              Covenda AI-SOC is designed for technology companies building SaaS platforms, software products, and AI/AGI systems. The Covenda Technology System delivers preemptive threat intelligence and risk-based vulnerability management that's especially suited for advanced digital systems and software supply chain security.
+              Covenda AI-SOC is designed for technology companies building SaaS platforms, software products, and AI/AGI systems. Covenda AI delivers preemptive threat intelligence and risk-based vulnerability management that's especially suited for advanced digital systems and software supply chain security.
             </p>
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
               Forward-Deployed Engineers embed with your team to wire the platform into your environment, building detections and automations tuned for technology sector threats (software supply chain attacks, SaaS platform security, AI/AGI-specific threats) and the operational realities of modern software development and deployment.
@@ -35,7 +35,7 @@ export default function TechnologyPage() {
           {
             icon: '🚀',
             title: 'Forward-Deployed Engineering',
-            description: 'FDEs embed with your team to wire the Covenda Technology System into CI/CD pipelines and cloud environments, accelerating time to value.',
+            description: 'FDEs embed with your team to wire it into CI/CD pipelines and cloud environments, accelerating time to value.',
           },
           {
             icon: '⚙️',
@@ -45,7 +45,7 @@ export default function TechnologyPage() {
           {
             icon: '📊',
             title: '24/7 AI-SOC Operations',
-            description: 'Continuous threat operations through the Covenda Technology System, co-managed with your team and aligned with technology sector SLOs.',
+            description: 'Continuous threat operations through the Covenda AI, co-managed with your team and aligned with technology sector SLOs.',
           },
         ]}
       />

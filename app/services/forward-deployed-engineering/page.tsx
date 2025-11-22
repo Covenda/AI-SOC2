@@ -7,7 +7,7 @@ export default function ForwardDeployedEngineeringPage() {
       <Hero
         badge="Service"
         title="Forward-Deployed Engineering"
-        description="Product engineers embed with your team to bridge the Covenda Technology System and your environment. They accelerate value by doing things that don't scale, then feed patterns back into the platform."
+        description="Product engineers embed with your team to bridge the Covenda AI and your environment. They accelerate value by doing things that don't scale, then feed patterns back into the platform."
         primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
@@ -18,7 +18,7 @@ export default function ForwardDeployedEngineeringPage() {
               Product Engineers, Not Generic Consultants
             </h2>
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
-              Forward-Deployed Engineers (FDEs) are software/product engineers who embed directly with customers. They act as the bridge between your environment and the Covenda Technology System. Unlike traditional SaaS vendors who build generic products and force everyone into them, FDEs willingly "do things that don't scale" early to discover product–market fit, then abstract and scale the patterns that work.
+              Forward-Deployed Engineers (FDEs) are software/product engineers who embed directly with customers. They act as the bridge between your environment and the Covenda AI. Unlike traditional SaaS vendors who build generic products and force everyone into them, FDEs willingly "do things that don't scale" early to discover product–market fit, then abstract and scale the patterns that work.
             </p>
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
               FDEs work closely with customers (virtually or on-site) to understand unique, complex, often ambiguous security challenges. Their goal is to shrink the time between "first meeting" and "first meaningful win" by wiring detections, tuning automations, and building workflows that immediately matter.
@@ -49,7 +49,7 @@ export default function ForwardDeployedEngineeringPage() {
             icon: '🔄',
             title: 'Product Iteration & Adaptation',
             description:
-              'Build custom or unscalable solutions as needed, then feed those patterns back into the Covenda Technology System so they become reusable.',
+              'Build custom or unscalable solutions as needed, then feed those patterns back into the Covenda AI so they become reusable.',
           },
           {
             icon: '🤝',
@@ -61,7 +61,7 @@ export default function ForwardDeployedEngineeringPage() {
             icon: '🔧',
             title: 'Platform Integration',
             description:
-              'Wire the Covenda Technology System into your existing stack (SIEM, EDR, cloud, identity, ticketing, CI/CD) so it works in your environment.',
+              'Wire the Covenda AI into your existing stack (SIEM, EDR, cloud, identity, ticketing, CI/CD) so it works in your environment.',
           },
           {
             icon: '📈',

@@ -8,7 +8,7 @@ export default function NewsroomPage() {
         variant="simple"
         badge="Newsroom"
         title="Latest News"
-        description="The latest news, press releases, and company announcements from Covenda about AI-SOC operations, the Covenda Technology System, and Forward-Deployed Engineering."
+        description="The latest news, press releases, and company announcements from Covenda about AI-SOC operations, the Covenda AI, and Forward-Deployed Engineering."
       />
 
       <section className="section bg-neutral-50">

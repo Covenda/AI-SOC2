@@ -7,7 +7,7 @@ export default function WebinarsPage() {
         variant="simple"
         badge="Webinars"
         title="Webinars & Training"
-        description="Learn from Covenda experts about AI-SOC operations, the Covenda Technology System, Forward-Deployed Engineering, and threat operations through live webinars and on-demand training."
+        description="Learn from Covenda experts about AI-SOC operations, the Covenda AI, Forward-Deployed Engineering, and threat operations through live webinars and on-demand training."
       />
 
       <section className="section bg-neutral-50">

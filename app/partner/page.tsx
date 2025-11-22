@@ -7,7 +7,7 @@ export default function PartnerPage() {
       <Hero
         badge="Partners"
         title="Partner Ecosystem"
-        description="Partner with Covenda to deliver AI-SOC operations powered by the Covenda Technology System and Forward-Deployed Engineers to your customers."
+        description="Partner with Covenda to deliver AI-SOC operations  and Forward-Deployed Engineers to your customers."
         primaryCTA={{ text: 'Become a Partner', href: '/contact' }}
       />
 
@@ -17,13 +17,13 @@ export default function PartnerPage() {
           {
             icon: '🤝',
             title: 'Channel Partners (VAR)',
-            description: 'Resell Covenda AI-SOC and grow your security practice with the Covenda Technology System.',
+            description: 'Resell Covenda AI-SOC and grow your security practice with the Covenda AI.',
             href: '/partner/var',
           },
           {
             icon: '🔌',
             title: 'Technology Partners',
-            description: 'Integrate the Covenda Technology System capabilities into your products.',
+            description: 'Integrate the Covenda AI capabilities into your products.',
             href: '/partner/tech',
           },
           {
@@ -35,7 +35,7 @@ export default function PartnerPage() {
           {
             icon: '⚙️',
             title: 'OEM Partners',
-            description: 'Embed the Covenda Technology System capabilities into your solutions.',
+            description: 'Embed the Covenda AI capabilities into your solutions.',
             href: '/partner/oem',
           },
           {

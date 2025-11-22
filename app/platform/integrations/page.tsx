@@ -7,12 +7,12 @@ export default function IntegrationsPage() {
       <Hero
         badge="Integrations"
         title="Integrations with Your Security Stack"
-        description="The Covenda Technology System wires into your existing tools—SIEM, EDR, cloud, identity, ticketing, CI/CD—so the AI-SOC works with your environment, not against it."
+        description="Covenda AI wires into your existing tools—SIEM, EDR, cloud, identity, ticketing, CI/CD—so the AI-SOC works with your environment, not against it."
         primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
       <FeatureGrid
-        title="How the Covenda Technology System Integrates"
+        title="How the Covenda AI Integrates"
         description="Forward-Deployed Engineers wire the platform into your existing stack so threat operations run seamlessly across your tools"
         features={[
           {

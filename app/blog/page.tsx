@@ -5,22 +5,22 @@ export default function BlogPage() {
   const blogPosts = [
     {
       slug: 'detection-engineering-best-practices',
-      title: 'Detection Engineering in the Covenda Technology System',
-      excerpt: 'How Forward-Deployed Engineers build and tune detections in the Covenda Technology System, feeding threat hunting and monitoring operations.',
+      title: 'Detection Engineering in the Covenda AI',
+      excerpt: 'How Forward-Deployed Engineers build and tune detections in the Covenda AI, feeding threat hunting and monitoring operations.',
       date: '2025-01-15',
       category: 'Detection Engineering',
     },
     {
       slug: 'building-effective-ai-soc-operations',
       title: 'Running Security Operations as a Product',
-      excerpt: 'How Covenda runs security operations as a product through the Covenda Technology System and Forward-Deployed Engineers.',
+      excerpt: 'How Covenda runs security operations as a product through the Covenda AI and Forward-Deployed Engineers.',
       date: '2025-01-10',
       category: 'AI-SOC',
     },
     {
       slug: 'security-automation-workflow-orchestration',
       title: 'Preemptive Threat Intelligence and Risk-Based Vulnerability Management',
-      excerpt: 'How the Covenda Technology System and Lucid AI deliver preemptive, event-agnostic intelligence and risk-based vulnerability management.',
+      excerpt: 'How the Covenda AI and Lucid AI deliver preemptive, event-agnostic intelligence and risk-based vulnerability management.',
       date: '2025-01-05',
       category: 'Automation',
     },
@@ -32,7 +32,7 @@ export default function BlogPage() {
         variant="simple"
         badge="Blog"
         title="Insights & Research"
-        description="Stay informed with the latest insights on Covenda AI-SOC, the Covenda Technology System, Forward-Deployed Engineering, and threat operations."
+        description="Stay informed with the latest insights on Covenda AI-SOC, the Covenda AI, Forward-Deployed Engineering, and threat operations."
       />
 
       <section className="section bg-white">

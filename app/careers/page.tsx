@@ -6,7 +6,7 @@ export default function CareersPage() {
       <Hero
         badge="Careers"
         title="Join Our Team"
-        description="Join Covenda as a Forward-Deployed Engineer or core product team member. Help run security operations as a product, powered by the Covenda Technology System."
+        description="Join Covenda as a Forward-Deployed Engineer or core product team member. Help run security operations as a product, ."
         primaryCTA={{ text: 'View Open Positions', href: '/work-with-us' }}
       />
 
@@ -20,13 +20,13 @@ export default function CareersPage() {
               <div className="card">
                 <h3 className="text-xl md:text-2xl font-bold text-brand-navy mb-4">Forward-Deployed Engineering</h3>
                 <p className="text-lg text-neutral-700 leading-relaxed">
-                  Embed with customers as a product engineer. Bridge the Covenda Technology System and customer environments, doing things that don't scale to accelerate value, then feed patterns back into the platform.
+                  Embed with customers as a product engineer. Bridge the Covenda AI and customer environments, doing things that don't scale to accelerate value, then feed patterns back into the platform.
                 </p>
               </div>
               <div className="card">
                 <h3 className="text-xl md:text-2xl font-bold text-brand-navy mb-4">Product-First Culture</h3>
                 <p className="text-lg text-neutral-700 leading-relaxed">
-                  Work on the Covenda Technology System (including Lucid AI) that powers AI-SOC operations. Build preemptive threat intelligence, risk-based vulnerability management, and the platform that runs security operations as a product.
+                  Work on the Covenda AI (including Lucid AI) that powers AI-SOC operations. Build preemptive threat intelligence, risk-based vulnerability management, and the platform that runs security operations as a product.
                 </p>
               </div>
               <div className="card">

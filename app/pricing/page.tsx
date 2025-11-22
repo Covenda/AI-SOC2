@@ -25,7 +25,7 @@ export default function PricingPage() {
       features: [
         'Everything in Starter',
         'Forward-Deployed Engineers',
-        'Covenda Technology System access',
+        'Covenda AI access',
         'Threat modeling, hunting, intelligence, monitoring, assessment',
         'Workflow automation',
         'Priority support',
@@ -45,7 +45,7 @@ export default function PricingPage() {
         'AI-SOC Co-Management',
         '24/7 threat operations',
         'Dedicated Forward-Deployed Engineers',
-        'Full Covenda Technology System access',
+        'Full Covenda AI access',
         'Compliance support',
         'Custom integrations',
         'SLA guarantees',
@@ -62,7 +62,7 @@ export default function PricingPage() {
         variant="simple"
         badge="Pricing"
         title="Simple, Transparent Pricing"
-        description="Pricing for Covenda AI-SOC. All plans include the Covenda Technology System, Forward-Deployed Engineers, and continuous threat operations."
+        description="Pricing for Covenda AI-SOC. All plans include the Covenda AI, Forward-Deployed Engineers, and continuous threat operations."
         primaryCTA={{ text: 'Contact Sales', href: '/contact' }}
       />
 

@@ -15,7 +15,7 @@ export default function RansomwarePage() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
-              Covenda AI-SOC defends against ransomware through continuous threat operations. The Covenda Technology System models ransomware attack paths (threat modeling), hunts for signs of ransomware activity in your environment (threat hunting), and delivers preemptive intelligence on ransomware groups and campaigns (threat intelligence).
+              Covenda AI-SOC defends against ransomware through continuous threat operations. Covenda AI models ransomware attack paths (threat modeling), hunts for signs of ransomware activity in your environment (threat hunting), and delivers preemptive intelligence on ransomware groups and campaigns (threat intelligence).
             </p>
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
               Forward-Deployed Engineers wire detections and automations specific to ransomware, and the AI-SOC continuously monitors and assesses ransomware risks, prioritizing based on business impact.
@@ -30,7 +30,7 @@ export default function RansomwarePage() {
           {
             icon: '🎯',
             title: 'Preemptive Threat Modeling',
-            description: 'The Covenda Technology System models ransomware attack paths before incidents occur, including how ransomware groups target your industry and systems.',
+            description: 'Covenda AI models ransomware attack paths before incidents occur, including how ransomware groups target your industry and systems.',
           },
           {
             icon: '⚠️',

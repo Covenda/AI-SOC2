@@ -8,7 +8,7 @@ export default function BookDemoPage() {
         variant="gradient"
         badge="Schedule a Demo"
         title="Book a Live Demo"
-        description="See how Covenda can be your AI-SOC, powered by the Covenda Technology System and Forward-Deployed Engineers. Turn on security operations as a product instead of building from scratch."
+        description="See how Covenda can be your AI-SOC,  and Forward-Deployed Engineers. Turn on security operations as a product instead of building from scratch."
         primaryCTA={{ text: 'Schedule Now', href: '#demo-form' }}
       />
 
@@ -21,7 +21,7 @@ export default function BookDemoPage() {
                 Why Book a Demo?
               </h2>
               <p className="text-xl text-neutral-600 mb-8">
-                Experience the Covenda Technology System and learn how Forward-Deployed Engineers wire it into your environment to run AI-SOC operations
+                Experience the Covenda AI and learn how Forward-Deployed Engineers wire it into your environment to run AI-SOC operations
               </p>
             </div>
             <div className="grid md:grid-cols-3 gap-6 mb-12">

@@ -7,14 +7,14 @@ export default function DemoCenterPage() {
       <Hero
         variant="simple"
         badge="Demo Center"
-        title="Experience the Covenda Technology System"
-        description="Explore interactive demos and see how the Covenda Technology System powers AI-SOC operations: threat modeling, preemptive intelligence, risk-based vulnerability management, and more."
+        title="Experience the Covenda AI"
+        description="Explore interactive demos and see how the Covenda AI powers AI-SOC operations: threat modeling, preemptive intelligence, risk-based vulnerability management, and more."
         primaryCTA={{ text: 'Book a Live Demo', href: '/book-demo' }}
       />
 
       <FeatureGrid
         title="Interactive Demos"
-        description="Explore how the Covenda Technology System powers AI-SOC operations through guided demonstrations"
+        description="Explore how the Covenda AI powers AI-SOC operations through guided demonstrations"
         features={[
           {
             icon: '🔍',
@@ -29,7 +29,7 @@ export default function DemoCenterPage() {
           {
             icon: '🚀',
             title: 'Forward-Deployed Engineering',
-            description: 'Learn how FDEs wire the Covenda Technology System into your environment and accelerate time to value.',
+            description: 'Learn how FDEs wire it into your environment and accelerate time to value.',
           },
           {
             icon: '⚙️',

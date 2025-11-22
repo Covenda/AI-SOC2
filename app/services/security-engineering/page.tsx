@@ -7,7 +7,7 @@ export default function SecurityEngineeringPage() {
       <Hero
         badge="Service"
         title="Security Engineering"
-        description="Designing and tuning controls, detections, and automations in the Covenda Technology System. Configuring the platform and your existing tools for optimal threat operations."
+        description="Designing and tuning controls, detections, and automations in the Covenda AI. Configuring the platform and your existing tools for optimal threat operations."
         primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
@@ -15,13 +15,13 @@ export default function SecurityEngineeringPage() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-6">
-              Engineering the Covenda Technology System for Your Environment
+              Engineering the Covenda AI for Your Environment
             </h2>
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
-              Security Engineering at Covenda means designing and tuning the controls, detections, and automations that run through the Covenda Technology System. Our engineers configure the platform—including Lucid AI—to model threats, map specifications to systems, and drive continuous security operations in your specific context.
+              Security Engineering at Covenda means designing and tuning the controls, detections, and automations that run through the Covenda AI. Our engineers configure the platform—including Lucid AI—to model threats, map specifications to systems, and drive continuous security operations in your specific context.
             </p>
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
-              This includes detection engineering (building and tuning detections for threat hunting and monitoring), automation and runbooks (automated response workflows), and configuration of both the Covenda Technology System and your existing security tools (SIEM, EDR, cloud, identity, etc.) so they work together effectively.
+              This includes detection engineering (building and tuning detections for threat hunting and monitoring), automation and runbooks (automated response workflows), and configuration of both the Covenda AI and your existing security tools (SIEM, EDR, cloud, identity, etc.) so they work together effectively.
             </p>
           </div>
         </div>
@@ -34,7 +34,7 @@ export default function SecurityEngineeringPage() {
             icon: '🔍',
             title: 'Detection Engineering',
             description:
-              'Design and build detections for threat hunting and monitoring. Tune the Covenda Technology System to detect modeled threats in your environment.',
+              'Design and build detections for threat hunting and monitoring. Tune the Covenda AI to detect modeled threats in your environment.',
           },
           {
             icon: '🤖',
@@ -46,13 +46,13 @@ export default function SecurityEngineeringPage() {
             icon: '⚙️',
             title: 'Platform Configuration',
             description:
-              'Configure the Covenda Technology System and Lucid AI for threat modeling, risk-based vulnerability management, and preemptive intelligence.',
+              'Configure the Covenda AI and Lucid AI for threat modeling, risk-based vulnerability management, and preemptive intelligence.',
           },
           {
             icon: '🔗',
             title: 'Tool Integration',
             description:
-              'Wire the Covenda Technology System into your existing stack (SIEM, EDR, cloud, identity, ticketing, CI/CD) for seamless operations.',
+              'Wire the Covenda AI into your existing stack (SIEM, EDR, cloud, identity, ticketing, CI/CD) for seamless operations.',
           },
           {
             icon: '📊',

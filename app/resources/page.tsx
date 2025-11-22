@@ -16,7 +16,7 @@ export default function ResourcesPage() {
           {
             icon: '📚',
             title: 'Guides & eBooks',
-            description: 'Comprehensive guides on AI-SOC operations, threat intelligence, and the Covenda Technology System.',
+            description: 'Comprehensive guides on AI-SOC operations, threat intelligence, and the Covenda AI.',
             href: '/resources/guides',
           },
           {
@@ -46,7 +46,7 @@ export default function ResourcesPage() {
           {
             icon: '💼',
             title: 'Case Studies',
-            description: 'See how organizations use Covenda AI-SOC, powered by the Covenda Technology System and Forward-Deployed Engineers.',
+            description: 'See how organizations use Covenda AI-SOC,  and Forward-Deployed Engineers.',
             href: '/case-study',
           },
         ]}

@@ -21,7 +21,7 @@ export default function Footer() {
               <span className="text-xl font-bold text-brand-orange">Covenda</span>
             </Link>
             <p className="text-neutral-600 text-sm max-w-xs mb-6">
-              Covenda is your AI-SOC, powered by the Covenda Technology System and Forward-Deployed Engineers. We run security operations as a product.
+              Covenda is your AI-SOC. We run security operations as a product.
             </p>
             <div className="flex space-x-4">
               <a

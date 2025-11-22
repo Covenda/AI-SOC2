@@ -18,7 +18,7 @@ export default function MaturityAssessmentPage() {
                 Evaluate Your Security Operations
               </h3>
               <p className="text-neutral-600">
-                Use our maturity model to benchmark your security operations capabilities and understand how Covenda AI-SOC, powered by the Covenda Technology System, can serve your organization.
+                Use our maturity model to benchmark your security operations capabilities and understand how Covenda AI-SOC, , can serve your organization.
               </p>
             </div>
           </div>

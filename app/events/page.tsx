@@ -7,7 +7,7 @@ export default function EventsPage() {
         variant="simple"
         badge="Events"
         title="Events & Conferences"
-        description="Join Covenda at upcoming security conferences and events. Learn about AI-SOC operations, the Covenda Technology System, and Forward-Deployed Engineering."
+        description="Join Covenda at upcoming security conferences and events. Learn about AI-SOC operations, the Covenda AI, and Forward-Deployed Engineering."
       />
 
       <section className="section bg-neutral-50">

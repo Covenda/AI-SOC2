@@ -15,7 +15,7 @@ export default function RetailPage() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
-              Covenda AI-SOC is designed for retail organizations facing payment fraud, brand abuse, and e-commerce security threats. The Covenda Technology System delivers preemptive threat intelligence and risk-based vulnerability management tuned for retail-specific threats.
+              Covenda AI-SOC is designed for retail organizations facing payment fraud, brand abuse, and e-commerce security threats. Covenda AI delivers preemptive threat intelligence and risk-based vulnerability management tuned for retail-specific threats.
             </p>
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
               Forward-Deployed Engineers embed with your team to wire the platform into your environment, building detections and automations tuned for retail threats (payment fraud, brand impersonation, e-commerce attacks) and the operational realities of retail operations.
@@ -45,7 +45,7 @@ export default function RetailPage() {
           {
             icon: '📱',
             title: '24/7 AI-SOC Operations',
-            description: 'Continuous threat operations through the Covenda Technology System, co-managed with your team and aligned with retail sector SLOs.',
+            description: 'Continuous threat operations through the Covenda AI, co-managed with your team and aligned with retail sector SLOs.',
           },
         ]}
       />

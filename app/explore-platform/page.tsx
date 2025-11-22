@@ -7,8 +7,8 @@ export default function ExplorePlatformPage() {
     <div>
       <Hero
         badge="AI-SOC Platform"
-        title="Explore the Covenda Technology System"
-        description="Discover how the Covenda Technology System powers AI-SOC operations: preemptive threat intelligence, risk-based vulnerability management, and continuous threat operations."
+        title="Explore the Covenda AI"
+        description="Discover how the Covenda AI powers AI-SOC operations: preemptive threat intelligence, risk-based vulnerability management, and continuous threat operations."
         primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
         secondaryCTA={{ text: 'View Demo Center', href: '/platform/demo-center' }}
       />
@@ -21,7 +21,7 @@ export default function ExplorePlatformPage() {
               The Platform That Powers Covenda AI-SOC
             </h2>
             <p className="text-xl text-neutral-600 mb-8">
-              The Covenda Technology System is the core AI-native fabric that powers Covenda AI-SOC. It includes Lucid AI for threat modeling, preemptive intelligence, and risk-based vulnerability management. Forward-Deployed Engineers wire it into your environment.
+              Covenda AI is the core AI-native fabric that powers Covenda AI-SOC. It includes Lucid AI for threat modeling, preemptive intelligence, and risk-based vulnerability management. Forward-Deployed Engineers wire it into your environment.
             </p>
           </div>
         </div>
@@ -29,7 +29,7 @@ export default function ExplorePlatformPage() {
 
       {/* Core Capabilities */}
       <FeatureGrid
-        title="How the Covenda Technology System Powers AI-SOC Operations"
+        title="How the Covenda AI Powers AI-SOC Operations"
         description="The platform delivers threat modeling, intelligence, risk-based vulnerability management, and automation—all integrated with your existing tools"
         features={[
           {
@@ -71,7 +71,7 @@ export default function ExplorePlatformPage() {
             icon: '🎯',
             title: 'Demo Center',
             description:
-              'Explore interactive demos of the Covenda Technology System and how it powers AI-SOC operations.',
+              'Explore interactive demos of the Covenda AI and how it powers AI-SOC operations.',
             href: '/platform/demo-center',
           },
         ]}
@@ -166,7 +166,7 @@ export default function ExplorePlatformPage() {
               Seamless Integration with Your Security Stack
             </h2>
             <p className="text-xl text-neutral-600 mb-8">
-              The Covenda Technology System wires into your existing tools—SIEM, EDR, cloud, identity, ticketing, CI/CD—so the AI-SOC works with your environment, not against it.
+              Covenda AI wires into your existing tools—SIEM, EDR, cloud, identity, ticketing, CI/CD—so the AI-SOC works with your environment, not against it.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/platform/integrations" className="btn btn-primary">
@@ -188,7 +188,7 @@ export default function ExplorePlatformPage() {
             Turn on Your AI-SOC
           </h2>
           <p className="text-xl text-neutral-200 mb-8 max-w-2xl mx-auto">
-            Covenda runs security operations as a product. Forward-Deployed Engineers embed with your team to wire the Covenda Technology System into your environment. Get started with a demo or assessment.
+            Covenda runs security operations as a product. Forward-Deployed Engineers embed with your team to wire it into your environment. Get started with a demo or assessment.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/book-demo" className="btn bg-white hover:bg-neutral-100 text-brand-navy text-lg px-8 py-4">

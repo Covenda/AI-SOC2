@@ -6,7 +6,7 @@ export default function IntelligenceGraphPage() {
       <Hero
         badge="Intelligence Graph"
         title="The Intelligence Graph"
-        description="The Intelligence Graph connects threat intelligence, controls, evidence, and automated response in the Covenda Technology System. It powers threat modeling, hunting, and assessment across your AI-SOC operations."
+        description="The Intelligence Graph connects threat intelligence, controls, evidence, and automated response in the Covenda AI. It powers threat modeling, hunting, and assessment across your AI-SOC operations."
         primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
         secondaryCTA={{ text: 'Learn More', href: '/platform' }}
       />
@@ -18,7 +18,7 @@ export default function IntelligenceGraphPage() {
               How the Intelligence Graph Powers Your AI-SOC
             </h2>
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
-              The Intelligence Graph is the connective fabric in the Covenda Technology System. It links threat intelligence, controls, evidence, and automated response into a unified model that powers threat operations.
+              The Intelligence Graph is the connective fabric in the Covenda AI. It links threat intelligence, controls, evidence, and automated response into a unified model that powers threat operations.
             </p>
             <div className="space-y-8">
               <div className="border-l-4 border-brand-orange pl-6">

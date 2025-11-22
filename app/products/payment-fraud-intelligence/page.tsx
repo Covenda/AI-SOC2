@@ -5,34 +5,44 @@ export default function PaymentFraudIntelligencePage() {
   return (
     <div>
       <Hero
-        badge="Product"
+        badge="AI-SOC Capability"
         title="Payment Fraud Intelligence"
-        description="Detect and prevent payment fraud with real-time intelligence on fraud schemes, compromised cards, and threat actors."
+        description="Payment fraud intelligence that powers threat modeling, hunting, and assessment within Covenda's AI-SOC. Monitors fraud schemes, compromised cards, and threat actors to feed threat operations."
         primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
+      <section className="section bg-white">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto">
+            <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
+              Payment Fraud Intelligence is a capability domain within Covenda's AI-SOC that focuses on payment-related threats. It feeds threat modeling (how payment systems can be attacked), threat hunting (looking for fraud indicators), and threat assessment (prioritizing payment risks).
+            </p>
+          </div>
+        </div>
+      </section>
+
       <FeatureGrid
-        title="Fraud Prevention"
+        title="How Payment Fraud Intelligence Powers the AI-SOC"
         features={[
           {
             icon: '💳',
             title: 'Card Compromise Detection',
-            description: 'Identify compromised payment cards before fraud occurs.',
+            description: 'Identifies compromised payment cards before fraud occurs, feeding threat hunting and monitoring operations.',
           },
           {
             icon: '🎣',
             title: 'Fraud Scheme Intelligence',
-            description: 'Stay ahead of emerging fraud schemes and techniques.',
+            description: 'Tracks emerging fraud schemes and techniques, powering threat modeling and intelligence operations.',
           },
           {
             icon: '👥',
             title: 'Threat Actor Tracking',
-            description: 'Monitor fraud-focused threat actors and their activities.',
+            description: 'Monitors fraud-focused threat actors and their activities, feeding threat intelligence and assessment.',
           },
           {
             icon: '🌐',
             title: 'Dark Web Monitoring',
-            description: 'Track stolen payment data on dark web marketplaces.',
+            description: 'Tracks stolen payment data on dark web marketplaces, powering threat hunting and intelligence operations.',
           },
         ]}
       />

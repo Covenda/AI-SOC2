@@ -6,33 +6,46 @@ export default function DigitalRiskPage() {
     <div>
       <Hero
         badge="Use Case"
-        title="Digital Risk Protection"
-        description="Protect your organization from digital risks including brand abuse, executive impersonation, and data leakage."
+        title="Digital Risk Protection with Covenda's AI-SOC"
+        description="How Covenda's AI-SOC protects against digital risks: threat modeling maps how brands and executives can be targeted, threat intelligence monitors for brand abuse and impersonation, and threat assessment prioritizes digital risks based on business impact."
         primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
+      <section className="section bg-white">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto">
+            <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
+              Covenda's AI-SOC protects against digital risks through continuous threat operations. The Covenda Technology System models how brands and executives can be targeted (threat modeling), monitors for brand abuse and impersonation (threat intelligence), and hunts for signs of digital risk in your environment (threat hunting).
+            </p>
+            <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
+              The AI-SOC continuously assesses digital risks, prioritizing based on business impact. Forward-Deployed Engineers wire detections and automations specific to digital risk, integrating with your existing tools.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <FeatureGrid
-        title="Digital Risk Capabilities"
+        title="How Covenda's AI-SOC Protects Against Digital Risk"
         features={[
           {
             icon: '🎯',
-            title: 'Brand Protection',
-            description: 'Monitor and protect your brand from abuse across digital channels.',
+            title: 'Threat Modeling for Digital Risk',
+            description: 'Models how brands and executives can be targeted, including phishing, impersonation, and brand abuse scenarios.',
           },
           {
             icon: '👥',
-            title: 'Executive Protection',
-            description: 'Protect executives from impersonation and targeted attacks.',
+            title: 'Brand & Executive Intelligence',
+            description: 'Preemptive intelligence on brand abuse, executive impersonation, and digital threats that feeds threat operations.',
           },
           {
             icon: '📱',
-            title: 'Social Media Monitoring',
-            description: 'Monitor social media for threats and brand abuse.',
+            title: 'Continuous Monitoring',
+            description: 'Monitors social media, web, and dark web for threats and brand abuse, feeding threat hunting and assessment operations.',
           },
           {
             icon: '🔍',
             title: 'Data Leakage Detection',
-            description: 'Detect sensitive data exposure across the web and dark web.',
+            description: 'Detects sensitive data exposure across the web and dark web, powering threat intelligence and assessment.',
           },
         ]}
       />

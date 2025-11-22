@@ -7,34 +7,34 @@ export default function DemoCenterPage() {
       <Hero
         variant="simple"
         badge="Demo Center"
-        title="Experience the Covenda AI Platform"
-        description="Explore interactive demos and see how Covenda helps build and operate effective AI-SOC capabilities."
+        title="Experience the Covenda Technology System"
+        description="Explore interactive demos and see how the Covenda Technology System powers AI-SOC operations: threat modeling, preemptive intelligence, risk-based vulnerability management, and more."
         primaryCTA={{ text: 'Book a Live Demo', href: '/book-demo' }}
       />
 
       <FeatureGrid
         title="Interactive Demos"
-        description="Explore our platform capabilities through guided demonstrations"
+        description="Explore how the Covenda Technology System powers AI-SOC operations through guided demonstrations"
         features={[
           {
             icon: '🔍',
-            title: 'Security Posture Assessment',
-            description: 'See how we evaluate your current security posture and build a prioritized roadmap.',
+            title: 'Threat Modeling & Intelligence',
+            description: 'See how the platform models threats before incidents happen and delivers preemptive, event-agnostic intelligence.',
           },
           {
-            icon: '🤖',
-            title: 'Detection Engineering',
-            description: 'Explore how Forward-Deployed Engineers build custom detections for your environment.',
+            icon: '🎯',
+            title: 'Risk-Based Vulnerability Management',
+            description: 'Explore how Lucid AI prioritizes vulnerabilities based on business risk, not just CVSS scores.',
+          },
+          {
+            icon: '🚀',
+            title: 'Forward-Deployed Engineering',
+            description: 'Learn how FDEs wire the Covenda Technology System into your environment and accelerate time to value.',
           },
           {
             icon: '⚙️',
-            title: 'Automated Response',
-            description: 'Learn how we automate security workflows and response playbooks.',
-          },
-          {
-            icon: '📊',
-            title: 'Co-Managed Operations',
-            description: 'See how we co-manage AI-SOC operations with defined SLOs.',
+            title: 'AI-SOC Operations',
+            description: 'See how threat modeling, hunting, intelligence, monitoring, and assessment run continuously through the platform.',
           },
         ]}
       />

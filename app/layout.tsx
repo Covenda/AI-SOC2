@@ -4,15 +4,19 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Covenda - AI-SOC Services with Forward-Deployed Security Engineers',
+  title: 'Covenda - Your AI-SOC, Powered by the Covenda Technology System',
   description:
-    'We embed Forward-Deployed Security Engineers with your team to build detections, automate responses, and co-manage operations on Covenda AI.',
+    'Covenda runs security operations as a product. Turn on your AI-SOC with preemptive threat intelligence, risk-based vulnerability management, and Forward-Deployed Engineers.',
   keywords: [
+    'AI-SOC',
     'threat intelligence',
     'cybersecurity',
-    'security intelligence',
-    'cyber threat intelligence',
-    'covenda ai',
+    'security operations',
+    'threat modeling',
+    'threat hunting',
+    'covenda',
+    'covenda technology system',
+    'lucid ai',
   ],
 };
 

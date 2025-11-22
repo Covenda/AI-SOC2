@@ -7,7 +7,7 @@ export default function AISOCCoManagementPage() {
       <Hero
         badge="Service"
         title="AI-SOC Co-Management"
-        description="Co-manage your security operations with defined SLOs, continuous improvement, and measurable outcomes."
+        description="For organizations with existing SOC teams: Covenda co-manages AI-SOC operations with your staff. Covenda Technology System + Forward-Deployed Engineers + your team = shared outcomes."
         primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
@@ -15,13 +15,13 @@ export default function AISOCCoManagementPage() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-6">
-              Co-Managed Security Operations
+              Co-Managing AI-SOC Operations with Your Team
             </h2>
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
-              We co-manage your AI-SOC operations with defined Service Level Objectives (SLOs), ensuring clear expectations, measurable outcomes, and continuous improvement. Our Forward-Deployed Security Engineers work alongside your team to monitor, detect, respond, and improve your security operations.
+              If you already have a SOC team, Covenda's AI-SOC Co-Management model lets you leverage the Covenda Technology System and Forward-Deployed Engineers while keeping your team in the loop. We co-manage threat operations—threat modeling, hunting, intelligence, monitoring, and assessment—with defined Service Level Objectives (SLOs) and continuous improvement.
             </p>
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
-              This co-managed approach combines the expertise of our security engineers with the domain knowledge of your team, resulting in more effective security operations and better outcomes.
+              The Covenda Technology System runs the AI-SOC operations, Forward-Deployed Engineers tune and integrate it into your environment, and your team provides domain knowledge and context. This shared model means you get the benefits of Covenda's AI-SOC without replacing your existing team—instead, we augment and accelerate what you're already doing.
             </p>
           </div>
         </div>
@@ -34,37 +34,37 @@ export default function AISOCCoManagementPage() {
             icon: '📊',
             title: 'Defined SLOs',
             description:
-              'Clear Service Level Objectives for mean time to detect, mean time to respond, and detection coverage.',
+              'Clear Service Level Objectives for threat operations: detection coverage, mean time to detect, mean time to respond, and risk-based prioritization.',
           },
           {
             icon: '👥',
-            title: '24/7 Coverage',
+            title: 'Shared Operations',
             description:
-              'Round-the-clock security monitoring and response capabilities with our team.',
+              'Covenda Technology System + Forward-Deployed Engineers + your team working together on threat modeling, hunting, intelligence, monitoring, and assessment.',
           },
           {
             icon: '🔍',
-            title: 'Threat Detection',
+            title: 'Continuous Threat Operations',
             description:
-              'Continuous threat detection and analysis using our platform and expertise.',
+              '24/7 threat hunting, monitoring, and assessment through the Covenda Technology System, tuned by FDEs and contextualized by your team.',
           },
           {
             icon: '⚡',
-            title: 'Incident Response',
+            title: 'Automated Response',
             description:
-              'Rapid incident response and containment with defined playbooks and workflows.',
+              'Automated response playbooks and workflows that integrate with your existing processes and tools.',
           },
           {
             icon: '📈',
             title: 'Continuous Improvement',
             description:
-              'Regular reviews and improvements to detections, workflows, and processes.',
+              'Regular reviews and improvements to detections, workflows, and threat models based on real-world performance and your feedback.',
           },
           {
             icon: '📋',
-            title: 'Reporting & Metrics',
+            title: 'Transparent Reporting',
             description:
-              'Regular reporting on security metrics, incidents, and improvements.',
+              'Regular reporting on threat operations, incidents, risk assessments, and improvements with full visibility for your team.',
           },
         ]}
       />

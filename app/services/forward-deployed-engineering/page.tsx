@@ -7,7 +7,7 @@ export default function ForwardDeployedEngineeringPage() {
       <Hero
         badge="Service"
         title="Forward-Deployed Engineering"
-        description="Security engineers embedded with your team to build detections, automate workflows, and transfer knowledge."
+        description="Product engineers embed with your team to bridge the Covenda Technology System and your environment. They accelerate value by doing things that don't scale, then feed patterns back into the platform."
         primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
@@ -15,56 +15,59 @@ export default function ForwardDeployedEngineeringPage() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-6">
-              Embedded Security Engineers
+              Product Engineers, Not Generic Consultants
             </h2>
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
-              Our Forward-Deployed Security Engineers embed directly with your team to understand your environment, build custom detections, and automate security workflows. They work alongside your team, not as external consultants, ensuring knowledge transfer and building your team's capabilities over time.
+              Forward-Deployed Engineers (FDEs) are software/product engineers who embed directly with customers. They act as the bridge between your environment and the Covenda Technology System. Unlike traditional SaaS vendors who build generic products and force everyone into them, FDEs willingly "do things that don't scale" early to discover product–market fit, then abstract and scale the patterns that work.
             </p>
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
-              This embedded approach ensures that our engineers understand your business context, threat landscape, and operational constraints, enabling them to build solutions that actually work in your environment.
+              FDEs work closely with customers (virtually or on-site) to understand unique, complex, often ambiguous security challenges. Their goal is to shrink the time between "first meeting" and "first meaningful win" by wiring detections, tuning automations, and building workflows that immediately matter.
+            </p>
+            <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
+              When FDEs build custom or unscalable solutions, those patterns are brought back into the core product team and abstracted into reusable features. There's a tight loop between FDEs and the core product team; FDEs are NOT a generic services silo. Success is measured by increasing impact and speed per engagement, not by rigid uniformity.
             </p>
           </div>
         </div>
       </section>
 
       <FeatureGrid
-        title="Forward-Deployed Engineering Capabilities"
+        title="What Forward-Deployed Engineers Do"
         features={[
           {
             icon: '👥',
-            title: 'Team Embedding',
+            title: 'Customer-Centric Problem Solving',
             description:
-              'Security engineers work directly with your team, understanding your environment and business context.',
+              'FDEs sit close to customers (virtually or on-site) and tackle ambiguous, complex security problems in your specific environment.',
           },
           {
-            icon: '🔍',
-            title: 'Custom Detection Engineering',
+            icon: '⚡',
+            title: 'Accelerated Value Delivery',
             description:
-              'Build and tune custom detections tailored to your environment, threat landscape, and business needs.',
+              'Shrink time from first meeting to first meaningful win by wiring detections, tuning automations, and building workflows that matter immediately.',
           },
           {
-            icon: '🤖',
-            title: 'Workflow Automation',
+            icon: '🔄',
+            title: 'Product Iteration & Adaptation',
             description:
-              'Automate security workflows and response playbooks to reduce mean time to respond.',
+              'Build custom or unscalable solutions as needed, then feed those patterns back into the Covenda Technology System so they become reusable.',
           },
           {
-            icon: '📚',
-            title: 'Knowledge Transfer',
+            icon: '🤝',
+            title: 'Strategic Partnerships',
             description:
-              'Transfer knowledge and best practices to your team, building their capabilities over time.',
+              'Build deep trust and momentum with strategic customers, leading to higher contract value and long-term relationships.',
           },
           {
             icon: '🔧',
-            title: 'Tool Integration',
+            title: 'Platform Integration',
             description:
-              'Integrate and optimize your security tools, ensuring they work together effectively.',
+              'Wire the Covenda Technology System into your existing stack (SIEM, EDR, cloud, identity, ticketing, CI/CD) so it works in your environment.',
           },
           {
-            icon: '📊',
-            title: 'Continuous Improvement',
+            icon: '📈',
+            title: 'Shared Playbooks & Patterns',
             description:
-              'Continuously improve detections, workflows, and processes based on real-world performance.',
+              'One FDE's work becomes a foundation for the next. Shared playbooks, automations, and patterns accelerate every engagement.',
           },
         ]}
       />

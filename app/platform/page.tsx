@@ -7,56 +7,56 @@ export default function PlatformPage() {
     <div>
       <Hero
         badge="AI-SOC Platform"
-        title="Covenda AI Platform"
-        description="A unified platform that connects threat intelligence, controls, evidence, and automated response in a single ecosystem."
+        title="The Covenda Technology System"
+        description="The core AI-native fabric that powers Covenda's AI-SOC. Includes Lucid AI for threat modeling, preemptive intelligence, and risk-based vulnerability management."
         primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
         secondaryCTA={{ text: 'View Demo Center', href: '/platform/demo-center' }}
       />
 
       <FeatureGrid
-        title="Platform Capabilities"
-        description="Comprehensive AI-SOC capabilities built for modern security teams"
+        title="How the Covenda Technology System Powers Your AI-SOC"
+        description="The platform delivers threat modeling, intelligence, risk-based vulnerability management, and automation—all integrated with your existing tools and tuned by Forward-Deployed Engineers"
         features={[
           {
             icon: '🔍',
-            title: 'Threat Intelligence',
+            title: 'Preemptive Threat Intelligence',
             description:
-              'Real-time threat intelligence to identify and prioritize threats before they impact your organization.',
+              'Event-agnostic, spec-driven threat intelligence that models threats before incidents happen. Maps the gap between your security specifications and actual systems.',
             href: '/products/threat-intelligence',
           },
           {
-            icon: '🤖',
-            title: 'Detection Engineering',
+            icon: '🎯',
+            title: 'Risk-Based Vulnerability Management',
             description:
-              'Build, tune, and deploy custom detections tailored to your environment and threat landscape.',
-            href: '/use-case/automation-security-workflows',
+              'Lucid AI prioritizes vulnerabilities based on business risk, not just CVSS scores. Focuses on what actually matters to your organization.',
+            href: '/products/vulnerability-intelligence',
           },
           {
-            icon: '⚙️',
-            title: 'Automated Response',
+            icon: '🗺️',
+            title: 'Threat Modeling',
             description:
-              'Automate security workflows and response playbooks to reduce mean time to respond.',
-            href: '/use-case/automation-security-workflows',
+              'Models how systems can be attacked, including AI-/AGI-specific threat scenarios. Feeds threat hunting and monitoring operations.',
+            href: '/platform/recorded-future-ai',
           },
           {
             icon: '🔌',
-            title: 'Integrations',
+            title: 'Seamless Integrations',
             description:
-              'Seamlessly integrate with 50+ security tools including SIEM, SOAR, and ticketing systems.',
+              'Wires into your existing stack: SIEM, EDR, cloud, identity, ticketing, CI/CD. The platform works with your tools, not instead of them.',
             href: '/platform/integrations',
           },
           {
             icon: '📊',
-            title: 'Co-Managed Operations',
+            title: 'Intelligence Graph',
             description:
-              'Co-manage your AI-SOC operations with defined SLOs and continuous improvement.',
-            href: '/platform',
+              'Connects threat intelligence, controls, evidence, and automated response in a unified graph that powers threat operations.',
+            href: '/platform/intelligence-graph',
           },
           {
             icon: '🎯',
             title: 'Demo Center',
             description:
-              'Explore interactive demos of our platform capabilities and use cases.',
+              'Explore interactive demos of the Covenda Technology System and how it powers AI-SOC operations.',
             href: '/platform/demo-center',
           },
         ]}
@@ -67,10 +67,10 @@ export default function PlatformPage() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-6">
-              Seamless Integration with Your Security Stack
+              Integrated with Your Security Stack
             </h2>
             <p className="text-xl text-neutral-600 mb-8">
-              Connect Covenda AI with your existing SIEM, SOAR, ticketing systems, and other security tools
+              The Covenda Technology System wires into your existing tools—SIEM, EDR, cloud, identity, ticketing, CI/CD—so the AI-SOC works with your environment, not against it.
             </p>
             <Link href="/platform/integrations" className="btn btn-primary">
               Explore Integrations

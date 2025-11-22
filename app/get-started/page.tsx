@@ -7,7 +7,7 @@ export default function GetStartedPage() {
       <Hero
         variant="gradient"
         title="Get Started with Covenda"
-        description="Start with a 2-4 week assessment to understand your current state and build a prioritized roadmap. No long-term commitment required."
+        description="Turn on Covenda's AI-SOC. Forward-Deployed Engineers embed with your team to wire the Covenda Technology System into your environment. Get started with a demo or assessment."
       />
 
       {/* Book a Demo Section */}
@@ -19,7 +19,7 @@ export default function GetStartedPage() {
                 Book a Live Demo
               </h2>
               <p className="text-xl text-neutral-600 mb-8">
-                See how Covenda can help build and operate your AI-SOC with Forward-Deployed Security Engineers.
+                See how Covenda can be your AI-SOC, powered by the Covenda Technology System and Forward-Deployed Engineers.
               </p>
               <div className="bg-neutral-50 rounded-2xl p-8 md:p-12">
                 <div className="space-y-6">
@@ -63,7 +63,7 @@ export default function GetStartedPage() {
                     <div className="text-left">
                       <h3 className="font-semibold text-brand-navy mb-2">Expert Guidance</h3>
                       <p className="text-neutral-600">
-                        Learn from our Forward-Deployed Security Engineers
+                        Learn from our Forward-Deployed Engineers about Covenda's AI-SOC
                       </p>
                     </div>
                   </div>
@@ -114,9 +114,9 @@ export default function GetStartedPage() {
             </div>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="card">
-                <h3 className="text-xl font-bold text-brand-navy mb-3">Security Posture Assessment</h3>
+                <h3 className="text-xl font-bold text-brand-navy mb-3">AI-SOC Assessment</h3>
                 <p className="text-neutral-600 mb-4">
-                  Comprehensive evaluation of your current security posture with actionable roadmap.
+                  Understand how Covenda's AI-SOC can work in your environment. Forward-Deployed Engineers assess your current state and wire the Covenda Technology System.
                 </p>
                 <Link href="/book-demo" className="text-brand-orange font-semibold">
                   Request Assessment →
@@ -125,16 +125,16 @@ export default function GetStartedPage() {
               <div className="card">
                 <h3 className="text-xl font-bold text-brand-navy mb-3">Forward-Deployed Engineers</h3>
                 <p className="text-neutral-600 mb-4">
-                  Embed security engineers with your team to build detections and automate responses.
+                  Product engineers embed with your team to wire the Covenda Technology System into your environment, accelerating time to value.
                 </p>
                 <Link href="/work-with-us" className="text-brand-orange font-semibold">
                   Learn More →
                 </Link>
               </div>
               <div className="card">
-                <h3 className="text-xl font-bold text-brand-navy mb-3">Co-Managed Operations</h3>
+                <h3 className="text-xl font-bold text-brand-navy mb-3">AI-SOC Operations</h3>
                 <p className="text-neutral-600 mb-4">
-                  Co-manage your AI-SOC operations with defined SLOs and measurable outcomes.
+                  Covenda runs security operations as a product. Co-manage with your team through the Covenda Technology System and Forward-Deployed Engineers.
                 </p>
                 <Link href="/platform" className="text-brand-orange font-semibold">
                   Explore Platform →

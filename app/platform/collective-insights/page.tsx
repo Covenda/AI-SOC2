@@ -6,7 +6,7 @@ export default function CollectiveInsightsPage() {
       <Hero
         badge="Collective Insights"
         title="Collective Insights"
-        description="Leverage the power of our global security community. Access anonymized insights from thousands of organizations worldwide."
+        description="Anonymized insights from Covenda's AI-SOC operations across customers. Understand threats, patterns, and risk trends from a broader perspective to improve your threat operations."
         primaryCTA={{ text: 'Learn More', href: '/book-demo' }}
       />
 
@@ -14,11 +14,10 @@ export default function CollectiveInsightsPage() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-6">
-              Powered by Global Intelligence
+              Insights from Covenda's AI-SOC Operations
             </h2>
             <p className="text-xl text-neutral-600">
-              Our community-driven insights help you understand threats from a global perspective
-              and make better security decisions.
+              Collective Insights aggregates anonymized patterns from Covenda's AI-SOC operations across customers. These insights help you understand threat trends, risk patterns, and security outcomes from a broader perspective, improving your own threat modeling, hunting, and assessment capabilities.
             </p>
           </div>
         </div>

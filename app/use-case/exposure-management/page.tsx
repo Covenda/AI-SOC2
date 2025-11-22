@@ -6,33 +6,46 @@ export default function ExposureManagementPage() {
     <div>
       <Hero
         badge="Use Case"
-        title="Exposure Management"
-        description="Discover, assess, and reduce security exposures across your attack surface with continuous monitoring."
+        title="Exposure Management with Covenda's AI-SOC"
+        description="How Covenda's AI-SOC manages exposures: threat modeling maps how exposed assets can be attacked, attack surface intelligence discovers exposures, and risk-based vulnerability management prioritizes remediation based on business risk."
         primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
+      <section className="section bg-white">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto">
+            <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
+              Covenda's AI-SOC manages exposures through continuous threat operations. Attack Surface Intelligence discovers exposed assets, threat modeling maps how those exposures can be attacked, and risk-based vulnerability management (powered by Lucid AI) prioritizes remediation based on the gap between your security specifications and actual systems.
+            </p>
+            <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
+              The AI-SOC continuously monitors exposures, correlates them with vulnerability intelligence, and feeds threat assessment operations that prioritize based on business risk, not just CVSS scores.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <FeatureGrid
-        title="Exposure Management Capabilities"
+        title="How Covenda's AI-SOC Manages Exposures"
         features={[
           {
             icon: '🌐',
-            title: 'Asset Discovery',
-            description: 'Continuously discover internet-facing assets and exposures.',
+            title: 'Continuous Asset Discovery',
+            description: 'Attack Surface Intelligence continuously discovers internet-facing assets and exposures, feeding threat modeling operations.',
           },
           {
             icon: '📊',
-            title: 'Risk Assessment',
-            description: 'Assess and prioritize exposures based on exploitability.',
+            title: 'Risk-Based Assessment',
+            description: 'Lucid AI assesses and prioritizes exposures based on business risk and exploitability, not just generic vulnerability scores.',
           },
           {
             icon: '🔍',
-            title: 'Vulnerability Correlation',
-            description: 'Correlate exposures with vulnerability intelligence.',
+            title: 'Spec-to-System Gap Analysis',
+            description: 'Maps the gap between your security specifications and actual exposed systems, identifying where exposures matter most.',
           },
           {
             icon: '⚡',
-            title: 'Remediation Guidance',
-            description: 'Get actionable guidance to reduce exposures.',
+            title: 'Threat Assessment Integration',
+            description: 'Integrates exposure data with threat modeling and assessment to prioritize remediation based on business impact.',
           },
         ]}
       />

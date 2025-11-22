@@ -7,7 +7,7 @@ export default function SecurityEngineeringPage() {
       <Hero
         badge="Service"
         title="Security Engineering"
-        description="Comprehensive security posture evaluation with actionable roadmap and custom detection engineering."
+        description="Designing and tuning controls, detections, and automations in the Covenda Technology System. Configuring the platform and your existing tools for optimal threat operations."
         primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
@@ -15,13 +15,13 @@ export default function SecurityEngineeringPage() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-6">
-              Comprehensive Security Posture Assessment
+              Engineering the Covenda Technology System for Your Environment
             </h2>
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
-              We start every engagement with a comprehensive 2-4 week assessment to understand your current security posture, identify gaps, and build a prioritized roadmap. This assessment helps us understand your environment, threat landscape, and business context.
+              Security Engineering at Covenda means designing and tuning the controls, detections, and automations that run through the Covenda Technology System. Our engineers configure the platform—including Lucid AI—to model threats, map specifications to systems, and drive continuous security operations in your specific context.
             </p>
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
-              Our security engineers evaluate your existing detections, security tools, processes, and workflows to identify areas for improvement and build a clear path forward.
+              This includes detection engineering (building and tuning detections for threat hunting and monitoring), automation and runbooks (automated response workflows), and configuration of both the Covenda Technology System and your existing security tools (SIEM, EDR, cloud, identity, etc.) so they work together effectively.
             </p>
           </div>
         </div>
@@ -31,40 +31,40 @@ export default function SecurityEngineeringPage() {
         title="Security Engineering Capabilities"
         features={[
           {
-            icon: '📊',
-            title: 'Security Posture Assessment',
-            description:
-              'Comprehensive evaluation of your current security posture, tools, processes, and capabilities.',
-          },
-          {
-            icon: '🗺️',
-            title: 'Actionable Roadmap',
-            description:
-              'Prioritized roadmap with clear milestones and measurable outcomes to guide your security journey.',
-          },
-          {
             icon: '🔍',
             title: 'Detection Engineering',
             description:
-              'Design and build custom detections tailored to your environment and threat landscape.',
+              'Design and build detections for threat hunting and monitoring. Tune the Covenda Technology System to detect modeled threats in your environment.',
           },
           {
-            icon: '📈',
-            title: 'Gap Analysis',
+            icon: '🤖',
+            title: 'Automation & Runbooks',
             description:
-              'Identify gaps in your security operations and recommend solutions to address them.',
+              'Build automated response playbooks and workflows that integrate with your existing tools and processes.',
           },
           {
-            icon: '🛠️',
-            title: 'Tool Evaluation',
+            icon: '⚙️',
+            title: 'Platform Configuration',
             description:
-              'Evaluate your existing security tools and recommend optimizations or new solutions.',
+              'Configure the Covenda Technology System and Lucid AI for threat modeling, risk-based vulnerability management, and preemptive intelligence.',
           },
           {
-            icon: '📋',
-            title: 'Process Optimization',
+            icon: '🔗',
+            title: 'Tool Integration',
             description:
-              'Review and optimize your security processes and workflows for efficiency and effectiveness.',
+              'Wire the Covenda Technology System into your existing stack (SIEM, EDR, cloud, identity, ticketing, CI/CD) for seamless operations.',
+          },
+          {
+            icon: '📊',
+            title: 'Threat Modeling Setup',
+            description:
+              'Configure threat modeling to map how your systems can be attacked, including AI-/AGI-specific threat scenarios.',
+          },
+          {
+            icon: '🎯',
+            title: 'Risk-Based Prioritization',
+            description:
+              'Tune risk-based vulnerability management to prioritize based on business risk, not just CVSS scores.',
           },
         ]}
       />

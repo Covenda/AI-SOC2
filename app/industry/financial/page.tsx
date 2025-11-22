@@ -6,33 +6,46 @@ export default function FinancialPage() {
     <div>
       <Hero
         badge="Industry"
-        title="Intelligence for Financial Services"
-        description="SOC Modernization: How Forward-Deployed Security Engineers help financial institutions build and operate effective AI-SOC capabilities."
+        title="AI-SOC for Financial Services"
+        description="Covenda's AI-SOC for financial institutions: preemptive threat intelligence, risk-based vulnerability management, and Forward-Deployed Engineers tuned for regulatory compliance and financial sector threats."
         primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
+      <section className="section bg-white">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto">
+            <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
+              Covenda's AI-SOC is designed for financial services organizations operating in highly regulated environments. The Covenda Technology System delivers preemptive threat intelligence and risk-based vulnerability management that prioritizes based on business risk and regulatory requirements, not just generic threat feeds.
+            </p>
+            <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
+              Forward-Deployed Engineers embed with your team to wire the platform into your environment, building detections and automations tuned for financial sector threats, regulatory compliance (FFIEC, GLBA, PCI-DSS), and the operational realities of banking, insurance, and capital markets.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <FeatureGrid
-        title="SOC Modernization for Financial Services"
+        title="How Covenda's AI-SOC Serves Financial Services"
         features={[
           {
             icon: '🔍',
-            title: 'Security Posture Assessment',
-            description: 'Comprehensive evaluation of your current security posture with actionable roadmap.',
+            title: 'Regulatory-Aligned Threat Operations',
+            description: 'Threat modeling, hunting, intelligence, monitoring, and assessment tuned for financial sector threats and regulatory requirements.',
           },
           {
             icon: '🚀',
-            title: 'Forward-Deployed Engineers',
-            description: 'Embed security engineers with your team to build detections and automate responses.',
+            title: 'Forward-Deployed Engineering',
+            description: 'FDEs embed with your team to wire the Covenda Technology System into your environment, accelerating time to value in complex financial systems.',
           },
           {
             icon: '⚙️',
-            title: 'Co-Managed Operations',
-            description: 'Co-manage your AI-SOC operations with defined SLOs and measurable outcomes.',
+            title: 'Risk-Based Prioritization',
+            description: 'Lucid AI prioritizes vulnerabilities and threats based on business risk and regulatory impact, not just CVSS scores or generic alerts.',
           },
           {
             icon: '📊',
-            title: 'Measurable Results',
-            description: 'Achieve 70% faster MTTD, 24/7 coverage, and production-ready detections in 2-4 weeks.',
+            title: '24/7 AI-SOC Operations',
+            description: 'Continuous threat operations through the Covenda Technology System, co-managed with your team and aligned with financial sector SLOs.',
           },
         ]}
       />

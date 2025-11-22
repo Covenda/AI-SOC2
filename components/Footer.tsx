@@ -18,10 +18,10 @@ export default function Footer() {
           {/* Brand & Description */}
           <div className="col-span-2">
             <Link href="/" className="flex items-center mb-4">
-              <span className="text-xl font-bold text-brand-orange">Covenda AI</span>
+              <span className="text-xl font-bold text-brand-orange">Covenda</span>
             </Link>
             <p className="text-neutral-600 text-sm max-w-xs mb-6">
-              We embed Forward-Deployed Security Engineers with your team to build detections, automate responses, and co-manage operations.
+              Covenda is your AI-SOC, powered by the Covenda Technology System and Forward-Deployed Engineers. We run security operations as a product.
             </p>
             <div className="flex space-x-4">
               <a
@@ -87,7 +87,7 @@ export default function Footer() {
               </Link>
             </div>
             <div className="text-sm text-neutral-600">
-              © {currentYear} Covenda AI. All rights reserved.
+              © {currentYear} Covenda. All rights reserved.
             </div>
           </div>
         </div>

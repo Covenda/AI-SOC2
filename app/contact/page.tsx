@@ -8,7 +8,7 @@ export default function ContactPage() {
         variant="simple"
         badge="Contact"
         title="Get in Touch"
-        description="Connect with our team to learn how Covenda can help build and operate your AI-SOC."
+        description="Connect with our team to learn how Covenda can be your AI-SOC, powered by the Covenda Technology System and Forward-Deployed Engineers."
       />
 
       <section className="section bg-white">
@@ -46,21 +46,27 @@ export default function ContactPage() {
                     </h3>
                     <div className="space-y-6">
                       <div>
-                        <p className="font-semibold text-brand-navy mb-2">London Office</p>
+                        <p className="font-semibold text-brand-navy mb-2">Fort Lauderdale, FL</p>
                         <p className="text-lg text-neutral-700 leading-relaxed">
-                          167-169 Great Portland Street<br />
-                          5th Floor<br />
-                          London, England<br />
-                          W1W 5PF
+                          United States
                         </p>
                       </div>
                       <div>
-                        <p className="font-semibold text-brand-navy mb-2">Woburn Office</p>
+                        <p className="font-semibold text-brand-navy mb-2">Dallas (Irving), TX</p>
                         <p className="text-lg text-neutral-700 leading-relaxed">
-                          Covenda Labs<br />
-                          299 Washington St.<br />
-                          Woburn, MA 01801<br />
                           United States
+                        </p>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-brand-navy mb-2">Atlanta, GA</p>
+                        <p className="text-lg text-neutral-700 leading-relaxed">
+                          United States
+                        </p>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-brand-navy mb-2">London, UK</p>
+                        <p className="text-lg text-neutral-700 leading-relaxed">
+                          United Kingdom
                         </p>
                       </div>
                     </div>
@@ -125,7 +131,7 @@ export default function ContactPage() {
                       Schedule a Demo
                     </h3>
                     <p className="text-lg text-neutral-700 mb-4">
-                      Book a personalized demo to see how Covenda can help build and operate your AI-SOC.
+                      Book a personalized demo to see how Covenda can be your AI-SOC, powered by the Covenda Technology System.
                 </p>
                 <Link href="/book-demo" className="btn btn-primary">
                       Request Demo

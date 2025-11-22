@@ -11,14 +11,14 @@ export default function HomePage() {
             <div className="mb-6">
               <span className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm text-white text-sm font-medium">
                 <span className="w-2 h-2 bg-brand-cyan rounded-full mr-2 animate-pulse"></span>
-                AI-SOC Services
+                AI-SOC as a Product
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 text-balance">
-              We are your AI-SOC
+              Your AI-SOC, powered by the Covenda Technology System
             </h1>
             <p className="text-xl md:text-2xl text-neutral-200 mb-8 max-w-3xl text-balance">
-              We embed Forward-Deployed Security Engineers with your team to build detections, automate responses, and co-manage operations on Covenda AI.
+              Covenda runs security operations as a product. We deliver threat modeling, hunting, intelligence, monitoring, and assessment—continuously, preemptively, and risk-based—through our platform and Forward-Deployed Engineers.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
@@ -43,20 +43,20 @@ export default function HomePage() {
         <div className="container-custom py-12 md:py-16">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold gradient-text mb-2">70%</div>
-              <div className="text-neutral-600">Faster MTTD</div>
-            </div>
-            <div className="text-center">
               <div className="text-4xl md:text-5xl font-bold gradient-text mb-2">24/7</div>
-              <div className="text-neutral-600">Coverage</div>
+              <div className="text-neutral-600">AI-SOC Operations</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold gradient-text mb-2">2-4 wks</div>
-              <div className="text-neutral-600">To Production</div>
+              <div className="text-4xl md:text-5xl font-bold gradient-text mb-2">Preemptive</div>
+              <div className="text-neutral-600">Threat Modeling</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold gradient-text mb-2">50+</div>
-              <div className="text-neutral-600">Integrations</div>
+              <div className="text-4xl md:text-5xl font-bold gradient-text mb-2">Risk-Based</div>
+              <div className="text-neutral-600">Vulnerability Management</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl md:text-5xl font-bold gradient-text mb-2">Event-Agnostic</div>
+              <div className="text-neutral-600">Intelligence</div>
             </div>
           </div>
         </div>
@@ -67,33 +67,33 @@ export default function HomePage() {
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-20">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-navy mb-6">
-              How It Works
+              How Our AI-SOC Works
             </h2>
             <p className="text-xl text-neutral-600 leading-relaxed">
-              Covenda AI connects threat intelligence, controls, evidence, and automated response in a single ecosystem
+              The Covenda Technology System powers continuous threat operations. Forward-Deployed Engineers embed with your team to wire it into your environment and accelerate value.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: 'Examine',
+                title: 'Threat Modeling & Intelligence',
                 description:
-                  'Comprehensive security posture evaluation with actionable roadmap.',
-                href: '/explore-platform',
+                  'The Covenda Technology System models threats before incidents happen. Event-agnostic, spec-driven intelligence maps the gap between your security posture and actual systems.',
+                href: '/platform',
                 icon: '🔍',
               },
               {
-                title: 'Deploy',
+                title: 'Forward-Deployed Engineering',
                 description:
-                  'Forward-deployed security engineers embedded with your team.',
-                href: '/work-with-us',
+                  'Product engineers embed with your team to wire detections, automations, and workflows. They bridge the platform and your environment, accelerating time to value.',
+                href: '/services/forward-deployed-engineering',
                 icon: '🚀',
               },
               {
-                title: 'Operate',
+                title: 'Continuous Operations',
                 description:
-                  'Co-managed AI-SOC operations with defined SLOs.',
-                href: '/platform',
+                  'Threat hunting, monitoring, and assessment run 24/7 through the AI-SOC. Risk-based prioritization and automated response, co-managed with your team.',
+                href: '/services/ai-soc-co-management',
                 icon: '⚙️',
               },
             ].map((product) => (
@@ -125,20 +125,20 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <div className="inline-block px-4 py-2 rounded-full bg-brand-orange/10 text-brand-orange text-sm font-semibold mb-6">
-                Forward-Deployed Engineers
+                Covenda Technology System
               </div>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-navy mb-6">
-                Detection & Automation
+                The Platform That Powers Your AI-SOC
               </h2>
               <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
-                Our Forward-Deployed Security Engineers work alongside your team to build custom detections, automate security workflows, and co-manage your AI-SOC operations.
+                The Covenda Technology System—including Lucid AI—delivers preemptive threat intelligence and risk-based vulnerability management. It models threats, maps specifications to systems, and drives continuous security operations.
               </p>
               <ul className="space-y-5 mb-10">
                 {[
-                  'Custom detection engineering and tuning',
-                  'Automated response playbooks and workflows',
-                  'Co-managed operations with defined SLOs',
-                  'Seamless integration with your security stack',
+                  'Preemptive threat modeling before incidents occur',
+                  'Risk-based vulnerability management beyond CVSS scores',
+                  'Event-agnostic threat intelligence and hunting',
+                  'Seamless integration with SIEM, EDR, cloud, and identity systems',
                 ].map((feature, index) => (
                   <li key={index} className="flex items-start">
                     <svg
@@ -171,7 +171,7 @@ export default function HomePage() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                       </svg>
                     </div>
-                    <div className="text-brand-navy font-semibold text-lg">Covenda AI Platform</div>
+                    <div className="text-brand-navy font-semibold text-lg">Covenda Technology System</div>
                   </div>
                 </div>
               </div>
@@ -185,10 +185,10 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10"></div>
         <div className="container-custom relative text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-            Ready to build your AI-SOC?
+            Turn on your AI-SOC
           </h2>
           <p className="text-xl text-neutral-200 mb-8 max-w-2xl mx-auto">
-            Start with a 2-4 week assessment to understand your current state and build a prioritized roadmap. No long-term commitment required.
+            Covenda runs security operations as a product. Forward-Deployed Engineers embed with your team to wire the Covenda Technology System into your environment. Get started with a demo or assessment.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

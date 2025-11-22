@@ -4,9 +4,9 @@ export default function RecordedFutureAIPage() {
   return (
     <div>
       <Hero
-        badge="Artificial Intelligence"
-        title="Covenda AI"
-        description="AI-powered platform that connects threat intelligence, controls, evidence, and automated response in a single ecosystem."
+        badge="Covenda Technology System"
+        title="Covenda Technology System & Lucid AI"
+        description="The deep dive: how the Covenda Technology System—including Lucid AI—models threats, maps specifications to systems, and drives the AI-SOC through preemptive intelligence and risk-based vulnerability management."
         primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
@@ -14,31 +14,37 @@ export default function RecordedFutureAIPage() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-8">
-              AI-Powered AI-SOC Platform
+              The Platform That Powers Covenda's AI-SOC
             </h2>
-            <div className="grid md:grid-cols-2 gap-8">
+            <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
+              The <strong>Covenda Technology System</strong> is our AI-native security fabric. It includes <strong>Lucid AI</strong>, our engine for spec-driven, preemptive, event-agnostic threat intelligence and risk-based vulnerability management.
+            </p>
+            <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
+              The core insight: the real vulnerability is the <strong>gap between your security specifications and your actual systems</strong>. The Covenda Technology System continuously maps and closes that gap by modeling threats before incidents happen, prioritizing based on business risk (not just CVSS scores), and delivering intelligence that's especially suited for AI/AGI systems and highly regulated industries.
+            </p>
+            <div className="grid md:grid-cols-2 gap-8 mt-12">
               <div className="card">
-                <h3 className="text-xl font-bold text-brand-navy mb-3">Threat Intelligence</h3>
+                <h3 className="text-xl font-bold text-brand-navy mb-3">Preemptive Threat Modeling</h3>
                 <p className="text-neutral-600">
-                  Real-time threat intelligence to identify and prioritize threats before they impact your organization.
+                  Models threats before incidents occur. Event-agnostic intelligence that maps how systems can be attacked, including AI-/AGI-specific threat scenarios.
                 </p>
               </div>
               <div className="card">
-                <h3 className="text-xl font-bold text-brand-navy mb-3">Detection Engineering</h3>
+                <h3 className="text-xl font-bold text-brand-navy mb-3">Spec-to-System Mapping</h3>
                 <p className="text-neutral-600">
-                  Build and tune custom detections tailored to your environment and threat landscape.
+                  Continuously maps the gap between your security specifications and actual systems. Identifies where reality diverges from intended security posture.
                 </p>
               </div>
               <div className="card">
-                <h3 className="text-xl font-bold text-brand-navy mb-3">Automated Response</h3>
+                <h3 className="text-xl font-bold text-brand-navy mb-3">Risk-Based Vulnerability Management</h3>
                 <p className="text-neutral-600">
-                  Automate security workflows and response playbooks to reduce mean time to respond.
+                  Lucid AI prioritizes vulnerabilities based on business risk, not just CVSS scores. Focuses on what actually matters to your organization.
                 </p>
               </div>
               <div className="card">
-                <h3 className="text-xl font-bold text-brand-navy mb-3">Co-Managed Operations</h3>
+                <h3 className="text-xl font-bold text-brand-navy mb-3">AI-SOC Operations Engine</h3>
                 <p className="text-neutral-600">
-                  Co-manage your AI-SOC operations with defined SLOs and continuous improvement.
+                  Powers threat modeling, hunting, intelligence, monitoring, and assessment. The brain of the AI-SOC that drives continuous security operations.
                 </p>
               </div>
             </div>

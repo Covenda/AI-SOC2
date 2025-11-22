@@ -6,7 +6,7 @@ export default function CareersPage() {
       <Hero
         badge="Careers"
         title="Join Our Team"
-        description="Join our team of Forward-Deployed Security Engineers helping organizations build and operate effective AI-SOC capabilities."
+        description="Join Covenda as a Forward-Deployed Engineer or core product team member. Help run security operations as a product, powered by the Covenda Technology System."
         primaryCTA={{ text: 'View Open Positions', href: '/work-with-us' }}
       />
 
@@ -20,25 +20,25 @@ export default function CareersPage() {
               <div className="card">
                 <h3 className="text-xl md:text-2xl font-bold text-brand-navy mb-4">Forward-Deployed Engineering</h3>
                 <p className="text-lg text-neutral-700 leading-relaxed">
-                  Work directly with customer teams to build detections, automate responses, and co-manage AI-SOC operations.
+                  Embed with customers as a product engineer. Bridge the Covenda Technology System and customer environments, doing things that don't scale to accelerate value, then feed patterns back into the platform.
                 </p>
               </div>
               <div className="card">
-                <h3 className="text-xl md:text-2xl font-bold text-brand-navy mb-4">Measurable Impact</h3>
+                <h3 className="text-xl md:text-2xl font-bold text-brand-navy mb-4">Product-First Culture</h3>
                 <p className="text-lg text-neutral-700 leading-relaxed">
-                  See the direct impact of your work: 70% faster MTTD, 24/7 coverage, and production-ready detections in 2-4 weeks.
+                  Work on the Covenda Technology System (including Lucid AI) that powers AI-SOC operations. Build preemptive threat intelligence, risk-based vulnerability management, and the platform that runs security operations as a product.
                 </p>
               </div>
               <div className="card">
-                <h3 className="text-xl md:text-2xl font-bold text-brand-navy mb-4">Collaborative Culture</h3>
+                <h3 className="text-xl md:text-2xl font-bold text-brand-navy mb-4">YC-Style Approach</h3>
                 <p className="text-lg text-neutral-700 leading-relaxed">
-                  Join a team of passionate security engineers committed to helping organizations build effective AI-SOC capabilities.
+                  Join a team that "does things that don't scale" early to discover product–market fit, then abstracts and scales what works. Tight loop between FDEs and core product team.
                 </p>
               </div>
               <div className="card">
                 <h3 className="text-xl md:text-2xl font-bold text-brand-navy mb-4">Continuous Learning</h3>
                 <p className="text-lg text-neutral-700 leading-relaxed">
-                  Work across diverse environments and technologies, continuously learning and advancing your security engineering skills.
+                  Work across diverse customer environments, threat landscapes, and technologies. Learn from real-world security operations and feed that learning back into the product.
                 </p>
               </div>
             </div>

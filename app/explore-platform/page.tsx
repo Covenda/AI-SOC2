@@ -7,8 +7,8 @@ export default function ExplorePlatformPage() {
     <div>
       <Hero
         badge="AI-SOC Platform"
-        title="Explore the Covenda AI Platform"
-        description="Discover how our unified platform connects threat intelligence, controls, evidence, and automated response in a single ecosystem."
+        title="Explore the Covenda Technology System"
+        description="Discover how the Covenda Technology System powers AI-SOC operations: preemptive threat intelligence, risk-based vulnerability management, and continuous threat operations."
         primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
         secondaryCTA={{ text: 'View Demo Center', href: '/platform/demo-center' }}
       />
@@ -18,10 +18,10 @@ export default function ExplorePlatformPage() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-6">
-              One Platform, Complete AI-SOC
+              The Platform That Powers Covenda's AI-SOC
             </h2>
             <p className="text-xl text-neutral-600 mb-8">
-              The Covenda AI platform is the foundation of modern AI-SOC operations. Connect threat intelligence, build detections, automate responses, and co-manage operations with Forward-Deployed Security Engineers.
+              The Covenda Technology System is the core AI-native fabric that powers Covenda's AI-SOC. It includes Lucid AI for threat modeling, preemptive intelligence, and risk-based vulnerability management. Forward-Deployed Engineers wire it into your environment.
             </p>
           </div>
         </div>
@@ -29,49 +29,49 @@ export default function ExplorePlatformPage() {
 
       {/* Core Capabilities */}
       <FeatureGrid
-        title="Platform Capabilities"
-        description="Comprehensive AI-SOC capabilities built for modern security teams"
+        title="How the Covenda Technology System Powers AI-SOC Operations"
+        description="The platform delivers threat modeling, intelligence, risk-based vulnerability management, and automation—all integrated with your existing tools"
         features={[
           {
             icon: '🔍',
-            title: 'Threat Intelligence',
+            title: 'Preemptive Threat Intelligence',
             description:
-              'Real-time threat intelligence to identify and prioritize threats before they impact your organization.',
+              'Event-agnostic, spec-driven threat intelligence that models threats before incidents happen, feeding threat operations.',
             href: '/products/threat-intelligence',
           },
           {
-            icon: '🤖',
-            title: 'Detection Engineering',
+            icon: '🎯',
+            title: 'Risk-Based Vulnerability Management',
             description:
-              'Build and tune custom detections tailored to your environment and threat landscape.',
-            href: '/use-case/automation-security-workflows',
+              'Lucid AI prioritizes vulnerabilities based on business risk and the gap between specifications and systems, not just CVSS scores.',
+            href: '/products/vulnerability-intelligence',
           },
           {
             icon: '⚙️',
-            title: 'Automated Response',
+            title: 'Threat Operations',
             description:
-              'Automate security workflows and response playbooks to reduce mean time to respond.',
-            href: '/use-case/automation-security-workflows',
+              'Continuous threat modeling, hunting, intelligence, monitoring, and assessment through the platform.',
+            href: '/platform',
           },
           {
             icon: '🔌',
-            title: 'Integrations',
+            title: 'Seamless Integrations',
             description:
-              'Seamlessly integrate with 50+ security tools including SIEM, SOAR, and ticketing systems.',
+              'Wires into your existing stack: SIEM, EDR, cloud, identity, ticketing, CI/CD. Works with your tools, not instead of them.',
             href: '/platform/integrations',
           },
           {
-            icon: '📊',
-            title: 'Co-Managed Operations',
+            icon: '🚀',
+            title: 'Forward-Deployed Engineering',
             description:
-              'Co-manage your AI-SOC operations with defined SLOs and continuous improvement.',
-            href: '/platform',
+              'FDEs embed with your team to wire the platform into your environment, accelerating time to value.',
+            href: '/services/forward-deployed-engineering',
           },
           {
             icon: '🎯',
             title: 'Demo Center',
             description:
-              'Explore interactive demos of our platform capabilities and use cases.',
+              'Explore interactive demos of the Covenda Technology System and how it powers AI-SOC operations.',
             href: '/platform/demo-center',
           },
         ]}
@@ -86,7 +86,7 @@ export default function ExplorePlatformPage() {
                 Why Choose Covenda?
               </h2>
               <p className="text-xl text-neutral-600">
-                Built for security teams who need Forward-Deployed Security Engineers and measurable outcomes
+                Built for organizations who want to turn on an AI-SOC instead of building one from scratch
               </p>
             </div>
             <div className="grid md:grid-cols-3 gap-8">
@@ -166,8 +166,7 @@ export default function ExplorePlatformPage() {
               Seamless Integration with Your Security Stack
             </h2>
             <p className="text-xl text-neutral-600 mb-8">
-              Connect Covenda AI with your existing SIEM, SOAR, ticketing systems, and other security tools.
-              Our platform integrates with 50+ security products out of the box.
+              The Covenda Technology System wires into your existing tools—SIEM, EDR, cloud, identity, ticketing, CI/CD—so the AI-SOC works with your environment, not against it.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/platform/integrations" className="btn btn-primary">
@@ -186,10 +185,10 @@ export default function ExplorePlatformPage() {
         <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10"></div>
         <div className="container-custom relative text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-            Ready to Build Your AI-SOC?
+            Turn on Your AI-SOC
           </h2>
           <p className="text-xl text-neutral-200 mb-8 max-w-2xl mx-auto">
-            Start with a 2-4 week assessment to understand your current state and build a prioritized roadmap. No long-term commitment required.
+            Covenda runs security operations as a product. Forward-Deployed Engineers embed with your team to wire the Covenda Technology System into your environment. Get started with a demo or assessment.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/book-demo" className="btn bg-white hover:bg-neutral-100 text-brand-navy text-lg px-8 py-4">

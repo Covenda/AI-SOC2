@@ -40,7 +40,7 @@ export default function Navbar() {
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
               <span className="text-xl font-bold text-brand-orange">
-                Covenda AI
+                Covenda
               </span>
             </Link>
           </div>

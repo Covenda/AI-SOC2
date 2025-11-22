@@ -67,7 +67,7 @@ export default function ForwardDeployedEngineeringPage() {
             icon: '📈',
             title: 'Shared Playbooks & Patterns',
             description:
-              'One FDE's work becomes a foundation for the next. Shared playbooks, automations, and patterns accelerate every engagement.',
+              "One FDE's work becomes a foundation for the next. Shared playbooks, automations, and patterns accelerate every engagement.",
           },
         ]}
       />

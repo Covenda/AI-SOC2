@@ -46,7 +46,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex lg:items-center lg:flex-1 lg:justify-center lg:gap-0.5" ref={dropdownRef}>
+          <div className="hidden lg:flex lg:items-center lg:flex-1 lg:justify-center lg:gap-0.5 relative" ref={dropdownRef}>
             {navigationData.map((item) => (
               <div
                 key={item.label}
@@ -84,27 +84,139 @@ export default function Navbar() {
 
                 {/* Dropdown Menu */}
                 {item.children && activeDropdown === item.label && (
-                  <div 
-                    className="absolute left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-neutral-200 py-1.5 origin-top z-50 overflow-hidden"
-                    style={{
-                      animation: 'fadeInDown 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards',
-                      boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)'
-                    }}
-                  >
-                    {item.children.map((child, index) => (
-                      <Link
-                        key={child.href}
-                        href={child.href}
-                        className="dropdown-item block px-4 py-2.5 text-sm font-normal text-neutral-700 hover:text-brand-orange hover:bg-neutral-50 transition-colors duration-150"
-                        style={{
-                          animationDelay: `${index * 0.02}s`
-                        }}
-                        onClick={() => setActiveDropdown(null)}
-                      >
-                        {child.label}
-                      </Link>
-                    ))}
-                  </div>
+                  item.label === 'Platform' ? (
+                    // Platform Mega Menu
+                    <div 
+                      className="absolute left-1/2 -translate-x-1/2 mt-2 w-[95vw] max-w-6xl bg-brand-navy rounded-lg origin-top z-50 overflow-hidden"
+                      style={{
+                        animation: 'fadeInDown 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+                      }}
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <div className="grid grid-cols-3 gap-8 p-8">
+                        {/* Left Column: Platform Overview */}
+                        <div className="space-y-4">
+                          <h3 className="text-white font-bold text-base mb-4">Platform Overview</h3>
+                          <p className="text-white text-sm leading-relaxed mb-6">
+                            A single platform to enable organization-wide decision making—get comprehensive, real-time, and unbiased threat intelligence to identify what matters most.
+                          </p>
+                          <div className="space-y-3">
+                            <Link href="/book-demo" className="block text-white text-sm hover:text-brand-orange transition-colors duration-150" onClick={() => setActiveDropdown(null)}>
+                              Book a demo
+                            </Link>
+                            <Link href="/platform/demo-center" className="block text-white text-sm hover:text-brand-orange transition-colors duration-150" onClick={() => setActiveDropdown(null)}>
+                              Explore on-demand demos
+                            </Link>
+                            <Link href="/get-started" className="block text-white text-sm hover:text-brand-orange transition-colors duration-150" onClick={() => setActiveDropdown(null)}>
+                              Try our free tools
+                            </Link>
+                            <Link href="/vulnerability-database" className="block text-white text-sm hover:text-brand-orange transition-colors duration-150" onClick={() => setActiveDropdown(null)}>
+                              View trending vulnerabilities
+                            </Link>
+                          </div>
+                        </div>
+
+                        {/* Middle Column: Platform Features */}
+                        <div className="space-y-4">
+                          <h3 className="text-white font-bold text-base mb-4">Platform Features</h3>
+                          <div className="space-y-6">
+                            <Link href="/platform/intelligence-graph" className="block group" onClick={() => setActiveDropdown(null)}>
+                              <div className="flex items-start space-x-3">
+                                <div className="flex-shrink-0 w-6 h-6 mt-0.5">
+                                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                                  </svg>
+                                </div>
+                                <div className="flex-1">
+                                  <div className="text-white font-medium text-sm group-hover:text-brand-orange transition-colors duration-150">Intelligence Graph®</div>
+                                  <div className="text-white/80 text-xs mt-1 leading-relaxed">Analyze and detect emerging threats with data from 1M+ global sources.</div>
+                                </div>
+                              </div>
+                            </Link>
+                            <Link href="/platform/collective-insights" className="block group" onClick={() => setActiveDropdown(null)}>
+                              <div className="flex items-start space-x-3">
+                                <div className="flex-shrink-0 w-6 h-6 mt-0.5">
+                                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                                  </svg>
+                                </div>
+                                <div className="flex-1">
+                                  <div className="text-white font-medium text-sm group-hover:text-brand-orange transition-colors duration-150">Collective Insights®</div>
+                                  <div className="text-white/80 text-xs mt-1 leading-relaxed">Enrich data from security tools with threat intelligence to uncover patterns in detections.</div>
+                                </div>
+                              </div>
+                            </Link>
+                            <Link href="/platform/integrations" className="block group" onClick={() => setActiveDropdown(null)}>
+                              <div className="flex items-start space-x-3">
+                                <div className="flex-shrink-0 w-6 h-6 mt-0.5">
+                                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                  </svg>
+                                </div>
+                                <div className="flex-1">
+                                  <div className="text-white font-medium text-sm group-hover:text-brand-orange transition-colors duration-150">Integrations and APIs</div>
+                                  <div className="text-white/80 text-xs mt-1 leading-relaxed">Connect your security stack through pre-built integrations and flexible APIs.</div>
+                                </div>
+                              </div>
+                            </Link>
+                            <Link href="/platform/recorded-future-ai" className="block group" onClick={() => setActiveDropdown(null)}>
+                              <div className="flex items-start space-x-3">
+                                <div className="flex-shrink-0 w-6 h-6 mt-0.5">
+                                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                                  </svg>
+                                </div>
+                                <div className="flex-1">
+                                  <div className="text-white font-medium text-sm group-hover:text-brand-orange transition-colors duration-150">Covenda AI</div>
+                                  <div className="text-white/80 text-xs mt-1 leading-relaxed">Interact with the Intelligence Graph® with AI Conversations, AI Reporting, and AI Insights.</div>
+                                </div>
+                              </div>
+                            </Link>
+                          </div>
+                        </div>
+
+                        {/* Right Column: Products */}
+                        <div className="space-y-4">
+                          <h3 className="text-white font-bold text-base mb-4">Products</h3>
+                          <div className="space-y-3">
+                            {navigationData.find(nav => nav.label === 'Products')?.children?.map((product) => (
+                              <Link
+                                key={product.href}
+                                href={product.href}
+                                className="block text-white text-sm hover:text-brand-orange transition-colors duration-150"
+                                onClick={() => setActiveDropdown(null)}
+                              >
+                                {product.label}
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ) : (
+                    // Standard Dropdown for other items
+                    <div 
+                      className="absolute left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-neutral-200 py-1.5 origin-top z-50 overflow-hidden"
+                      style={{
+                        animation: 'fadeInDown 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+                        boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)'
+                      }}
+                    >
+                      {item.children.map((child, index) => (
+                        <Link
+                          key={child.href}
+                          href={child.href}
+                          className="dropdown-item block px-4 py-2.5 text-sm font-normal text-neutral-700 hover:text-brand-orange hover:bg-neutral-50 transition-colors duration-150"
+                          style={{
+                            animationDelay: `${index * 0.02}s`
+                          }}
+                          onClick={() => setActiveDropdown(null)}
+                        >
+                          {child.label}
+                        </Link>
+                      ))}
+                    </div>
+                  )
                 )}
               </div>
             ))}

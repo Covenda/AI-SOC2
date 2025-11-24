@@ -8,7 +8,7 @@ export default function ServicesPage() {
       <Hero
         badge="Services"
         title="How You Engage with Covenda AI-SOC"
-        description="Covenda runs security operations as a product. These are the three main ways customers engage with our AI-SOC: Security Engineering, Forward-Deployed Engineering, and AI-SOC Co-Management."
+        description="Covenda runs security operations as a product. These are the three main ways customers engage with our AI-SOC: Analyst on Demand, Intelligence Services, and Vulnerability Hunting."
         primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
@@ -17,25 +17,25 @@ export default function ServicesPage() {
         description="These aren't standalone consulting services—they're engagement models for how Covenda AI-SOC operates with your team"
         features={[
           {
-            icon: '🔍',
-            title: 'Security Engineering',
+            icon: '👥',
+            title: 'Analyst on Demand',
             description:
-              'Designing and tuning controls, detections, and automations in the Covenda AI. Configuring the platform and your existing tools for optimal threat operations.',
-            href: '/services/security-engineering',
+              'Forward-Deployed Engineers embed with your team to bridge the Covenda AI and your environment. They accelerate value by wiring detections and automations that matter immediately.',
+            href: '/services/analyst-on-demand',
           },
           {
-            icon: '🚀',
-            title: 'Forward-Deployed Engineering',
+            icon: '🧠',
+            title: 'Intelligence Services',
             description:
-              'Product engineers embed with your team to bridge the Covenda AI and your environment. They accelerate value by wiring detections and automations that matter immediately.',
-            href: '/services/forward-deployed-engineering',
+              'Comprehensive threat intelligence and analysis services to help you understand and respond to emerging threats in real-time.',
+            href: '/services/intelligence-services',
           },
           {
-            icon: '⚙️',
-            title: 'AI-SOC Co-Management',
+            icon: '🎯',
+            title: 'Vulnerability Hunting',
             description:
-              'For organizations with existing SOC teams: Covenda co-manages AI-SOC operations with your staff. Covenda AI + FDEs + your team = shared outcomes.',
-            href: '/services/ai-soc-co-management',
+              'Proactive vulnerability discovery and assessment services to identify and prioritize security gaps before they become incidents.',
+            href: '/services/vulnerability-hunting',
           },
         ]}
         columns={3}
@@ -61,9 +61,9 @@ export default function ServicesPage() {
                 <div className="w-16 h-16 bg-brand-orange/10 rounded-full flex items-center justify-center mx-auto mb-6">
                   <span className="text-3xl">🚀</span>
                 </div>
-                <h3 className="text-xl font-bold text-brand-navy mb-4">Forward-Deployed Engineering</h3>
+                <h3 className="text-xl font-bold text-brand-navy mb-4">Analyst on Demand</h3>
                 <p className="text-lg text-neutral-700 leading-relaxed">
-                  Product engineers embed with your team to wire it into your environment. They bridge the platform and your reality, accelerating time to value.
+                  Forward-Deployed Engineers embed with your team to wire the platform into your environment. They bridge the Covenda AI and your reality, accelerating time to value.
                 </p>
               </div>
               <div>

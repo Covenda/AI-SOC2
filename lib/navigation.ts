@@ -9,9 +9,9 @@ export const navigationData: NavItem[] = [
     label: 'Services',
     href: '/services',
     children: [
-      { label: 'Security Engineering', href: '/services/security-engineering' },
-      { label: 'Forward-Deployed Engineering', href: '/services/forward-deployed-engineering' },
-      { label: 'AI-SOC Co-Management', href: '/services/ai-soc-co-management' },
+      { label: 'Analyst on Demand', href: '/services/analyst-on-demand' },
+      { label: 'Intelligence Services', href: '/services/intelligence-services' },
+      { label: 'Vulnerability Hunting', href: '/services/vulnerability-hunting' },
     ],
   },
   {
@@ -119,9 +119,9 @@ export const footerSections = [
   {
     title: 'Services',
     links: [
-      { label: 'Security Engineering', href: '/services/security-engineering' },
-      { label: 'Forward-Deployed Engineering', href: '/services/forward-deployed-engineering' },
-      { label: 'AI-SOC Co-Management', href: '/services/ai-soc-co-management' },
+      { label: 'Analyst on Demand', href: '/services/analyst-on-demand' },
+      { label: 'Intelligence Services', href: '/services/intelligence-services' },
+      { label: 'Vulnerability Hunting', href: '/services/vulnerability-hunting' },
     ],
   },
   {

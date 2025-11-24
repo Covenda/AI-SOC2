@@ -181,7 +181,7 @@ export default function ExplorePlatformPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="section bg-gradient-to-br from-brand-navy via-brand-orange to-brand-orange relative overflow-hidden">
+      <section className="section bg-brand-orange relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10"></div>
         <div className="container-custom relative text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">

@@ -6,6 +6,8 @@ export default function AboutPage() {
     <div>
       <Hero
         variant="simple"
+      
+      
         badge="About"
         title="About Covenda"
         description="Covenda is your AI-SOC. We run security operations as a product."

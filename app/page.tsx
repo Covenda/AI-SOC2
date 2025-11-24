@@ -4,13 +4,13 @@ export default function HomePage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-brand-navy via-brand-orange to-brand-orange overflow-hidden">
+      <section className="relative bg-brand-orange overflow-hidden">
         <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10"></div>
         <div className="container-custom relative">
           <div className="py-24 md:py-32 lg:py-40 max-w-5xl">
             <div className="mb-6">
               <span className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm text-white text-sm font-medium">
-                <span className="w-2 h-2 bg-brand-cyan rounded-full mr-2 animate-pulse"></span>
+                <span className="w-2 h-2 bg-white rounded-full mr-2 animate-pulse"></span>
                 AI-SOC as a Product
               </span>
             </div>
@@ -163,10 +163,10 @@ export default function HomePage() {
               </Link>
             </div>
             <div className="relative">
-              <div className="aspect-square rounded-2xl bg-gradient-to-br from-brand-orange via-brand-orange to-brand-cyan p-1">
+              <div className="aspect-square rounded-2xl bg-brand-orange p-1">
                 <div className="w-full h-full bg-white rounded-2xl flex items-center justify-center">
                   <div className="text-center p-8">
-                    <div className="w-32 h-32 mx-auto mb-6 bg-gradient-to-br from-brand-orange to-brand-orange rounded-full flex items-center justify-center shadow-glow-orange">
+                    <div className="w-32 h-32 mx-auto mb-6 bg-brand-orange rounded-full flex items-center justify-center shadow-glow-orange">
                       <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                       </svg>
@@ -181,7 +181,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="section bg-gradient-to-br from-brand-navy via-brand-orange to-brand-orange relative overflow-hidden">
+      <section className="section bg-brand-orange relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10"></div>
         <div className="container-custom relative text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">

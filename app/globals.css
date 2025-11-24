@@ -31,7 +31,7 @@
   }
 
   .btn-accent {
-    @apply bg-gradient-to-r from-brand-cyan to-brand-orange hover:from-brand-orange hover:to-brand-cyan text-white focus:ring-brand-orange;
+    @apply bg-brand-orange hover:bg-brand-orange/90 text-white focus:ring-brand-orange;
   }
 
   .btn-ghost {
@@ -84,7 +84,7 @@
 
   /* Gradient text */
   .gradient-text {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-cyan via-brand-orange to-brand-orange;
+    @apply text-brand-orange;
   }
 
   /* Navigation link */

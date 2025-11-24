@@ -29,7 +29,7 @@ export default function Hero({
     <section
       className={`relative ${
         isGradient
-          ? 'bg-gradient-to-br from-brand-navy via-brand-orange to-brand-orange'
+          ? 'bg-brand-orange'
           : 'bg-neutral-50'
       } overflow-hidden`}
     >

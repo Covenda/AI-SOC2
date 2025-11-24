@@ -1,260 +1,332 @@
-import Hero from '@/components/Hero';
+'use client';
+
+import { useState } from 'react';
 import Link from 'next/link';
 
 export default function ContactPage() {
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    companyEmail: '',
+    companyName: '',
+    country: '',
+    inquiryType: '',
+    message: '',
+    isMSSP: false,
+    marketing: false,
+    privacy: false,
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value, type } = e.target;
+    if (type === 'checkbox') {
+      const checked = (e.target as HTMLInputElement).checked;
+      setFormData(prev => ({ ...prev, [name]: checked }));
+    } else {
+      setFormData(prev => ({ ...prev, [name]: value }));
+    }
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Handle form submission
+    console.log('Form submitted:', formData);
+  };
+
+  const locations = [
+    {
+      city: 'Fort Lauderdale',
+      address: '100 E Broward Blvd, Suite 200, Fort Lauderdale, FL 33301 United States',
+      country: 'United States',
+    },
+    {
+      city: 'Dallas',
+      address: '5000 Legacy Dr, Suite 200, Plano, TX 75024 United States',
+      country: 'United States',
+    },
+    {
+      city: 'Atlanta',
+      address: '3500 Lenox Rd NE, Suite 200, Atlanta, GA 30326 United States',
+      country: 'United States',
+    },
+    {
+      city: 'London',
+      address: '167-169 Great Portland Street, 5th Floor, London EC1V 9NR United Kingdom',
+      country: 'United Kingdom',
+    },
+  ];
+
   return (
-    <div>
-      <Hero
-        variant="simple"
-        badge="Contact"
-        title="Get in Touch"
-        description="Connect with our team to learn how Covenda can be your AI-SOC,  and Forward-Deployed Engineers."
-      />
-
-      <section className="section bg-white">
+    <div className="bg-white">
+      {/* Contact Information Section */}
+      <section className="py-16 border-b border-neutral-200">
         <div className="container-custom">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-12">
-              {/* Contact Information */}
-              <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-8">
-                  Contact Information
-                </h2>
-                <div className="space-y-8">
-                  <div>
-                    <h3 className="text-xl font-bold text-brand-navy mb-3 flex items-center">
-                      <svg
-                        className="w-6 h-6 text-brand-orange mr-3"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                        />
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                        />
-                      </svg>
-                      Offices
-                    </h3>
-                    <div className="space-y-6">
-                      <div>
-                        <p className="font-semibold text-brand-navy mb-2">Fort Lauderdale, FL</p>
-                        <p className="text-lg text-neutral-700 leading-relaxed">
-                          United States
-                        </p>
-                      </div>
-                      <div>
-                        <p className="font-semibold text-brand-navy mb-2">Dallas (Irving), TX</p>
-                        <p className="text-lg text-neutral-700 leading-relaxed">
-                          United States
-                        </p>
-                      </div>
-                      <div>
-                        <p className="font-semibold text-brand-navy mb-2">Atlanta, GA</p>
-                        <p className="text-lg text-neutral-700 leading-relaxed">
-                          United States
-                        </p>
-                      </div>
-                      <div>
-                        <p className="font-semibold text-brand-navy mb-2">London, UK</p>
-                        <p className="text-lg text-neutral-700 leading-relaxed">
-                          United Kingdom
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div>
-                    <h3 className="text-xl font-bold text-brand-navy mb-3 flex items-center">
-                      <svg
-                        className="w-6 h-6 text-brand-orange mr-3"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                        />
-                      </svg>
-                      Email
-                    </h3>
-                    <p className="text-lg text-neutral-700 mb-2">
-                      <a
-                        href="mailto:support@covenda.ai"
-                        className="text-brand-orange hover:text-brand-navy transition-colors"
-                      >
-                        support@covenda.ai
-                      </a>
-                    </p>
-                    <p className="text-neutral-600 mb-2">
-                      For general inquiries, support, and partnership opportunities
-                    </p>
-                    <p className="text-lg text-neutral-700 mb-2">
-                      <a
-                        href="mailto:hiring@covenda.ai"
-                        className="text-brand-orange hover:text-brand-navy transition-colors"
-                      >
-                        hiring@covenda.ai
-                      </a>
-                    </p>
-                    <p className="text-neutral-600">
-                      For career and hiring inquiries
-                    </p>
-                  </div>
-
-                  <div>
-                    <h3 className="text-xl font-bold text-brand-navy mb-3 flex items-center">
-                      <svg
-                        className="w-6 h-6 text-brand-orange mr-3"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                        />
-                      </svg>
-                      Schedule a Demo
-                    </h3>
-                    <p className="text-lg text-neutral-700 mb-4">
-                      Book a personalized demo to see how Covenda can be your AI-SOC, .
-                </p>
-                <Link href="/book-demo" className="btn btn-primary">
-                      Request Demo
-                </Link>
-              </div>
-
-                  <div>
-                    <h3 className="text-xl font-bold text-brand-navy mb-3 flex items-center">
-                      <svg
-                        className="w-6 h-6 text-brand-orange mr-3"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-                        />
-                      </svg>
-                      Partnership Inquiries
-                    </h3>
-                    <p className="text-lg text-neutral-700 mb-4">
-                  Explore technology, channel, and strategic partnership opportunities.
-                </p>
-                <Link href="/partner" className="btn btn-secondary">
-                  Partner With Us
-                </Link>
-                  </div>
-                </div>
-              </div>
-
-              {/* Contact Form */}
-              <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-8">
-                  Send us a Message
-                </h2>
-                <div className="card">
-                  <form className="space-y-6" action="mailto:support@covenda.ai" method="post" encType="text/plain">
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-semibold text-brand-navy mb-2">
-                        Name *
-                      </label>
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        required
-                        className="w-full px-4 py-3 rounded-lg border border-neutral-200 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-transparent transition-all"
-                        placeholder="Your name"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-semibold text-brand-navy mb-2">
-                        Email *
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        required
-                        className="w-full px-4 py-3 rounded-lg border border-neutral-200 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-transparent transition-all"
-                        placeholder="your.email@company.com"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="company" className="block text-sm font-semibold text-brand-navy mb-2">
-                        Company
-                      </label>
-                      <input
-                        type="text"
-                        id="company"
-                        name="company"
-                        className="w-full px-4 py-3 rounded-lg border border-neutral-200 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-transparent transition-all"
-                        placeholder="Your company"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="subject" className="block text-sm font-semibold text-brand-navy mb-2">
-                        Subject *
-                      </label>
-                      <select
-                        id="subject"
-                        name="subject"
-                        required
-                        className="w-full px-4 py-3 rounded-lg border border-neutral-200 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-transparent transition-all"
-                      >
-                        <option value="">Select a subject</option>
-                        <option value="demo">Request a Demo</option>
-                        <option value="sales">Sales Inquiry</option>
-                        <option value="support">Customer Support</option>
-                        <option value="partnership">Partnership Opportunity</option>
-                        <option value="other">Other</option>
-                      </select>
-                    </div>
-                    <div>
-                      <label htmlFor="message" className="block text-sm font-semibold text-brand-navy mb-2">
-                        Message *
-                      </label>
-                      <textarea
-                        id="message"
-                        name="message"
-                        rows={6}
-                        required
-                        className="w-full px-4 py-3 rounded-lg border border-neutral-200 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-transparent transition-all resize-none"
-                        placeholder="Tell us how we can help..."
-                      />
-                    </div>
-                    <button type="submit" className="btn btn-primary w-full">
-                      Send Message
-                    </button>
-                    <p className="text-sm text-neutral-600 text-center">
-                      By submitting this form, you agree to our{' '}
-                      <Link href="/legal/privacy-policy/4-0" className="text-brand-orange hover:underline">
-                        Privacy Policy
-                      </Link>
-                      .
-                    </p>
-                  </form>
-                </div>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 className="text-4xl md:text-5xl font-bold text-brand-navy mb-6">
+                Contact information
+              </h1>
+              <p className="text-lg text-neutral-700 leading-relaxed">
+                With global offices around the world, we're here to support you where it matters most.
+              </p>
+            </div>
+            <div className="hidden lg:block">
+              {/* Decorative graphic placeholder */}
+              <div className="w-full h-64 bg-neutral-100 rounded-lg flex items-center justify-center">
+                <div className="text-neutral-400 text-sm">Illustration</div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Get in Touch Section */}
+      <section className="py-16">
+        <div className="container-custom">
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* Left Side - Get in touch */}
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-6">
+                Get in touch
+              </h2>
+              <p className="text-lg text-neutral-700 mb-6 leading-relaxed">
+                Questions about our products, intelligence, or research? Reach out to our team to schedule a meeting and we'll get back to you as soon as possible.
+              </p>
+              <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
+                Note that we don't accept job applications from this form. Please visit our{' '}
+                <Link href="/careers" className="text-brand-orange hover:underline">
+                  Careers page
+                </Link>{' '}
+                to learn about job opportunities with Covenda.
+              </p>
+            </div>
+
+            {/* Right Side - Contact Form */}
+            <div>
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <label htmlFor="firstName" className="block text-sm font-medium text-brand-navy mb-2">
+                      * First Name
+                    </label>
+                    <input
+                      type="text"
+                      id="firstName"
+                      name="firstName"
+                      required
+                      value={formData.firstName}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-brand-orange transition-all"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="lastName" className="block text-sm font-medium text-brand-navy mb-2">
+                      * Last Name
+                    </label>
+                    <input
+                      type="text"
+                      id="lastName"
+                      name="lastName"
+                      required
+                      value={formData.lastName}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-brand-orange transition-all"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label htmlFor="companyEmail" className="block text-sm font-medium text-brand-navy mb-2">
+                    * Company Email
+                  </label>
+                  <input
+                    type="email"
+                    id="companyEmail"
+                    name="companyEmail"
+                    required
+                    value={formData.companyEmail}
+                    onChange={handleChange}
+                    placeholder="name@company.com"
+                    className="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-brand-orange transition-all"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="companyName" className="block text-sm font-medium text-brand-navy mb-2">
+                    * Company Name
+                  </label>
+                  <input
+                    type="text"
+                    id="companyName"
+                    name="companyName"
+                    required
+                    value={formData.companyName}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-brand-orange transition-all"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="country" className="block text-sm font-medium text-brand-navy mb-2">
+                    * Country
+                  </label>
+                  <select
+                    id="country"
+                    name="country"
+                    required
+                    value={formData.country}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-brand-orange transition-all bg-white"
+                  >
+                    <option value="">Select...</option>
+                    <option value="US">United States</option>
+                    <option value="GB">United Kingdom</option>
+                    <option value="CA">Canada</option>
+                    <option value="AU">Australia</option>
+                    <option value="DE">Germany</option>
+                    <option value="FR">France</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label htmlFor="inquiryType" className="block text-sm font-medium text-brand-navy mb-2">
+                    * Inquiry Type
+                  </label>
+                  <select
+                    id="inquiryType"
+                    name="inquiryType"
+                    required
+                    value={formData.inquiryType}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-brand-orange transition-all bg-white"
+                  >
+                    <option value="">Select...</option>
+                    <option value="demo">Request a Demo</option>
+                    <option value="sales">Sales Inquiry</option>
+                    <option value="support">Product Support</option>
+                    <option value="partnership">Partnership</option>
+                    <option value="research">Research Inquiry</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium text-brand-navy mb-2">
+                    What can we help you with?
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows={5}
+                    value={formData.message}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-brand-orange transition-all resize-none"
+                  />
+                </div>
+
+                <div className="space-y-4">
+                  <div className="flex items-start">
+                    <input
+                      type="checkbox"
+                      id="isMSSP"
+                      name="isMSSP"
+                      checked={formData.isMSSP}
+                      onChange={handleChange}
+                      className="mt-1 w-4 h-4 text-brand-orange border-neutral-300 rounded focus:ring-brand-orange"
+                    />
+                    <label htmlFor="isMSSP" className="ml-3 text-sm text-neutral-700">
+                      Are you a managed security service provider?
+                    </label>
+                  </div>
+
+                  <div className="flex items-start">
+                    <input
+                      type="checkbox"
+                      id="marketing"
+                      name="marketing"
+                      checked={formData.marketing}
+                      onChange={handleChange}
+                      className="mt-1 w-4 h-4 text-brand-orange border-neutral-300 rounded focus:ring-brand-orange"
+                    />
+                    <label htmlFor="marketing" className="ml-3 text-sm text-neutral-700">
+                      I agree to receive other marketing communications from Covenda.
+                    </label>
+                  </div>
+
+                  <div className="flex items-start">
+                    <input
+                      type="checkbox"
+                      id="privacy"
+                      name="privacy"
+                      required
+                      checked={formData.privacy}
+                      onChange={handleChange}
+                      className="mt-1 w-4 h-4 text-brand-orange border-neutral-300 rounded focus:ring-brand-orange"
+                    />
+                    <label htmlFor="privacy" className="ml-3 text-sm text-neutral-700">
+                      * I agree to allow Covenda to store and process my personal data.
+                    </label>
+                  </div>
+                </div>
+
+                <p className="text-sm text-neutral-600 leading-relaxed">
+                  Covenda uses the information you provide in this form to contact you about our products and services. You may unsubscribe from these communications at any time. For more information on how to unsubscribe, our privacy practices, and how we are committed to protecting and respecting your privacy, please review our{' '}
+                  <Link href="/legal/privacy-policy/4-0" className="text-brand-orange hover:underline">
+                    Privacy Policy
+                  </Link>
+                  .
+                </p>
+
+                <div>
+                  <p className="text-sm text-neutral-700 mb-4">
+                    Looking for product support? To get the fastest response, please log in to our support portal.
+                  </p>
+                  <button
+                    type="submit"
+                    className="btn btn-primary w-full"
+                  >
+                    Contact Us
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Locations Section */}
+      <section className="py-16 bg-neutral-50 border-t border-neutral-200">
+        <div className="container-custom">
+          <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-12">
+            Our locations
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {locations.map((location, index) => (
+              <div key={index} className="flex items-start space-x-3">
+                <div className="flex-shrink-0 mt-1">
+                  <svg className="w-6 h-6 text-brand-orange" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-lg font-bold text-brand-navy mb-2">
+                    {location.city}
+                  </h3>
+                  <p className="text-sm text-neutral-700 mb-3 leading-relaxed">
+                    {location.address}
+                  </p>
+                  <Link
+                    href={`https://maps.google.com/?q=${encodeURIComponent(location.address)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-brand-orange hover:underline inline-flex items-center"
+                  >
+                    Get directions →
+                  </Link>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

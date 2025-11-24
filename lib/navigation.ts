@@ -36,16 +36,6 @@ export const navigationData: NavItem[] = [
     ],
   },
   {
-    label: 'Use Cases',
-    href: '/use-case',
-    children: [
-      { label: 'Digital Risk', href: '/use-case/digital-risk' },
-      { label: 'Ransomware', href: '/use-case/ransomware' },
-      { label: 'Exposure Management', href: '/use-case/exposure-management' },
-      { label: 'Automation & Security Workflows', href: '/use-case/automation-security-workflows' },
-    ],
-  },
-  {
     label: 'Resources',
     href: '/resources',
     children: [

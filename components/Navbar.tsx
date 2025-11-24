@@ -85,16 +85,19 @@ export default function Navbar() {
                 {/* Dropdown Menu */}
                 {item.children && activeDropdown === item.label && (
                   <div 
-                    className="absolute left-0 mt-2 w-64 bg-white rounded-xl shadow-lg border border-neutral-200 py-2 origin-top z-50"
+                    className="absolute left-0 mt-2 w-64 bg-white rounded-xl shadow-lg border border-neutral-200 py-2 origin-top z-50 overflow-hidden"
                     style={{
-                      animation: 'fadeInDown 0.2s ease-out forwards'
+                      animation: 'fadeInDown 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards'
                     }}
                   >
-                    {item.children.map((child) => (
+                    {item.children.map((child, index) => (
                       <Link
                         key={child.href}
                         href={child.href}
-                        className="block px-4 py-2.5 text-sm text-neutral-700 hover:bg-neutral-50 hover:text-brand-orange transition-colors duration-150"
+                        className="dropdown-item block px-4 py-2.5 text-sm text-neutral-700 hover:bg-neutral-50 hover:text-brand-orange transition-all duration-200"
+                        style={{
+                          animationDelay: `${index * 0.03}s`
+                        }}
                         onClick={() => setActiveDropdown(null)}
                       >
                         {child.label}

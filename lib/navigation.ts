@@ -28,10 +28,7 @@ export const navigationData: NavItem[] = [
       { label: 'Brand Intelligence', href: '/products/brand-intelligence' },
       { label: 'SecOps Intelligence', href: '/products/secops-intelligence' },
       { label: 'Identity Intelligence', href: '/products/identity-intelligence' },
-      { label: 'Third-Party Intelligence', href: '/products/third-party-intelligence' },
-      { label: 'Attack Surface Intelligence', href: '/products/attack-surface-intelligence' },
       { label: 'Vulnerability Intelligence', href: '/products/vulnerability-intelligence' },
-      { label: 'Geopolitical Intelligence', href: '/products/geopolitical-intelligence' },
       { label: 'Payment Fraud Intelligence', href: '/products/payment-fraud-intelligence' },
     ],
   },
@@ -94,6 +91,7 @@ export const footerSections = [
       { label: 'SecOps Intelligence', href: '/products/secops-intelligence' },
       { label: 'Identity Intelligence', href: '/products/identity-intelligence' },
       { label: 'Vulnerability Intelligence', href: '/products/vulnerability-intelligence' },
+      { label: 'Payment Fraud Intelligence', href: '/products/payment-fraud-intelligence' },
     ],
   },
   {

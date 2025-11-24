@@ -24,12 +24,6 @@ export const navigationData: NavItem[] = [
       { label: 'Integrations', href: '/platform/integrations' },
       { label: 'Covenda AI', href: '/platform/recorded-future-ai' },
       { label: 'Browser Extension', href: '/platform/browser-extension' },
-    ],
-  },
-  {
-    label: 'Products',
-    href: '/products',
-    children: [
       { label: 'Threat Intelligence', href: '/products/threat-intelligence' },
       { label: 'Brand Intelligence', href: '/products/brand-intelligence' },
       { label: 'SecOps Intelligence', href: '/products/secops-intelligence' },

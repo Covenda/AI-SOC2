@@ -85,24 +85,23 @@ export default function Navbar() {
                 {/* Dropdown Menu */}
                 {item.children && activeDropdown === item.label && (
                   <div 
-                    className="absolute left-0 mt-3 w-72 bg-white rounded-lg shadow-xl border border-neutral-100 py-2 origin-top z-50 overflow-hidden"
+                    className="absolute left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-neutral-200 py-1.5 origin-top z-50 overflow-hidden"
                     style={{
                       animation: 'fadeInDown 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards',
-                      boxShadow: '0 10px 40px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04)'
+                      boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)'
                     }}
                   >
                     {item.children.map((child, index) => (
                       <Link
                         key={child.href}
                         href={child.href}
-                        className="dropdown-item group relative flex items-center px-5 py-2.5 text-sm font-medium text-neutral-700 hover:text-brand-orange transition-all duration-200 rounded-md mx-1 hover:translate-x-0.5"
+                        className="dropdown-item block px-4 py-2.5 text-sm font-normal text-neutral-700 hover:text-brand-orange hover:bg-neutral-50 transition-colors duration-150"
                         style={{
-                          animationDelay: `${index * 0.03}s`
+                          animationDelay: `${index * 0.02}s`
                         }}
                         onClick={() => setActiveDropdown(null)}
                       >
-                        <span className="relative z-10 flex-1">{child.label}</span>
-                        <span className="absolute inset-0 bg-neutral-50 opacity-0 group-hover:opacity-100 transition-opacity duration-200 rounded-md"></span>
+                        {child.label}
                       </Link>
                     ))}
                   </div>

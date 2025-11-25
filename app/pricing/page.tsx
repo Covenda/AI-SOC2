@@ -210,7 +210,7 @@ export default function PricingPage() {
         </div>
       </section>
 
-      <section className="section bg-white">
+      <section id="faq" className="section bg-white">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-12 text-center">

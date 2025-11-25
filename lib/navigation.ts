@@ -63,7 +63,7 @@ export const navigationData: NavItem[] = [
       { label: 'Privacy Policy', href: '/legal/privacy-policy/4-0' },
       { label: 'Terms of Service', href: '/legal/terms-of-use/7-0' },
       { label: 'Cookie Policy', href: '/legal/privacy-policy/3-0/cookies' },
-      { label: 'FAQ', href: '/legal/faq' },
+      { label: 'FAQ', href: '/pricing#faq' },
     ],
   },
 ];
@@ -85,7 +85,7 @@ export const footerSections = [
       { label: 'Privacy Policy', href: '/legal/privacy-policy/4-0' },
       { label: 'Terms of Service', href: '/legal/terms-of-use/7-0' },
       { label: 'Cookie Policy', href: '/legal/privacy-policy/3-0/cookies' },
-      { label: 'FAQ', href: '/legal/faq' },
+      { label: 'FAQ', href: '/pricing#faq' },
     ],
   },
 ];

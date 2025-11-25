@@ -406,108 +406,48 @@ export default function Navbar() {
             )}
 
             {activeDropdown === 'Why Covenda AI' && (
-              <div className="grid grid-cols-3 gap-8">
-                <div className="space-y-4">
-                  <h3 className="text-brand-navy font-bold text-lg mb-4">About</h3>
-                  <div className="space-y-4">
-                    <Link href="/about" className="block group" onClick={() => setActiveDropdown(null)}>
-                      <div className="flex items-start space-x-3">
-                        <div className="flex-shrink-0 w-6 h-6 mt-0.5">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                {navigationData.find(nav => nav.label === 'Why Covenda AI')?.children?.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="block group cursor-pointer"
+                    onClick={(e) => { e.stopPropagation(); setActiveDropdown(null); }}
+                  >
+                    <div className="flex items-start space-x-3">
+                      <div className="flex-shrink-0 w-6 h-6 mt-0.5">
+                        {item.label === 'About Us' && (
                           <svg className="w-6 h-6 text-brand-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                           </svg>
-                        </div>
-                        <div className="flex-1">
-                          <div className="text-neutral-800 font-medium text-sm group-hover:text-brand-orange transition-colors duration-150">About Us</div>
-                        </div>
-                      </div>
-                    </Link>
-                    <Link href="/our-story" className="block group" onClick={() => setActiveDropdown(null)}>
-                      <div className="flex items-start space-x-3">
-                        <div className="flex-shrink-0 w-6 h-6 mt-0.5">
+                        )}
+                        {item.label === 'Partners' && (
                           <svg className="w-6 h-6 text-brand-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                           </svg>
-                        </div>
-                        <div className="flex-1">
-                          <div className="text-neutral-800 font-medium text-sm group-hover:text-brand-orange transition-colors duration-150">Our Story</div>
-                        </div>
-                      </div>
-                    </Link>
-                    <Link href="/why-recorded-future" className="block group" onClick={() => setActiveDropdown(null)}>
-                      <div className="flex items-start space-x-3">
-                        <div className="flex-shrink-0 w-6 h-6 mt-0.5">
+                        )}
+                        {item.label === 'Contact' && (
                           <svg className="w-6 h-6 text-brand-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                           </svg>
-                        </div>
-                        <div className="flex-1">
-                          <div className="text-neutral-800 font-medium text-sm group-hover:text-brand-orange transition-colors duration-150">Why Covenda</div>
-                        </div>
+                        )}
+                        {item.label === 'Pricing' && (
+                          <svg className="w-6 h-6 text-brand-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        )}
+                        {item.label === 'Case Studies' && (
+                          <svg className="w-6 h-6 text-brand-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                          </svg>
+                        )}
                       </div>
-                    </Link>
-                  </div>
-                </div>
-                <div className="space-y-4">
-                  <h3 className="text-brand-navy font-bold text-lg mb-4">Connect</h3>
-                  <div className="space-y-4">
-                    {navigationData.find(nav => nav.label === 'Why Covenda AI')?.children?.filter(item => ['Contact', 'Partners', 'Careers'].includes(item.label)).map((item) => (
-                      <Link
-                        key={item.href}
-                        href={item.href}
-                        className="block group cursor-pointer"
-                        onClick={(e) => { e.stopPropagation(); setActiveDropdown(null); }}
-                      >
-                        <div className="flex items-start space-x-3">
-                          <div className="flex-shrink-0 w-6 h-6 mt-0.5">
-                            {item.label === 'Contact' && (
-                              <svg className="w-6 h-6 text-brand-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                              </svg>
-                            )}
-                            {item.label === 'Partners' && (
-                              <svg className="w-6 h-6 text-brand-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                              </svg>
-                            )}
-                            {item.label === 'Careers' && (
-                              <svg className="w-6 h-6 text-brand-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                              </svg>
-                            )}
-                          </div>
-                          <div className="flex-1">
-                            <div className="text-neutral-800 font-medium text-sm group-hover:text-brand-orange transition-colors duration-150">{item.label}</div>
-                          </div>
-                        </div>
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-                <div className="space-y-4">
-                  <h3 className="text-brand-navy font-bold text-lg mb-4">More</h3>
-                  <div className="space-y-4">
-                    {navigationData.find(nav => nav.label === 'Why Covenda AI')?.children?.filter(item => !['About', 'Contact', 'Partners', 'Careers', 'Our Story'].includes(item.label)).map((item) => (
-                      <Link
-                        key={item.href}
-                        href={item.href}
-                        className="block group cursor-pointer"
-                        onClick={(e) => { e.stopPropagation(); setActiveDropdown(null); }}
-                      >
-                        <div className="flex items-start space-x-3">
-                          <div className="flex-shrink-0 w-6 h-6 mt-0.5">
-                            <svg className="w-6 h-6 text-brand-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-                            </svg>
-                          </div>
-                          <div className="flex-1">
-                            <div className="text-neutral-800 font-medium text-sm group-hover:text-brand-orange transition-colors duration-150">{item.label}</div>
-                          </div>
-                        </div>
-                      </Link>
-                    ))}
-                  </div>
-                </div>
+                      <div className="flex-1">
+                        <div className="text-neutral-800 font-medium text-sm group-hover:text-brand-orange transition-colors duration-150">{item.label}</div>
+                      </div>
+                    </div>
+                  </Link>
+                ))}
               </div>
             )}
 

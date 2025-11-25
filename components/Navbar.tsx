@@ -97,8 +97,8 @@ export default function Navbar() {
                           </svg>
                         </div>
                         <div className="flex-1">
-                          <div className="text-neutral-800 font-medium text-sm group-hover:text-brand-orange transition-colors duration-150">RBVM</div>
-                          <div className="text-neutral-600 text-xs mt-1 leading-relaxed">Risk-Based Vulnerability Management prioritizes vulnerabilities based on business risk, not just CVSS scores.</div>
+                          <div className="text-neutral-800 font-medium text-sm group-hover:text-brand-orange transition-colors duration-150">Risk-Based Vulnerability Management</div>
+                          <div className="text-neutral-600 text-xs mt-1 leading-relaxed">Prioritizes vulnerabilities based on business risk, not just CVSS scores.</div>
                         </div>
                       </div>
                     </Link>
@@ -405,7 +405,7 @@ export default function Navbar() {
               </div>
             )}
 
-            {activeDropdown === 'Company' && (
+            {activeDropdown === 'Why Covenda AI' && (
               <div className="grid grid-cols-3 gap-8">
                 <div className="space-y-4">
                   <h3 className="text-brand-navy font-bold text-lg mb-4">About</h3>
@@ -451,7 +451,7 @@ export default function Navbar() {
                 <div className="space-y-4">
                   <h3 className="text-brand-navy font-bold text-lg mb-4">Connect</h3>
                   <div className="space-y-4">
-                    {navigationData.find(nav => nav.label === 'Company')?.children?.filter(item => ['Contact', 'Partners', 'Careers'].includes(item.label)).map((item) => (
+                    {navigationData.find(nav => nav.label === 'Why Covenda AI')?.children?.filter(item => ['Contact', 'Partners', 'Careers'].includes(item.label)).map((item) => (
                       <Link
                         key={item.href}
                         href={item.href}
@@ -487,7 +487,7 @@ export default function Navbar() {
                 <div className="space-y-4">
                   <h3 className="text-brand-navy font-bold text-lg mb-4">More</h3>
                   <div className="space-y-4">
-                    {navigationData.find(nav => nav.label === 'Company')?.children?.filter(item => !['About', 'Contact', 'Partners', 'Careers', 'Our Story', 'Why Covenda'].includes(item.label)).map((item) => (
+                    {navigationData.find(nav => nav.label === 'Why Covenda AI')?.children?.filter(item => !['About', 'Contact', 'Partners', 'Careers', 'Our Story'].includes(item.label)).map((item) => (
                       <Link
                         key={item.href}
                         href={item.href}

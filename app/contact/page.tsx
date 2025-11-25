@@ -36,22 +36,18 @@ export default function ContactPage() {
   const locations = [
     {
       city: 'Fort Lauderdale',
-      address: '100 E Broward Blvd, Suite 200, Fort Lauderdale, FL 33301 United States',
       country: 'United States',
     },
     {
       city: 'Dallas',
-      address: '5000 Legacy Dr, Suite 200, Plano, TX 75024 United States',
       country: 'United States',
     },
     {
       city: 'Atlanta',
-      address: '3500 Lenox Rd NE, Suite 200, Atlanta, GA 30326 United States',
       country: 'United States',
     },
     {
       city: 'London',
-      address: '167-169 Great Portland Street, 5th Floor, London EC1V 9NR United Kingdom',
       country: 'United Kingdom',
     },
   ];
@@ -62,22 +58,22 @@ export default function ContactPage() {
       <section className="py-16 border-b border-neutral-200">
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
+              <div>
               <h1 className="text-4xl md:text-5xl font-bold text-brand-navy mb-6">
                 Contact information
               </h1>
-              <p className="text-lg text-neutral-700 leading-relaxed">
+                        <p className="text-lg text-neutral-700 leading-relaxed">
                 With global offices around the world, we're here to support you where it matters most.
-              </p>
-            </div>
+                        </p>
+                      </div>
             <div className="hidden lg:block">
               {/* Decorative graphic placeholder */}
               <div className="w-full h-64 bg-neutral-100 rounded-lg flex items-center justify-center">
                 <div className="text-neutral-400 text-sm">Illustration</div>
-              </div>
-            </div>
-          </div>
-        </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
       </section>
 
       {/* Get in Touch Section */}
@@ -85,7 +81,7 @@ export default function ContactPage() {
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Left Side - Get in touch */}
-            <div>
+                  <div>
               <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-6">
                 Get in touch
               </h2>
@@ -98,11 +94,11 @@ export default function ContactPage() {
                   Careers page
                 </Link>{' '}
                 to learn about job opportunities with Covenda.
-              </p>
-            </div>
+                    </p>
+                  </div>
 
             {/* Right Side - Contact Form */}
-            <div>
+                  <div>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-2 gap-4">
                   <div>
@@ -119,52 +115,52 @@ export default function ContactPage() {
                       className="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-brand-orange transition-all"
                     />
                   </div>
-                  <div>
+              <div>
                     <label htmlFor="lastName" className="block text-sm font-medium text-brand-navy mb-2">
                       * Last Name
-                    </label>
-                    <input
-                      type="text"
+                      </label>
+                      <input
+                        type="text"
                       id="lastName"
                       name="lastName"
-                      required
+                        required
                       value={formData.lastName}
                       onChange={handleChange}
                       className="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-brand-orange transition-all"
-                    />
-                  </div>
+                      />
+                    </div>
                 </div>
 
-                <div>
+                    <div>
                   <label htmlFor="companyEmail" className="block text-sm font-medium text-brand-navy mb-2">
                     * Company Email
-                  </label>
-                  <input
-                    type="email"
+                      </label>
+                      <input
+                        type="email"
                     id="companyEmail"
                     name="companyEmail"
-                    required
+                        required
                     value={formData.companyEmail}
                     onChange={handleChange}
                     placeholder="name@company.com"
                     className="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-brand-orange transition-all"
-                  />
-                </div>
+                      />
+                    </div>
 
-                <div>
+                    <div>
                   <label htmlFor="companyName" className="block text-sm font-medium text-brand-navy mb-2">
                     * Company Name
-                  </label>
-                  <input
-                    type="text"
+                      </label>
+                      <input
+                        type="text"
                     id="companyName"
                     name="companyName"
                     required
                     value={formData.companyName}
                     onChange={handleChange}
                     className="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-brand-orange transition-all"
-                  />
-                </div>
+                      />
+                    </div>
 
                 <div>
                   <label htmlFor="country" className="block text-sm font-medium text-brand-navy mb-2">
@@ -189,41 +185,41 @@ export default function ContactPage() {
                   </select>
                 </div>
 
-                <div>
+                    <div>
                   <label htmlFor="inquiryType" className="block text-sm font-medium text-brand-navy mb-2">
                     * Inquiry Type
-                  </label>
-                  <select
+                      </label>
+                      <select
                     id="inquiryType"
                     name="inquiryType"
-                    required
+                        required
                     value={formData.inquiryType}
                     onChange={handleChange}
                     className="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-brand-orange transition-all bg-white"
-                  >
+                      >
                     <option value="">Select...</option>
-                    <option value="demo">Request a Demo</option>
-                    <option value="sales">Sales Inquiry</option>
+                        <option value="demo">Request a Demo</option>
+                        <option value="sales">Sales Inquiry</option>
                     <option value="support">Product Support</option>
                     <option value="partnership">Partnership</option>
                     <option value="research">Research Inquiry</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
 
-                <div>
+                    <div>
                   <label htmlFor="message" className="block text-sm font-medium text-brand-navy mb-2">
                     What can we help you with?
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
+                      </label>
+                      <textarea
+                        id="message"
+                        name="message"
                     rows={5}
                     value={formData.message}
                     onChange={handleChange}
                     className="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-brand-orange transition-all resize-none"
-                  />
-                </div>
+                      />
+                    </div>
 
                 <div className="space-y-4">
                   <div className="flex items-start">
@@ -272,11 +268,11 @@ export default function ContactPage() {
 
                 <p className="text-sm text-neutral-600 leading-relaxed">
                   Covenda uses the information you provide in this form to contact you about our products and services. You may unsubscribe from these communications at any time. For more information on how to unsubscribe, our privacy practices, and how we are committed to protecting and respecting your privacy, please review our{' '}
-                  <Link href="/legal/privacy-policy/4-0" className="text-brand-orange hover:underline">
-                    Privacy Policy
-                  </Link>
-                  .
-                </p>
+                      <Link href="/legal/privacy-policy/4-0" className="text-brand-orange hover:underline">
+                        Privacy Policy
+                      </Link>
+                      .
+                    </p>
 
                 <div>
                   <p className="text-sm text-neutral-700 mb-4">
@@ -314,10 +310,10 @@ export default function ContactPage() {
                     {location.city}
                   </h3>
                   <p className="text-sm text-neutral-700 mb-3 leading-relaxed">
-                    {location.address}
+                    {location.country}
                   </p>
                   <Link
-                    href={`https://maps.google.com/?q=${encodeURIComponent(location.address)}`}
+                    href={`https://maps.google.com/?q=${encodeURIComponent(location.city + ', ' + location.country)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm text-brand-orange hover:underline inline-flex items-center"

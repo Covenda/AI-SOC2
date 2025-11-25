@@ -73,43 +73,6 @@ export const navigationData: NavItem[] = [
 
 export const footerSections = [
   {
-    title: 'Services',
-    links: [
-      { label: 'Analyst on Demand', href: '/services/analyst-on-demand' },
-      { label: 'Intelligence Services', href: '/services/intelligence-services' },
-      { label: 'Vulnerability Hunting', href: '/services/vulnerability-hunting' },
-    ],
-  },
-  {
-    title: 'Platform',
-    links: [
-      { label: 'Demo Center', href: '/platform/demo-center' },
-      { label: 'Intelligence Graph', href: '/platform/intelligence-graph' },
-      { label: 'Collective Insights', href: '/platform/collective-insights' },
-      { label: 'Integrations', href: '/platform/integrations' },
-      { label: 'Covenda AI', href: '/platform/recorded-future-ai' },
-      { label: 'Browser Extension', href: '/platform/browser-extension' },
-      { label: 'Threat Intelligence', href: '/products/threat-intelligence' },
-      { label: 'Brand Intelligence', href: '/products/brand-intelligence' },
-      { label: 'SecOps Intelligence', href: '/products/secops-intelligence' },
-      { label: 'Identity Intelligence', href: '/products/identity-intelligence' },
-      { label: 'Vulnerability Intelligence', href: '/products/vulnerability-intelligence' },
-      { label: 'Payment Fraud Intelligence', href: '/products/payment-fraud-intelligence' },
-    ],
-  },
-  {
-    title: 'Resources',
-    links: [
-      { label: 'Blog', href: '/blog' },
-      { label: 'Events', href: '/events' },
-      { label: 'Webinars', href: '/webinars' },
-      { label: 'Guides', href: '/resources/guides' },
-      { label: 'Research', href: '/research' },
-      { label: 'Case Studies', href: '/case-study' },
-      { label: 'Newsroom', href: '/newsroom' },
-    ],
-  },
-  {
     title: 'Why Covenda AI',
     links: [
       { label: 'About', href: '/about' },

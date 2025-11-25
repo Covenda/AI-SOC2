@@ -97,7 +97,7 @@ export default function Navbar() {
                           </svg>
                         </div>
                         <div className="flex-1">
-                          <div className="text-neutral-800 font-medium text-sm group-hover:text-brand-orange transition-colors duration-150">Risk-Based VM</div>
+                          <div className="text-neutral-800 font-medium text-sm group-hover:text-brand-orange transition-colors duration-150">Risk-Based Vulnerability Management</div>
                           <div className="text-neutral-600 text-xs mt-1 leading-relaxed">Prioritizes vulnerabilities based on business risk, not just CVSS scores.</div>
                         </div>
                       </div>

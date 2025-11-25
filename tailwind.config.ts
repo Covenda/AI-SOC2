@@ -14,8 +14,8 @@ const config: Config = {
           navy: '#0A1F44',
           blue: '#1E3A8A',
           'blue-light': '#3B82F6',
-          orange: '#F97316',
-          'orange-light': '#FB923C',
+          orange: '#e2522b',
+          'orange-light': '#f06b4a',
           cyan: '#06B6D4',
           'cyan-light': '#67E8F9',
           purple: '#7C3AED',
@@ -23,7 +23,7 @@ const config: Config = {
         },
         accent: {
           red: '#EF4444',
-          orange: '#F97316',
+          orange: '#e2522b',
           green: '#10B981',
           yellow: '#FBBF24',
         },
@@ -85,7 +85,7 @@ const config: Config = {
         'hard': '0 20px 60px -15px rgba(0, 0, 0, 0.3)',
         'glow-blue': '0 0 40px rgba(59, 130, 246, 0.3)',
         'glow-purple': '0 0 40px rgba(124, 58, 237, 0.3)',
-        'glow-orange': '0 0 40px rgba(249, 115, 22, 0.3)',
+        'glow-orange': '0 0 40px rgba(226, 82, 43, 0.3)',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

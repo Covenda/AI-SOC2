@@ -2,7 +2,6 @@ import Hero from '@/components/Hero';
 import FeatureGrid from '@/components/FeatureGrid';
 import Link from 'next/link';
 
-import Image from 'next/image';
 
 export default function PlatformPage() {
   return (
@@ -56,12 +55,15 @@ export default function PlatformPage() {
                 Explore Platform
               </Link>
             </div>
-            <div className="hidden lg:block">
-              <div className="relative rounded-lg overflow-hidden shadow-2xl">
+            <div>
+              <div className="relative rounded-lg overflow-hidden shadow-2xl border border-neutral-200 bg-neutral-50">
                 <img 
                   src="/platform-visual.png" 
                   alt="AI-SOC Operations Dashboard" 
                   className="w-full h-auto rounded-lg"
+                  onError={(e) => {
+                    console.error('Image failed to load:', e);
+                  }}
                 />
               </div>
             </div>

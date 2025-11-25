@@ -43,8 +43,8 @@ export default function FeatureGrid({
           {features.map((feature, index) => {
             const content = (
               <>
-                {feature.icon && <div className="text-4xl mb-6">{feature.icon}</div>}
-                <h3 className="text-xl md:text-2xl font-bold text-brand-navy mb-4 group-hover:text-brand-orange transition-colors">
+                <div className="absolute top-0 left-0 right-0 h-[2px] bg-[#e2522b] rounded-t-xl"></div>
+                <h3 className="text-xl md:text-2xl font-bold text-[#e2522b] mb-4">
                   {feature.title}
                 </h3>
                 <p className="text-lg text-neutral-600 mb-4 leading-relaxed">{feature.description}</p>
@@ -74,7 +74,7 @@ export default function FeatureGrid({
                 <Link
                   key={index}
                   href={feature.href}
-                  className="card group cursor-pointer hover:border-brand-orange hover:shadow-lg"
+                  className="card group cursor-pointer hover:border-brand-orange hover:shadow-lg relative overflow-hidden"
                 >
                   {content}
                 </Link>
@@ -82,7 +82,7 @@ export default function FeatureGrid({
             }
 
             return (
-              <div key={index} className="card">
+              <div key={index} className="card relative overflow-hidden">
                 {content}
               </div>
             );

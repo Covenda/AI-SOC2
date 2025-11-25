@@ -100,10 +100,10 @@ export default function HomePage() {
               <Link
                 key={product.href}
                 href={product.href}
-                className="card group cursor-pointer hover:border-brand-orange hover:shadow-lg transition-all duration-300"
+                className="card group cursor-pointer hover:border-brand-orange hover:shadow-lg transition-all duration-300 relative overflow-hidden"
               >
-                <div className="text-4xl mb-6">{product.icon}</div>
-                <h3 className="text-xl md:text-2xl font-bold text-brand-navy mb-4 group-hover:text-brand-orange transition-colors">
+                <div className="absolute top-0 left-0 right-0 h-[2px] bg-[#e2522b] rounded-t-xl"></div>
+                <h3 className="text-xl md:text-2xl font-bold text-[#e2522b] mb-4">
                   {product.title}
                 </h3>
                 <p className="text-lg text-neutral-600 mb-4 leading-relaxed">{product.description}</p>

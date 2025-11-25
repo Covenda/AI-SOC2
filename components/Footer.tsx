@@ -21,7 +21,7 @@ export default function Footer() {
               <img 
                 src="/covenda-logo.png" 
                 alt="Covenda" 
-                className="h-8 w-8"
+                className="h-12 w-12"
               />
             </Link>
             <p className="text-neutral-600 text-sm max-w-xs mb-6">

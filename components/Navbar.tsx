@@ -495,7 +495,7 @@ export default function Navbar() {
               <img 
                 src="/covenda-logo.png" 
                 alt="Covenda" 
-                className="h-8 w-8"
+                className="h-12 w-12"
               />
             </Link>
           </div>

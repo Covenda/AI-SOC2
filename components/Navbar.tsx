@@ -76,6 +76,45 @@ export default function Navbar() {
                 <div className="space-y-4">
                   <h3 className="text-brand-navy font-bold text-lg mb-4">Platform Features</h3>
                   <div className="space-y-6">
+                    <Link href="/platform/threat-modeling" className="block group cursor-pointer" onClick={(e) => { e.stopPropagation(); setActiveDropdown(null); }}>
+                      <div className="flex items-start space-x-3">
+                        <div className="flex-shrink-0 w-6 h-6 mt-0.5">
+                          <svg className="w-6 h-6 text-brand-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                          </svg>
+                        </div>
+                        <div className="flex-1">
+                          <div className="text-neutral-800 font-medium text-sm group-hover:text-brand-orange transition-colors duration-150">Autonomous Threat Modelling</div>
+                          <div className="text-neutral-600 text-xs mt-1 leading-relaxed">Automated threat modeling that continuously identifies and prioritizes security risks.</div>
+                        </div>
+                      </div>
+                    </Link>
+                    <Link href="/products/vulnerability-intelligence" className="block group cursor-pointer" onClick={(e) => { e.stopPropagation(); setActiveDropdown(null); }}>
+                      <div className="flex items-start space-x-3">
+                        <div className="flex-shrink-0 w-6 h-6 mt-0.5">
+                          <svg className="w-6 h-6 text-brand-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                          </svg>
+                        </div>
+                        <div className="flex-1">
+                          <div className="text-neutral-800 font-medium text-sm group-hover:text-brand-orange transition-colors duration-150">Risk-Based VM</div>
+                          <div className="text-neutral-600 text-xs mt-1 leading-relaxed">Prioritizes vulnerabilities based on business risk, not just CVSS scores.</div>
+                        </div>
+                      </div>
+                    </Link>
+                    <Link href="/products/threat-intelligence" className="block group cursor-pointer" onClick={(e) => { e.stopPropagation(); setActiveDropdown(null); }}>
+                      <div className="flex items-start space-x-3">
+                        <div className="flex-shrink-0 w-6 h-6 mt-0.5">
+                          <svg className="w-6 h-6 text-brand-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                          </svg>
+                        </div>
+                        <div className="flex-1">
+                          <div className="text-neutral-800 font-medium text-sm group-hover:text-brand-orange transition-colors duration-150">Event-Agnostic Intelligence</div>
+                          <div className="text-neutral-600 text-xs mt-1 leading-relaxed">Event-agnostic, spec-driven threat intelligence that models threats before incidents happen.</div>
+                        </div>
+                      </div>
+                    </Link>
                     <Link href="/platform/integrations" className="block group cursor-pointer" onClick={(e) => { e.stopPropagation(); setActiveDropdown(null); }}>
                       <div className="flex items-start space-x-3">
                         <div className="flex-shrink-0 w-6 h-6 mt-0.5">
@@ -89,19 +128,6 @@ export default function Navbar() {
                         </div>
                       </div>
                     </Link>
-                    <Link href="/products/vulnerability-intelligence" className="block group cursor-pointer" onClick={(e) => { e.stopPropagation(); setActiveDropdown(null); }}>
-                      <div className="flex items-start space-x-3">
-                        <div className="flex-shrink-0 w-6 h-6 mt-0.5">
-                          <svg className="w-6 h-6 text-brand-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                          </svg>
-                        </div>
-                        <div className="flex-1">
-                          <div className="text-neutral-800 font-medium text-sm group-hover:text-brand-orange transition-colors duration-150">Risk-Based Vulnerability Management</div>
-                          <div className="text-neutral-600 text-xs mt-1 leading-relaxed">Prioritizes vulnerabilities based on business risk, not just CVSS scores.</div>
-                        </div>
-                      </div>
-                    </Link>
                     <Link href="/platform/recorded-future-ai" className="block group cursor-pointer" onClick={(e) => { e.stopPropagation(); setActiveDropdown(null); }}>
                       <div className="flex items-start space-x-3">
                         <div className="flex-shrink-0 w-6 h-6 mt-0.5">
@@ -112,19 +138,6 @@ export default function Navbar() {
                         <div className="flex-1">
                           <div className="text-neutral-800 font-medium text-sm group-hover:text-brand-orange transition-colors duration-150">Covenda AI</div>
                           <div className="text-neutral-600 text-xs mt-1 leading-relaxed">Interact with the Intelligence Graph® with AI Conversations, AI Reporting, and AI Insights.</div>
-                        </div>
-                      </div>
-                    </Link>
-                    <Link href="/products/threat-intelligence" className="block group cursor-pointer" onClick={(e) => { e.stopPropagation(); setActiveDropdown(null); }}>
-                      <div className="flex items-start space-x-3">
-                        <div className="flex-shrink-0 w-6 h-6 mt-0.5">
-                          <svg className="w-6 h-6 text-brand-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
-                          </svg>
-                        </div>
-                        <div className="flex-1">
-                          <div className="text-neutral-800 font-medium text-sm group-hover:text-brand-orange transition-colors duration-150">Event Agnostic Intelligence</div>
-                          <div className="text-neutral-600 text-xs mt-1 leading-relaxed">Event-agnostic, spec-driven threat intelligence that models threats before incidents happen.</div>
                         </div>
                       </div>
                     </Link>

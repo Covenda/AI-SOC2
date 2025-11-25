@@ -33,6 +33,23 @@ export default function ContactPage() {
     console.log('Form submitted:', formData);
   };
 
+  const offices = [
+    {
+      city: 'Atlanta',
+      company: 'Covenda Labs',
+      address: '361 17th St NW',
+      cityState: 'Atlanta, GA 30363',
+      country: 'United States',
+    },
+    {
+      city: 'London',
+      company: 'Company number 14617359',
+      address: '167-169 Great Portland Street',
+      cityState: 'London, W1W 5PF',
+      country: 'United Kingdom',
+    },
+  ];
+
   const locations = [
     {
       city: 'Fort Lauderdale',
@@ -291,8 +308,53 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Our Locations Section */}
+      {/* Offices Section */}
       <section className="py-16 bg-neutral-50 border-t border-neutral-200">
+        <div className="container-custom">
+          <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-12">
+            Offices
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            {offices.map((office, index) => (
+              <div key={index} className="flex items-start space-x-3">
+                <div className="flex-shrink-0 mt-1">
+                  <svg className="w-6 h-6 text-brand-orange" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-lg font-bold text-brand-navy mb-2">
+                    {office.city}
+                  </h3>
+                  <p className="text-sm font-medium text-neutral-800 mb-1">
+                    {office.company}
+                  </p>
+                  <p className="text-sm text-neutral-700 mb-1 leading-relaxed">
+                    {office.address}
+                  </p>
+                  <p className="text-sm text-neutral-700 mb-3 leading-relaxed">
+                    {office.cityState}
+                  </p>
+                  <p className="text-sm text-neutral-600 mb-3">
+                    {office.country}
+                  </p>
+                  <Link
+                    href={`https://maps.google.com/?q=${encodeURIComponent(office.address + ', ' + office.cityState + ', ' + office.country)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-brand-orange hover:underline inline-flex items-center"
+                  >
+                    Get directions →
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Our Locations Section */}
+      <section className="py-16 bg-white border-t border-neutral-200">
         <div className="container-custom">
           <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-12">
             Our locations

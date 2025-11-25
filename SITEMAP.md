@@ -1,6 +1,6 @@
 # Covenda AI-SOC Website Sitemap
 
-## Complete Site Structure (69 Pages)
+## Complete Site Structure (66 Pages)
 
 ### 🏠 Root & Main Pages
 ```
@@ -12,15 +12,12 @@
 └── /book-demo
 ```
 
-### 🛠️ Services (7 pages)
+### 🛠️ Services (4 pages)
 ```
 /services
 ├── /services/analyst-on-demand
 ├── /services/intelligence-services
-├── /services/vulnerability-hunting
-├── /services/security-engineering
-├── /services/forward-deployed-engineering
-└── /services/ai-soc-co-management
+└── /services/vulnerability-hunting
 ```
 
 ### 🚀 Platform (7 pages)
@@ -173,7 +170,7 @@
 | Category | Count | Pages |
 |----------|-------|-------|
 | Main Pages | 5 | Home, About, Contact, Pricing, Get Started |
-| Services | 7 | Main + 6 service pages |
+| Services | 4 | Main + 3 service pages |
 | Platform | 7 | Main + 6 platform pages |
 | Products | 9 | All product pages |
 | Resources | 10 | Blog, Events, Webinars, Research, Guides, etc. |
@@ -183,7 +180,7 @@
 | Legal | 4 | Privacy, Terms, Cookies, FAQ |
 | News & Media | 2 | Newsroom + Press Releases |
 | Other | 11 | Explore Platform, Careers, etc. |
-| **TOTAL** | **69** | All pages |
+| **TOTAL** | **66** | All pages |
 
 ---
 
@@ -249,9 +246,6 @@ These pages exist but may be accessed via:
 
 ### Legacy/Unused Pages
 Some pages may exist but not be actively linked:
-- `/services/security-engineering`
-- `/services/forward-deployed-engineering`
-- `/services/ai-soc-co-management`
 - Various industry/use case pages
 - Some product pages not in main navigation
 
@@ -275,8 +269,7 @@ Covenda AI-SOC Website
 ├── Supporting Pages
 │   ├── Industry Pages (6 pages)
 │   ├── Use Case Pages (4 pages)
-│   ├── Partner Pages (6 pages)
-│   └── Additional Service Pages (3 pages)
+│   └── Partner Pages (6 pages)
 │
 ├── Content Pages
 │   ├── Blog (Dynamic + listing)
@@ -291,5 +284,5 @@ Covenda AI-SOC Website
     └── Book Demo
 ```
 
-**Total: 69 Pages**
+**Total: 66 Pages**
 

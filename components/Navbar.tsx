@@ -516,9 +516,11 @@ export default function Navbar() {
           {/* Brand Name */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
-              <span className="text-xl font-bold text-brand-orange">
-                Covenda
-              </span>
+              <img 
+                src="/covenda-logo.svg" 
+                alt="Covenda" 
+                className="h-8 w-8"
+              />
             </Link>
           </div>
 

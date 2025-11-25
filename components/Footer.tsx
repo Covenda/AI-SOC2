@@ -18,7 +18,11 @@ export default function Footer() {
           {/* Brand & Description */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center mb-4">
-              <span className="text-xl font-bold text-brand-orange">Covenda</span>
+              <img 
+                src="/covenda-logo.svg" 
+                alt="Covenda" 
+                className="h-8 w-8"
+              />
             </Link>
             <p className="text-neutral-600 text-sm max-w-xs mb-6">
               Covenda is your AI-SOC. We run security operations as a product.

@@ -14,9 +14,9 @@ export default function Footer() {
     <footer className="bg-white text-neutral-900">
       <div className="container-custom">
         {/* Main Footer Content */}
-        <div className="py-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-8">
+        <div className="py-16 flex flex-col md:flex-row gap-8 md:gap-12">
           {/* Brand & Description */}
-          <div className="col-span-2">
+          <div className="flex-shrink-0">
             <Link href="/" className="flex items-center mb-4">
               <span className="text-xl font-bold text-brand-orange">Covenda</span>
             </Link>
@@ -51,7 +51,7 @@ export default function Footer() {
 
           {/* Footer Sections */}
           {footerSections.map((section) => (
-            <div key={section.title}>
+            <div key={section.title} className="flex-shrink-0">
               <h3 className="font-semibold text-brand-navy mb-4">{section.title}</h3>
               <ul className="space-y-3">
                 {section.links.map((link) => (

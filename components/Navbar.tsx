@@ -542,12 +542,9 @@ export default function Navbar() {
           </div>
 
           {/* CTA Buttons */}
-          <div className="hidden lg:flex lg:items-center lg:space-x-3">
-            <Link href="/get-started" className="btn btn-secondary text-sm px-5 py-2.5">
+          <div className="hidden lg:flex lg:items-center">
+            <Link href="/get-started" className="btn btn-primary text-sm px-5 py-2.5">
               Get Started
-            </Link>
-            <Link href="/book-demo" className="btn btn-primary text-sm px-5 py-2.5">
-              Book a Demo
             </Link>
           </div>
 
@@ -587,20 +584,13 @@ export default function Navbar() {
                 <MobileNavItem key={item.label} item={item} />
               ))}
             </div>
-            <div className="mt-6 space-y-3 pt-6 border-t border-neutral-200">
+            <div className="mt-6 pt-6 border-t border-neutral-200">
               <Link
                 href="/get-started"
-                className="btn btn-secondary w-full text-sm"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Get Started
-              </Link>
-              <Link
-                href="/book-demo"
                 className="btn btn-primary w-full text-sm"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Book a Demo
+                Get Started
               </Link>
             </div>
           </div>

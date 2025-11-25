@@ -62,63 +62,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Products Grid */}
-      <section className="section bg-neutral-50">
-        <div className="container-custom">
-          <div className="text-center max-w-3xl mx-auto mb-20">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-navy mb-6">
-              How Our AI-SOC Works
-            </h2>
-            <p className="text-xl text-neutral-600 leading-relaxed">
-              Covenda AI powers continuous threat operations. Forward-Deployed Engineers embed with your team to wire it into your environment and accelerate value.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                title: 'Threat Modeling & Intelligence',
-                description:
-                  'Covenda AI models threats before incidents happen. Event-agnostic, spec-driven intelligence maps the gap between your security posture and actual systems.',
-                href: '/platform',
-                icon: '🔍',
-              },
-              {
-                title: 'Forward-Deployed Engineering',
-                description:
-                  'Product engineers embed with your team to wire detections, automations, and workflows. They bridge the platform and your environment, accelerating time to value.',
-                href: '/services/forward-deployed-engineering',
-                icon: '🚀',
-              },
-              {
-                title: 'Continuous Operations',
-                description:
-                  'Threat hunting, monitoring, and assessment run 24/7 through the AI-SOC. Risk-based prioritization and automated response, co-managed with your team.',
-                href: '/services/ai-soc-co-management',
-                icon: '⚙️',
-              },
-            ].map((product) => (
-              <Link
-                key={product.href}
-                href={product.href}
-                className="card group cursor-pointer hover:border-brand-orange hover:shadow-lg transition-all duration-300"
-              >
-                <div className="text-4xl mb-6">{product.icon}</div>
-                <h3 className="text-xl md:text-2xl font-bold text-brand-navy mb-4 group-hover:text-brand-orange transition-colors">
-                  {product.title}
-                </h3>
-                <p className="text-lg text-neutral-600 mb-4 leading-relaxed">{product.description}</p>
-                <div className="flex items-center text-brand-orange font-semibold group-hover:text-brand-navy transition-colors">
-                  Learn more
-                  <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Platform Features */}
       <section className="section bg-white">
         <div className="container-custom">

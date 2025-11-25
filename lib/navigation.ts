@@ -89,11 +89,6 @@ export const footerSections = [
       { label: 'Integrations', href: '/platform/integrations' },
       { label: 'Covenda AI', href: '/platform/recorded-future-ai' },
       { label: 'Browser Extension', href: '/platform/browser-extension' },
-    ],
-  },
-  {
-    title: 'Products',
-    links: [
       { label: 'Threat Intelligence', href: '/products/threat-intelligence' },
       { label: 'Brand Intelligence', href: '/products/brand-intelligence' },
       { label: 'SecOps Intelligence', href: '/products/secops-intelligence' },

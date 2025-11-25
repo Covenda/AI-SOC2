@@ -14,7 +14,7 @@ export default function Footer() {
     <footer className="bg-white text-neutral-900">
       <div className="container-custom">
         {/* Main Footer Content */}
-        <div className="py-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+        <div className="py-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
           {/* Brand & Description */}
           <div className="col-span-2">
             <Link href="/" className="flex items-center mb-4">

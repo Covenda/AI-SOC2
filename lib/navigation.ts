@@ -6,15 +6,6 @@ export interface NavItem {
 
 export const navigationData: NavItem[] = [
   {
-    label: 'Services',
-    href: '/services',
-    children: [
-      { label: 'Analyst on Demand', href: '/services/analyst-on-demand' },
-      { label: 'Intelligence Services', href: '/services/intelligence-services' },
-      { label: 'Vulnerability Hunting', href: '/services/vulnerability-hunting' },
-    ],
-  },
-  {
     label: 'Platform',
     href: '/platform',
     children: [
@@ -33,6 +24,26 @@ export const navigationData: NavItem[] = [
     ],
   },
   {
+    label: 'Why Covenda AI',
+    href: '/why-recorded-future',
+    children: [
+      { label: 'About Us', href: '/about' },
+      { label: 'Partners', href: '/partner' },
+      { label: 'Contact', href: '/contact' },
+      { label: 'Pricing', href: '/pricing' },
+      { label: 'Case Studies', href: '/case-study' },
+    ],
+  },
+  {
+    label: 'Services',
+    href: '/services',
+    children: [
+      { label: 'Analyst on Demand', href: '/services/analyst-on-demand' },
+      { label: 'Intelligence Services', href: '/services/intelligence-services' },
+      { label: 'Vulnerability Hunting', href: '/services/vulnerability-hunting' },
+    ],
+  },
+  {
     label: 'Resources',
     href: '/resources',
     children: [
@@ -43,17 +54,6 @@ export const navigationData: NavItem[] = [
       { label: 'Research', href: '/research' },
       { label: 'Case Studies', href: '/case-study' },
       { label: 'Newsroom', href: '/newsroom' },
-    ],
-  },
-  {
-    label: 'Why Covenda AI',
-    href: '/why-recorded-future',
-    children: [
-      { label: 'About Us', href: '/about' },
-      { label: 'Partners', href: '/partner' },
-      { label: 'Contact', href: '/contact' },
-      { label: 'Pricing', href: '/pricing' },
-      { label: 'Case Studies', href: '/case-study' },
     ],
   },
   {

@@ -176,7 +176,7 @@ export default function Navbar() {
             {activeDropdown === 'Services' && (
               <div className="grid grid-cols-3 gap-8">
                 <div className="space-y-4">
-                  <h3 className="text-brand-navy font-bold text-lg mb-4">Our Services</h3>
+                  <h3 className="text-brand-navy font-bold text-lg mb-4">Service Overview</h3>
                   <p className="text-neutral-700 text-sm leading-relaxed mb-6">
                     Our services include Analyst on Demand, Intelligence Services, and Vulnerability Hunting to help you build and operate a world-class AI-SOC.
                   </p>
@@ -208,7 +208,7 @@ export default function Navbar() {
                   </div>
                 </div>
                 <div className="space-y-4">
-                  <h3 className="text-brand-navy font-bold text-lg mb-4">Service Offerings</h3>
+                  <h3 className="text-brand-navy font-bold text-lg mb-4">Services</h3>
                   <div className="space-y-6">
                     {navigationData.find(nav => nav.label === 'Services')?.children?.map((service) => (
                       <Link

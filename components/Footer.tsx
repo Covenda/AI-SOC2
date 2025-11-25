@@ -19,7 +19,7 @@ export default function Footer() {
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center mb-4">
               <img 
-                src="/covenda-logo.svg" 
+                src="/covenda-logo.png" 
                 alt="Covenda" 
                 className="h-8 w-8"
               />

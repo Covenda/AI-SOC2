@@ -283,7 +283,7 @@ export default function Navbar() {
             )}
 
             {activeDropdown === 'Resources' && (
-              <div className="grid grid-cols-4 gap-8">
+              <div className="grid grid-cols-3 gap-8">
                 <div className="space-y-4">
                   <h3 className="text-brand-navy font-bold text-lg mb-4">Content</h3>
                   <div className="space-y-4">
@@ -368,30 +368,6 @@ export default function Navbar() {
                           <div className="flex-shrink-0 w-6 h-6 mt-0.5">
                             <svg className="w-6 h-6 text-brand-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
-                            </svg>
-                          </div>
-                          <div className="flex-1">
-                            <div className="text-neutral-800 font-medium text-sm group-hover:text-brand-orange transition-colors duration-150">{resource.label}</div>
-                          </div>
-                        </div>
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-                <div className="space-y-4">
-                  <h3 className="text-brand-navy font-bold text-lg mb-4">All Resources</h3>
-                  <div className="space-y-4">
-                    {navigationData.find(nav => nav.label === 'Resources')?.children?.map((resource) => (
-                      <Link
-                        key={resource.href}
-                        href={resource.href}
-                        className="block group cursor-pointer"
-                        onClick={(e) => { e.stopPropagation(); setActiveDropdown(null); }}
-                      >
-                        <div className="flex items-start space-x-3">
-                          <div className="flex-shrink-0 w-6 h-6 mt-0.5">
-                            <svg className="w-6 h-6 text-brand-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                             </svg>
                           </div>
                           <div className="flex-1">
@@ -517,7 +493,7 @@ export default function Navbar() {
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
               <img 
-                src="/covenda-logo.svg" 
+                src="/covenda-logo.png" 
                 alt="Covenda" 
                 className="h-8 w-8"
               />

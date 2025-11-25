@@ -35,6 +35,15 @@ export const navigationData: NavItem[] = [
   {
     label: 'Resources',
     href: '/resources',
+    children: [
+      { label: 'Blog', href: '/blog' },
+      { label: 'Events', href: '/events' },
+      { label: 'Webinars', href: '/webinars' },
+      { label: 'Guides', href: '/resources/guides' },
+      { label: 'Research', href: '/research' },
+      { label: 'Case Studies', href: '/case-study' },
+      { label: 'Newsroom', href: '/newsroom' },
+    ],
   },
   {
     label: 'Why Covenda AI',

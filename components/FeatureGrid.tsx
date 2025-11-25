@@ -32,7 +32,7 @@ export default function FeatureGrid({
         {(title || description) && (
           <div className="text-center max-w-3xl mx-auto mb-20">
             {title && (
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#e2522b] mb-6">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-navy mb-6">
                 {title}
               </h2>
             )}
@@ -43,7 +43,7 @@ export default function FeatureGrid({
           {features.map((feature, index) => {
             const content = (
               <>
-                <div className="absolute -top-8 -left-8 -right-8 h-[4px] bg-[#e2522b] rounded-t-xl"></div>
+                <div className="h-[2px] w-full bg-[#e2522b] mb-6 -mx-8 -mt-8 rounded-t-xl"></div>
                 <h3 className="text-xl md:text-2xl font-bold text-[#e2522b] mb-4">
                   {feature.title}
                 </h3>

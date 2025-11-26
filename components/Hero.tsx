@@ -362,7 +362,7 @@ export default function Hero({
       <section className="relative bg-white overflow-hidden">
         <div className="container-custom relative">
           <div className="py-20 md:py-28 lg:py-36">
-            <div className="grid md:grid-cols-2 gap-16 lg:gap-20 items-center">
+            <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
               {/* Left Column - Text Content */}
               <div className="space-y-6">
                 {badge && (
@@ -385,11 +385,11 @@ export default function Hero({
                 </p>
                 
                 {(primaryCTA || secondaryCTA) && (
-                  <div className="flex flex-col sm:flex-row gap-4 pt-2">
+                  <div className="flex flex-col sm:flex-row gap-3 pt-2">
                     {primaryCTA && (
                       <Link
                         href={primaryCTA.href}
-                        className="inline-flex items-center justify-center text-base font-semibold px-8 py-3.5 rounded-lg bg-brand-navy text-white hover:bg-brand-navy/90 transition-colors"
+                        className="inline-flex items-center justify-center text-base font-semibold px-6 py-3 rounded-lg bg-brand-navy text-white hover:bg-brand-navy/90 transition-colors"
                       >
                         {primaryCTA.text}
                       </Link>
@@ -397,7 +397,7 @@ export default function Hero({
                     {secondaryCTA && (
                       <Link
                         href={secondaryCTA.href}
-                        className="inline-flex items-center justify-center text-base font-semibold px-8 py-3.5 rounded-lg bg-white text-brand-navy border-2 border-brand-navy hover:bg-neutral-50 transition-colors"
+                        className="inline-flex items-center justify-center text-base font-semibold px-6 py-3 rounded-lg bg-white text-brand-navy border-2 border-brand-navy hover:bg-neutral-50 transition-colors"
                       >
                         {secondaryCTA.text}
                       </Link>
@@ -407,7 +407,7 @@ export default function Hero({
               </div>
 
               {/* Right Column - Abstract Graphic */}
-              <div className="relative h-[450px] md:h-[550px] lg:h-[600px] flex items-center justify-center">
+              <div className="relative h-[350px] md:h-[450px] lg:h-[500px] flex items-center justify-center mt-8 md:mt-0">
                 {renderAbstractGraphic()}
               </div>
             </div>

@@ -5,10 +5,11 @@ export default function PaymentFraudIntelligencePage() {
   return (
     <div>
       <Hero
+        variant="product"
         badge="AI-SOC Capability"
         title="Payment Fraud Intelligence"
         description="Payment fraud intelligence that powers threat modeling, hunting, and assessment within Covenda AI-SOC. Monitors fraud schemes, compromised cards, and threat actors to feed threat operations."
-        primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
+        primaryCTA={{ text: 'Get a custom demo', href: '/book-demo' }}
       />
 
       <section className="section bg-white">

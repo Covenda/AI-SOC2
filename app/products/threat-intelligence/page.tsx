@@ -5,11 +5,12 @@ export default function ThreatIntelligencePage() {
   return (
     <div>
       <Hero
+        variant="product"
         badge="AI-SOC Capability"
         title="Threat Intelligence"
-        description="Event-agnostic, spec-driven threat intelligence for Covenda AI-SOC. Models threats before incidents happen, delivering preemptive intelligence that powers threat modeling, hunting, and assessment."
-        primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
-        secondaryCTA={{ text: 'Learn More', href: '/platform' }}
+        description="Identify relevant threats and mitigate them faster to prevent attacks."
+        primaryCTA={{ text: 'Get a custom demo', href: '/book-demo' }}
+        secondaryCTA={{ text: 'State of Threat Intelligence 2025 Report', href: '/resources' }}
       />
 
       <section className="section bg-white">

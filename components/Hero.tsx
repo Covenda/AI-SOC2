@@ -12,7 +12,7 @@ interface HeroProps {
     text: string;
     href: string;
   };
-  variant?: 'gradient' | 'simple';
+  variant?: 'gradient' | 'simple' | 'product';
 }
 
 export default function Hero({
@@ -24,6 +24,133 @@ export default function Hero({
   variant = 'gradient',
 }: HeroProps) {
   const isGradient = variant === 'gradient';
+  const isProduct = variant === 'product';
+
+  // Split title for product variant (first word dark, rest lighter)
+  const getTitleParts = () => {
+    if (!isProduct) return { first: title, rest: '' };
+    const words = title.split(' ');
+    if (words.length === 1) return { first: title, rest: '' };
+    const first = words[0];
+    const rest = words.slice(1).join(' ');
+    return { first, rest };
+  };
+
+  const titleParts = getTitleParts();
+
+  // Product variant with abstract graphics
+  if (isProduct) {
+    return (
+      <section className="relative bg-white overflow-hidden">
+        <div className="container-custom relative">
+          <div className="py-16 md:py-24 lg:py-32">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              {/* Left Column - Text Content */}
+              <div>
+                {badge && (
+                  <div className="mb-6">
+                    <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold bg-brand-orange/10 text-brand-orange border border-brand-orange/20">
+                      {badge}
+                    </span>
+                  </div>
+                )}
+                
+                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+                  <span className="text-brand-navy">{titleParts.first}</span>
+                  {titleParts.rest && (
+                    <span className="text-neutral-400"> {titleParts.rest}</span>
+                  )}
+                </h1>
+                
+                <p className="text-lg md:text-xl text-neutral-600 mb-8 leading-relaxed">
+                  {description}
+                </p>
+                
+                {(primaryCTA || secondaryCTA) && (
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    {primaryCTA && (
+                      <Link
+                        href={primaryCTA.href}
+                        className="inline-flex items-center justify-center text-base font-semibold px-6 py-3 rounded-lg bg-brand-navy text-white hover:bg-brand-navy/90 transition-colors"
+                      >
+                        {primaryCTA.text}
+                      </Link>
+                    )}
+                    {secondaryCTA && (
+                      <Link
+                        href={secondaryCTA.href}
+                        className="inline-flex items-center justify-center text-base font-semibold px-6 py-3 rounded-lg bg-white text-brand-navy border-2 border-brand-navy hover:bg-neutral-50 transition-colors"
+                      >
+                        {secondaryCTA.text}
+                      </Link>
+                    )}
+                  </div>
+                )}
+              </div>
+
+              {/* Right Column - Abstract Graphic */}
+              <div className="relative h-[400px] md:h-[500px] flex items-center justify-center">
+                <svg
+                  className="w-full h-full"
+                  viewBox="0 0 500 600"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  preserveAspectRatio="xMidYMid meet"
+                >
+                  {/* Geometric shapes - positioned around person */}
+                  {/* Red circle top right */}
+                  <circle cx="380" cy="100" r="50" fill="#e2522b" />
+                  
+                  {/* Blue circle right */}
+                  <circle cx="420" cy="220" r="45" fill="#1e3a5f" />
+                  
+                  {/* Red rectangle horizontal behind person */}
+                  <rect x="240" y="280" width="160" height="30" fill="#e2522b" />
+                  
+                  {/* Blue rectangle horizontal below red */}
+                  <rect x="220" y="350" width="180" height="30" fill="#1e3a5f" />
+                  
+                  {/* Blue circles left */}
+                  <circle cx="100" cy="380" r="40" fill="#1e3a5f" />
+                  <circle cx="120" cy="460" r="35" fill="#1e3a5f" />
+                  
+                  {/* Person silhouette from behind with umbrella */}
+                  <g transform="translate(250, 150)">
+                    {/* Umbrella - top */}
+                    <path
+                      d="M 0 -100 Q -50 -120 -80 -100 Q -50 -80 0 -80 Q 50 -80 80 -100 Q 50 -120 0 -100 Z"
+                      fill="#000000"
+                    />
+                    {/* Umbrella handle */}
+                    <line x1="0" y1="-80" x2="0" y2="20" stroke="#000000" strokeWidth="4" strokeLinecap="round" />
+                    
+                    {/* Head - circular */}
+                    <circle cx="0" cy="30" r="25" fill="#000000" />
+                    
+                    {/* Body - torso */}
+                    <path
+                      d="M -30 55 Q -35 100 -25 140 Q -20 180 -15 220 L 15 220 Q 20 180 25 140 Q 35 100 30 55 Z"
+                      fill="#000000"
+                    />
+                    
+                    {/* Left arm holding umbrella */}
+                    <ellipse cx="-40" cy="90" rx="15" ry="50" fill="#000000" transform="rotate(-20 -40 90)" />
+                    
+                    {/* Right arm */}
+                    <ellipse cx="40" cy="90" rx="15" ry="50" fill="#000000" transform="rotate(20 40 90)" />
+                    
+                    {/* Legs */}
+                    <rect x="-25" y="220" width="18" height="140" fill="#000000" rx="2" />
+                    <rect x="7" y="220" width="18" height="140" fill="#000000" rx="2" />
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section

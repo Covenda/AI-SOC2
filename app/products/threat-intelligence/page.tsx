@@ -6,6 +6,7 @@ export default function ThreatIntelligencePage() {
     <div>
       <Hero
         variant="product"
+        graphicType="threat"
         badge="AI-SOC Capability"
         title="Threat Intelligence"
         description="Identify relevant threats and mitigate them faster to prevent attacks."

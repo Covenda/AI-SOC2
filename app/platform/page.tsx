@@ -7,6 +7,7 @@ export default function PlatformPage() {
     <div>
       <Hero
         variant="product"
+        graphicType="platform"
         badge="AI-SOC Platform"
         title="Covenda AI"
         description="The core AI-native fabric that powers Covenda AI-SOC. Includes Lucid AI for threat modeling, preemptive intelligence, and risk-based vulnerability management."

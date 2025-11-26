@@ -6,6 +6,7 @@ export default function AnalystOnDemandPage() {
     <div>
       <Hero
         variant="product"
+        graphicType="analyst"
         badge="Service"
         title="Analyst on Demand"
         description="Forward-Deployed Engineers embed with your team to bridge the Covenda AI and your environment. They accelerate value by doing things that don't scale, then feed patterns back into the platform."

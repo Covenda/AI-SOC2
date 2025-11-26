@@ -6,6 +6,7 @@ export default function IntelligenceServicesPage() {
     <div>
       <Hero
         variant="product"
+        graphicType="intelligence-service"
         badge="Service"
         title="Intelligence Services"
         description="Comprehensive threat intelligence and analysis services to help you understand and respond to emerging threats in real-time. Get actionable insights from our Intelligence Graph® and expert analysts."

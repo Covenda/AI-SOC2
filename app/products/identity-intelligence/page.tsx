@@ -6,6 +6,7 @@ export default function IdentityIntelligencePage() {
     <div>
       <Hero
         variant="product"
+        graphicType="identity"
         badge="AI-SOC Capability"
         title="Identity Intelligence"
         description="Identity-focused intelligence that powers threat modeling, hunting, and assessment within Covenda AI-SOC. Monitors identity compromise, credential exposure, and account takeover to feed threat operations."

@@ -361,35 +361,35 @@ export default function Hero({
     return (
       <section className="relative bg-white overflow-hidden">
         <div className="container-custom relative">
-          <div className="py-16 md:py-24 lg:py-32">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="py-20 md:py-28 lg:py-36">
+            <div className="grid md:grid-cols-2 gap-16 lg:gap-20 items-center">
               {/* Left Column - Text Content */}
-              <div>
+              <div className="space-y-6">
                 {badge && (
-                  <div className="mb-6">
+                  <div>
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold bg-brand-orange/10 text-brand-orange border border-brand-orange/20">
                       {badge}
                     </span>
                   </div>
                 )}
                 
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight">
                   <span className="text-brand-navy">{titleParts.first}</span>
                   {titleParts.rest && (
                     <span className="text-neutral-400"> {titleParts.rest}</span>
                   )}
                 </h1>
                 
-                <p className="text-lg md:text-xl text-neutral-600 mb-8 leading-relaxed">
+                <p className="text-lg md:text-xl text-neutral-600 leading-relaxed max-w-xl">
                   {description}
                 </p>
                 
                 {(primaryCTA || secondaryCTA) && (
-                  <div className="flex flex-col sm:flex-row gap-4">
+                  <div className="flex flex-col sm:flex-row gap-4 pt-2">
                     {primaryCTA && (
                       <Link
                         href={primaryCTA.href}
-                        className="inline-flex items-center justify-center text-base font-semibold px-6 py-3 rounded-lg bg-brand-navy text-white hover:bg-brand-navy/90 transition-colors"
+                        className="inline-flex items-center justify-center text-base font-semibold px-8 py-3.5 rounded-lg bg-brand-navy text-white hover:bg-brand-navy/90 transition-colors"
                       >
                         {primaryCTA.text}
                       </Link>
@@ -397,7 +397,7 @@ export default function Hero({
                     {secondaryCTA && (
                       <Link
                         href={secondaryCTA.href}
-                        className="inline-flex items-center justify-center text-base font-semibold px-6 py-3 rounded-lg bg-white text-brand-navy border-2 border-brand-navy hover:bg-neutral-50 transition-colors"
+                        className="inline-flex items-center justify-center text-base font-semibold px-8 py-3.5 rounded-lg bg-white text-brand-navy border-2 border-brand-navy hover:bg-neutral-50 transition-colors"
                       >
                         {secondaryCTA.text}
                       </Link>
@@ -407,7 +407,7 @@ export default function Hero({
               </div>
 
               {/* Right Column - Abstract Graphic */}
-              <div className="relative h-[400px] md:h-[500px] flex items-center justify-center">
+              <div className="relative h-[450px] md:h-[550px] lg:h-[600px] flex items-center justify-center">
                 {renderAbstractGraphic()}
               </div>
             </div>

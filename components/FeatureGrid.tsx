@@ -32,7 +32,7 @@ export default function FeatureGrid({
         {(title || description) && (
           <div className="text-center max-w-3xl mx-auto mb-20">
             {title && (
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-navy mb-6">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-orange mb-6">
                 {title}
               </h2>
             )}

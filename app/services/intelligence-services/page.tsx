@@ -5,12 +5,10 @@ export default function IntelligenceServicesPage() {
   return (
     <div>
       <Hero
-        variant="product"
-        graphicType="intelligence-service"
         badge="Service"
         title="Intelligence Services"
         description="Comprehensive threat intelligence and analysis services to help you understand and respond to emerging threats in real-time. Get actionable insights from our Intelligence Graph® and expert analysts."
-        primaryCTA={{ text: 'Get a custom demo', href: '/book-demo' }}
+        primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
       <section className="section bg-white">

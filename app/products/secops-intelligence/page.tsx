@@ -5,12 +5,10 @@ export default function SecOpsIntelligencePage() {
   return (
     <div>
       <Hero
-        variant="product"
-        graphicType="secops"
         badge="AI-SOC Capability"
         title="SecOps Intelligence"
         description="Intelligence that powers security operations within Covenda AI-SOC. Feeds threat hunting, monitoring, and assessment with context-rich intelligence that reduces noise and accelerates response."
-        primaryCTA={{ text: 'Get a custom demo', href: '/book-demo' }}
+        primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
       <section className="section bg-white">

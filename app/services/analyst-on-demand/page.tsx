@@ -5,12 +5,10 @@ export default function AnalystOnDemandPage() {
   return (
     <div>
       <Hero
-        variant="product"
-        graphicType="analyst"
         badge="Service"
         title="Analyst on Demand"
         description="Forward-Deployed Engineers embed with your team to bridge the Covenda AI and your environment. They accelerate value by doing things that don't scale, then feed patterns back into the platform."
-        primaryCTA={{ text: 'Get a custom demo', href: '/book-demo' }}
+        primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
       <section className="section bg-white">

@@ -5,12 +5,10 @@ export default function IdentityIntelligencePage() {
   return (
     <div>
       <Hero
-        variant="product"
-        graphicType="identity"
         badge="AI-SOC Capability"
         title="Identity Intelligence"
         description="Identity-focused intelligence that powers threat modeling, hunting, and assessment within Covenda AI-SOC. Monitors identity compromise, credential exposure, and account takeover to feed threat operations."
-        primaryCTA={{ text: 'Get a custom demo', href: '/book-demo' }}
+        primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
       />
 
       <section className="section bg-white">

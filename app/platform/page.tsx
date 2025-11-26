@@ -6,12 +6,10 @@ export default function PlatformPage() {
   return (
     <div>
       <Hero
-        variant="product"
-        graphicType="platform"
         badge="AI-SOC Platform"
         title="Covenda AI"
         description="The core AI-native fabric that powers Covenda AI-SOC. Includes Lucid AI for threat modeling, preemptive intelligence, and risk-based vulnerability management."
-        primaryCTA={{ text: 'Get a custom demo', href: '/book-demo' }}
+        primaryCTA={{ text: 'Book a Demo', href: '/book-demo' }}
         secondaryCTA={{ text: 'View Demo Center', href: '/platform/demo-center' }}
       />
 

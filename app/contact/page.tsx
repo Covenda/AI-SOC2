@@ -302,7 +302,7 @@ export default function ContactPage() {
                     Contact Us
                   </button>
                 </div>
-              </form>
+                  </form>
             </div>
           </div>
         </div>
@@ -382,8 +382,8 @@ export default function ContactPage() {
                   >
                     Get directions →
                   </Link>
-                </div>
               </div>
+            </div>
             ))}
           </div>
         </div>

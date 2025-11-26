@@ -29,7 +29,7 @@ export default function RansomwarePage() {
         features={[
           {
             icon: '🎯',
-            title: 'Preemptive Threat Modeling',
+            title: 'Autonomous Threat Modelling',
             description: 'Covenda AI models ransomware attack paths before incidents occur, including how ransomware groups target your industry and systems.',
           },
           {

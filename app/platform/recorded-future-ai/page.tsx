@@ -24,7 +24,7 @@ export default function RecordedFutureAIPage() {
             </p>
             <div className="grid md:grid-cols-2 gap-8 mt-12">
               <div className="card">
-                <h3 className="text-xl font-bold text-brand-navy mb-3">Preemptive Threat Modeling</h3>
+                <h3 className="text-xl font-bold text-brand-navy mb-3">Autonomous Threat Modelling</h3>
                 <p className="text-neutral-600">
                   Models threats before incidents occur. Event-agnostic intelligence that maps how systems can be attacked, including AI-/AGI-specific threat scenarios.
                 </p>

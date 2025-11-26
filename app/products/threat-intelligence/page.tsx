@@ -30,7 +30,7 @@ export default function ThreatIntelligencePage() {
         features={[
           {
             icon: '🎯',
-            title: 'Preemptive Threat Modeling',
+            title: 'Autonomous Threat Modelling',
             description: 'Models threats before incidents happen. Event-agnostic intelligence that maps how systems can be attacked, including AI-/AGI-specific scenarios.',
           },
           {

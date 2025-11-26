@@ -102,7 +102,7 @@ export default function HomePage() {
                 href={product.href}
                 className="card group cursor-pointer hover:border-brand-orange hover:shadow-lg transition-all duration-300 relative overflow-hidden"
               >
-                <div className="h-[2px] w-full bg-[#e2522b] mb-6 -mx-8 -mt-8 rounded-t-xl"></div>
+                <div className="h-1 w-full bg-[#e2522b] mb-6 -mx-8 -mt-8 rounded-t-xl"></div>
                 <h3 className="text-xl md:text-2xl font-bold text-[#e2522b] mb-4">
                   {product.title}
                 </h3>

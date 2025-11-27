@@ -34,12 +34,10 @@ export default function ThreatIntelligencePage() {
             description: 'Models threats before incidents happen. Event-agnostic intelligence that maps how systems can be attacked, including AI-/AGI-specific scenarios.',
           },
           {
-            icon: '📊',
             title: 'Risk-Based Assessment',
             description: 'Prioritizes threats based on business risk and relevance to your organization, not just generic threat feeds.',
           },
           {
-            icon: '🔍',
             title: 'Threat Actor Intelligence',
             description: 'Tracks threat actors, their TTPs, and campaign activity in an event-agnostic way that feeds threat hunting operations.',
           },

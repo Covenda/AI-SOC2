@@ -1,0 +1,44 @@
+1:"$Sreact.fragment"
+2:I[3464,["2619","static/chunks/2619-3c9e02e22d10480a.js","7177","static/chunks/app/layout-fbf97a42c72ca353.js"],"default"]
+3:I[9766,[],""]
+4:I[8924,[],""]
+5:I[8743,["2619","static/chunks/2619-3c9e02e22d10480a.js","7177","static/chunks/app/layout-fbf97a42c72ca353.js"],"default"]
+7:I[4431,[],"OutletBoundary"]
+9:I[5278,[],"AsyncMetadataOutlet"]
+b:I[4431,[],"ViewportBoundary"]
+d:I[4431,[],"MetadataBoundary"]
+e:"$Sreact.suspense"
+10:I[7150,[],""]
+:HL["/_next/static/css/44000ead904f351a.css","style"]
+0:{"P":null,"b":"99VrAZ04SmVKYbwQPdGd5","p":"","c":["","blog","detection-engineering-best-practices"],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","detection-engineering-best-practices","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/44000ead904f351a.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"flex flex-col min-h-screen font-sans","suppressHydrationWarning":true,"children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","$L5",null,{}]]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","detection-engineering-best-practices","d"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",null,["$","$L7",null,{"children":["$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$Lb",null,{"children":"$Lc"}],null],["$","$Ld",null,{"children":["$","div",null,{"hidden":true,"children":["$","$e",null,{"fallback":null,"children":"$Lf"}]}]}]]}],false]],"m":"$undefined","G":["$10",[]],"s":false,"S":true}
+11:T799,
+      <p class="text-lg text-neutral-700 mb-6">
+        Building effective detections is at the core of modern security operations. Our Forward-Deployed Security Engineers work directly with your team to understand your environment, threat landscape, and business context to build detections that matter.
+      </p>
+      
+      <h2 class="text-3xl font-bold text-brand-navy mb-4 mt-8">Understanding Your Environment</h2>
+      <p class="text-lg text-neutral-700 mb-6">
+        Before writing a single detection rule, our engineers spend time understanding your infrastructure, data flows, and normal user behavior. This context is critical for building detections that reduce false positives while catching real threats.
+      </p>
+      
+      <h2 class="text-3xl font-bold text-brand-navy mb-4 mt-8">Threat Modeling and Detection Design</h2>
+      <p class="text-lg text-neutral-700 mb-6">
+        We use threat modeling techniques to identify the most relevant threats to your organization. This helps prioritize which detections to build first and ensures we're focusing on threats that could actually impact your business.
+      </p>
+      
+      <h2 class="text-3xl font-bold text-brand-navy mb-4 mt-8">Continuous Tuning and Improvement</h2>
+      <p class="text-lg text-neutral-700 mb-6">
+        Detections aren't set-and-forget. Our engineers continuously tune detections based on alert volume, false positive rates, and emerging threats. This iterative approach ensures your detections stay effective as your environment and threat landscape evolve.
+      </p>
+      
+      <h2 class="text-3xl font-bold text-brand-navy mb-4 mt-8">Measurable Outcomes</h2>
+      <p class="text-lg text-neutral-700 mb-6">
+        We track key metrics for every detection we build: mean time to detect, false positive rate, and alert volume. This data-driven approach helps us continuously improve and demonstrate the value of our work.
+      </p>
+    6:["$","div",null,{"children":[["$","section",null,{"className":"relative bg-neutral-50 overflow-hidden","children":[false,["$","div",null,{"className":"container-custom relative","children":["$","div",null,{"className":"py-20 md:py-28 lg:py-32 max-w-5xl mx-auto text-center","children":[["$","div",null,{"className":"mb-8 flex justify-center animate-fade-in","children":["$","span",null,{"className":"inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 bg-brand-orange/10 text-brand-orange border border-brand-orange/20 shadow-sm hover:bg-brand-orange/15","children":[false,"Detection Engineering"]}]}],["$","h1",null,{"className":"text-5xl md:text-6xl lg:text-7xl font-extrabold mb-8 text-balance leading-tight tracking-tight animate-fade-in text-brand-navy","style":{"animationDelay":"0.1s"},"children":"Detection Engineering Best Practices"}],["$","p",null,{"className":"text-lg md:text-xl lg:text-2xl mb-10 max-w-3xl mx-auto text-balance leading-relaxed animate-fade-in text-neutral-600","style":{"animationDelay":"0.2s"},"children":"How Forward-Deployed Security Engineers build and tune custom detections for your environment."}],"$undefined"]}]}],false]}],["$","article",null,{"className":"section bg-white","children":["$","div",null,{"className":"container-custom","children":["$","div",null,{"className":"max-w-4xl mx-auto","children":[["$","div",null,{"className":"mb-8 flex items-center gap-4 text-sm text-neutral-500","children":[["$","time",null,{"dateTime":"2025-01-15","children":"January 15, 2025"}],["$","span",null,{"children":"•"}],["$","span",null,{"children":"Detection Engineering"}]]}],["$","div",null,{"className":"prose prose-lg max-w-none","dangerouslySetInnerHTML":{"__html":"$11"}}],"$L12"]}]}]}]]}]
+13:I[2619,["2619","static/chunks/2619-3c9e02e22d10480a.js","5953","static/chunks/app/blog/%5Bslug%5D/page-77e39c15a2b4c2e9.js"],""]
+12:["$","div",null,{"className":"mt-16 pt-8 border-t border-neutral-200","children":["$","$L13",null,{"href":"/blog","className":"inline-flex items-center text-brand-orange font-semibold hover:text-brand-navy transition-colors","children":[["$","svg",null,{"className":"w-5 h-5 mr-2","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M10 19l-7-7m0 0l7-7m-7 7h18"}]}],"Back to Blog"]}]}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+8:null
+a:{"metadata":[["$","title","0",{"children":"Covenda - Your AI-SOC"}],["$","meta","1",{"name":"description","content":"Covenda runs security operations as a product. Turn on your AI-SOC with preemptive threat intelligence, risk-based vulnerability management, and Forward-Deployed Engineers."}],["$","meta","2",{"name":"keywords","content":"AI-SOC,threat intelligence,cybersecurity,security operations,threat modeling,threat hunting,covenda,covenda ai,lucid ai"}]],"error":null,"digest":"$undefined"}
+f:"$a:metadata"

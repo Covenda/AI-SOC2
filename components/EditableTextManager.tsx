@@ -1,10 +1,35 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useEditMode } from '@/contexts/EditModeContext';
+import { loadContent, saveContent } from '@/lib/contentStorage';
 
 export default function EditableTextManager() {
   const { isEditMode } = useEditMode();
+  const [contentData, setContentData] = useState<Record<string, string>>({});
+
+  // Load content from server on mount
+  useEffect(() => {
+    const loadContentData = async () => {
+      const data = await loadContent();
+      setContentData(data.content);
+    };
+    
+    loadContentData();
+    
+    // Reload content when page becomes visible (handles navigation)
+    const handleVisibilityChange = () => {
+      if (!document.hidden) {
+        loadContentData();
+      }
+    };
+    
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+    
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+  }, []);
 
   useEffect(() => {
     if (!isEditMode) {
@@ -116,18 +141,30 @@ export default function EditableTextManager() {
           el.setAttribute('data-text-id', textId);
         }
 
-        // Load saved text if available
-        const savedText = localStorage.getItem(`editable-text-${textId}`);
+        // Load saved text if available (from server first, then localStorage)
+        const savedText = contentData[textId] || localStorage.getItem(`editable-text-${textId}`);
         if (savedText && savedText !== el.textContent) {
           el.textContent = savedText;
         }
 
         // Save on blur (only if changed)
         const originalText = el.textContent || '';
-        const handleBlur = () => {
+        const handleBlur = async () => {
           const currentText = el.textContent || '';
           if (currentText !== originalText) {
+            // Save to server (API route)
+            const saved = await saveContent(textId, currentText);
+            
+            // Also save to localStorage as backup
             localStorage.setItem(`editable-text-${textId}`, currentText);
+            
+            // Update local state
+            if (saved) {
+              setContentData((prev) => ({
+                ...prev,
+                [textId]: currentText,
+              }));
+            }
           }
         };
 
@@ -156,7 +193,7 @@ export default function EditableTextManager() {
       clearTimeout(timeoutId);
       observer.disconnect();
     };
-  }, [isEditMode]);
+  }, [isEditMode, contentData]);
 
   return null;
 }

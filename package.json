@@ -8,9 +8,11 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d out",
     "dev": "next dev",
+    "prebuild": "node scripts/copy-content.js",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export-content": "node scripts/export-content.js"
   },
   "dependencies": {
     "next": "^15.1.4",

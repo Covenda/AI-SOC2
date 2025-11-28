@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import { EditModeProvider } from '@/contexts/EditModeContext';
+import EditableTextManager from '@/components/EditableTextManager';
+import EditModeToggle from '@/components/EditModeToggle';
 
 export const metadata: Metadata = {
   title: 'Covenda - Your AI-SOC',
@@ -28,9 +31,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="flex flex-col min-h-screen font-sans" suppressHydrationWarning>
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <EditModeProvider>
+          <Navbar />
+          <main className="flex-1">{children}</main>
+          <Footer />
+          <EditableTextManager />
+          <EditModeToggle />
+        </EditModeProvider>
       </body>
     </html>
   );

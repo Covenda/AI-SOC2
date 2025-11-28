@@ -141,3 +141,20 @@
   animation: slideDown 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   opacity: 0;
 }
+
+/* Editable text styles */
+.editable-text {
+  transition: background-color 0.2s ease;
+}
+
+.editable-text:hover {
+  background-color: rgba(225, 82, 43, 0.1);
+  outline: 2px dashed rgba(225, 82, 43, 0.3);
+  outline-offset: 2px;
+}
+
+.editable-text:focus {
+  background-color: rgba(225, 82, 43, 0.15);
+  outline: 2px solid rgba(225, 82, 43, 0.5);
+  outline-offset: 2px;
+}

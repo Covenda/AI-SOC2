@@ -3,33 +3,22 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
+import { useAuth } from '@/components/AuthProvider';
 
 export default function LoginPage() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
-  const [user, setUser] = useState<any>(null);
   const router = useRouter();
+  const { user, checkAuth } = useAuth();
 
   useEffect(() => {
     // Check if already logged in
-    checkAuth();
-  }, []);
-
-  const checkAuth = async () => {
-    try {
-      const response = await fetch('/api/auth/me');
-      if (response.ok) {
-        const data = await response.json();
-        setUser(data.user);
-        // Redirect to home if already logged in
-        router.push('/');
-      }
-    } catch (error) {
-      console.error('Auth check error:', error);
+    if (user) {
+      router.push('/');
     }
-  };
+  }, [user, router]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -42,14 +31,15 @@ export default function LoginPage() {
         headers: {
           'Content-Type': 'application/json',
         },
+        credentials: 'include', // Ensure cookies are sent/received
         body: JSON.stringify({ username, password }),
       });
 
       const data = await response.json();
 
       if (response.ok) {
-        setUser(data.user);
-        // Refresh the page to update auth state
+        // Use full page reload to ensure cookie is set and auth state refreshes
+        // This is more reliable than client-side navigation
         window.location.href = '/';
       } else {
         setError(data.error || 'Login failed');
@@ -64,7 +54,7 @@ export default function LoginPage() {
   const handleLogout = async () => {
     try {
       await fetch('/api/auth/logout', { method: 'POST' });
-      setUser(null);
+      await checkAuth();
       setUsername('');
       setPassword('');
     } catch (error) {

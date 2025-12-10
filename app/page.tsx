@@ -1,11 +1,18 @@
 'use client';
 
+import { useEffect } from 'react';
 import Link from 'next/link';
 import EditableText from '@/components/EditableText';
 import { useAuth } from '@/components/AuthProvider';
 
 export default function HomePage() {
-  const { user } = useAuth();
+  const { user, isLoading } = useAuth();
+  
+  // Debug: Log auth state (remove in production)
+  useEffect(() => {
+    console.log('HomePage - Auth state:', { user, isLoading });
+  }, [user, isLoading]);
+  
   return (
     <div>
       {/* Hero Section */}

@@ -36,7 +36,9 @@ export default function EditableText({
 
   const loadSavedContent = async () => {
     try {
-      const response = await fetch(`/api/edits?elementId=${encodeURIComponent(elementId)}`);
+      const response = await fetch(`/api/edits?elementId=${encodeURIComponent(elementId)}`, {
+        credentials: 'include', // Ensure cookies are sent
+      });
       if (response.ok) {
         const data = await response.json();
         if (data.edit && data.edit.content !== savedText) {
@@ -78,6 +80,7 @@ export default function EditableText({
         headers: {
           'Content-Type': 'application/json',
         },
+        credentials: 'include', // Ensure cookies are sent
         body: JSON.stringify({
           elementId,
           content: text,

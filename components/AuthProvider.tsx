@@ -23,12 +23,16 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const checkAuth = async () => {
     try {
-      const response = await fetch('/api/auth/me');
+      const response = await fetch('/api/auth/me', {
+        credentials: 'include', // Ensure cookies are sent
+      });
       if (response.ok) {
         const data = await response.json();
         setUser(data.user);
+        console.log('Auth check successful:', data.user);
       } else {
         setUser(null);
+        console.log('Auth check failed:', response.status);
       }
     } catch (error) {
       console.error('Auth check error:', error);
@@ -51,7 +55,17 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     checkAuth();
     // Poll for auth status every 5 minutes
     const interval = setInterval(checkAuth, 5 * 60 * 1000);
-    return () => clearInterval(interval);
+    
+    // Also check auth when window gains focus (user returns to tab)
+    const handleFocus = () => {
+      checkAuth();
+    };
+    window.addEventListener('focus', handleFocus);
+    
+    return () => {
+      clearInterval(interval);
+      window.removeEventListener('focus', handleFocus);
+    };
   }, []);
 
   return (

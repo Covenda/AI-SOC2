@@ -38,7 +38,10 @@ export async function POST(request: NextRequest) {
       secure: process.env.NODE_ENV === 'production',
       sameSite: 'lax',
       maxAge: 60 * 60 * 24 * 7, // 7 days
+      path: '/', // Ensure cookie is available site-wide
     });
+    
+    console.log('Login successful, session created:', sessionId);
 
     return response;
   } catch (error) {

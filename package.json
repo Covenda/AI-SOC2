@@ -12,7 +12,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/better-sqlite3": "^7.6.13",
     "bcryptjs": "^3.0.3",
+    "better-sqlite3": "^12.5.0",
     "jsonwebtoken": "^9.0.3",
     "next": "^16.0.8",
     "next-auth": "^5.0.0-beta.30",

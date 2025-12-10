@@ -686,7 +686,7 @@ export default function Navbar() {
             <div className="mt-6 pt-6 border-t border-neutral-200">
               <Link
                 href="/get-started"
-                className="btn btn-primary w-full text-sm block text-center"
+                className="btn btn-primary w-full text-sm"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Get Started

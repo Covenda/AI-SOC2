@@ -3,11 +3,13 @@
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { navigationData, type NavItem } from '@/lib/navigation';
+import { useAuth } from '@/components/AuthProvider';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const { user, logout } = useAuth();
 
   const handleDropdownClick = (label: string) => {
     setActiveDropdown(activeDropdown === label ? null : label);
@@ -641,7 +643,22 @@ export default function Navbar() {
           </div>
 
           {/* CTA Buttons */}
-          <div className="hidden lg:flex lg:items-center">
+          <div className="hidden lg:flex lg:items-center gap-3">
+            {user ? (
+              <>
+                <span className="text-sm text-neutral-600">Hi, {user.name}</span>
+                <button
+                  onClick={logout}
+                  className="btn bg-neutral-200 hover:bg-neutral-300 text-neutral-700 text-sm px-5 py-2.5"
+                >
+                  Logout
+                </button>
+              </>
+            ) : (
+              <Link href="/login" className="btn bg-neutral-200 hover:bg-neutral-300 text-neutral-700 text-sm px-5 py-2.5">
+                Login
+              </Link>
+            )}
             <Link href="/get-started" className="btn btn-primary text-sm px-5 py-2.5">
               Get Started
             </Link>
@@ -683,10 +700,34 @@ export default function Navbar() {
                 <MobileNavItem key={item.label} item={item} />
               ))}
             </div>
-            <div className="mt-6 pt-6 border-t border-neutral-200">
+            <div className="mt-6 pt-6 border-t border-neutral-200 space-y-3">
+              {user ? (
+                <>
+                  <div className="px-4 py-2 text-sm text-neutral-600">
+                    Logged in as: {user.email}
+                  </div>
+                  <button
+                    onClick={() => {
+                      logout();
+                      setMobileMenuOpen(false);
+                    }}
+                    className="btn bg-neutral-200 hover:bg-neutral-300 text-neutral-700 w-full text-sm"
+                  >
+                    Logout
+                  </button>
+                </>
+              ) : (
+                <Link
+                  href="/login"
+                  className="btn bg-neutral-200 hover:bg-neutral-300 text-neutral-700 w-full text-sm block text-center"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Login
+                </Link>
+              )}
               <Link
                 href="/get-started"
-                className="btn btn-primary w-full text-sm"
+                className="btn btn-primary w-full text-sm block text-center"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Get Started

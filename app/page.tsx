@@ -1,18 +1,9 @@
 'use client';
 
-import { useEffect } from 'react';
 import Link from 'next/link';
 import EditableText from '@/components/EditableText';
-import { useAuth } from '@/components/AuthProvider';
 
 export default function HomePage() {
-  const { user, isLoading } = useAuth();
-  
-  // Debug: Log auth state (remove in production)
-  useEffect(() => {
-    console.log('HomePage - Auth state:', { user, isLoading });
-  }, [user, isLoading]);
-  
   return (
     <div>
       {/* Hero Section */}
@@ -31,14 +22,12 @@ export default function HomePage() {
               defaultText="Your AI-SOC"
               tag="h1"
               className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 text-balance"
-              isAuthenticated={!!user}
             />
             <EditableText
               elementId="hero-description"
               defaultText="Covenda runs security operations as a product. We deliver threat modeling, hunting, intelligence, monitoring, and assessment—continuously, preemptively, and risk-based—through our platform and Forward-Deployed Engineers."
               tag="p"
               className="text-xl md:text-2xl text-neutral-200 mb-8 max-w-3xl text-balance"
-              isAuthenticated={!!user}
             />
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
@@ -91,14 +80,12 @@ export default function HomePage() {
               defaultText="How Our AI-SOC Works"
               tag="h2"
               className="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-navy mb-6"
-              isAuthenticated={!!user}
             />
             <EditableText
               elementId="section-description-1"
               defaultText="Covenda AI powers continuous threat operations. Forward-Deployed Engineers embed with your team to wire it into your environment and accelerate value."
               tag="p"
               className="text-xl text-neutral-600 leading-relaxed"
-              isAuthenticated={!!user}
             />
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -160,14 +147,12 @@ export default function HomePage() {
                 defaultText="The Platform That Powers Your AI-SOC"
                 tag="h2"
                 className="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-navy mb-6"
-                isAuthenticated={!!user}
               />
               <EditableText
                 elementId="platform-description"
                 defaultText="Covenda AI delivers preemptive threat intelligence and risk-based vulnerability management. It models threats, maps specifications to systems, and drives continuous security operations."
                 tag="p"
                 className="text-xl text-neutral-600 mb-8 leading-relaxed"
-                isAuthenticated={!!user}
               />
               <ul className="space-y-5 mb-10">
                 {[
@@ -225,14 +210,12 @@ export default function HomePage() {
             defaultText="Turn on your AI-SOC"
             tag="h2"
             className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6"
-            isAuthenticated={!!user}
           />
           <EditableText
             elementId="cta-description"
             defaultText="Covenda runs security operations as a product. Forward-Deployed Engineers embed with your team to wire it into your environment. Get started with a demo or assessment."
             tag="p"
             className="text-xl text-neutral-200 mb-8 max-w-2xl mx-auto"
-            isAuthenticated={!!user}
           />
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

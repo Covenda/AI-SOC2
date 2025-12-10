@@ -7,7 +7,6 @@ interface EditableTextProps {
   defaultText: string;
   className?: string;
   tag?: 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span' | 'div';
-  isAuthenticated?: boolean;
 }
 
 export default function EditableText({
@@ -15,7 +14,6 @@ export default function EditableText({
   defaultText,
   className = '',
   tag = 'p',
-  isAuthenticated = false,
 }: EditableTextProps) {
   const [isEditing, setIsEditing] = useState(false);
   const [text, setText] = useState(defaultText);
@@ -55,10 +53,6 @@ export default function EditableText({
   };
 
   const handleEdit = () => {
-    if (!isAuthenticated) {
-      alert('Please log in to edit content');
-      return;
-    }
     setIsEditing(true);
     // Focus textarea after a brief delay to ensure it's rendered
     setTimeout(() => {
@@ -123,18 +117,16 @@ export default function EditableText({
 
   if (isLoading) {
     return (
-      <Tag className={className}>
-        {defaultText}
-        {isAuthenticated && (
-          <button
-            onClick={handleEdit}
-            className="ml-2 text-xs text-neutral-400 hover:text-brand-orange transition-colors"
-            title="Edit (login required)"
-          >
-            ✏️
-          </button>
-        )}
-      </Tag>
+      <div className="relative group">
+        <Tag className={className}>{defaultText}</Tag>
+        <button
+          onClick={handleEdit}
+          className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity text-xs text-neutral-400 hover:text-brand-orange"
+          title="Click to edit"
+        >
+          ✏️
+        </button>
+      </div>
     );
   }
 
@@ -183,22 +175,18 @@ export default function EditableText({
   return (
     <div className="relative group">
       <Tag className={className}>{text}</Tag>
-      {isAuthenticated && (
-        <>
-          <button
-            onClick={handleEdit}
-            className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity text-xs text-neutral-400 hover:text-brand-orange"
-            title="Click to edit"
-            aria-label="Edit text"
-          >
-            ✏️
-          </button>
-          {lastSaved && (
-            <span className="ml-2 text-xs text-neutral-400 opacity-0 group-hover:opacity-100 transition-opacity">
-              (Last saved: {lastSaved.toLocaleTimeString()})
-            </span>
-          )}
-        </>
+      <button
+        onClick={handleEdit}
+        className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity text-xs text-neutral-400 hover:text-brand-orange"
+        title="Click to edit"
+        aria-label="Edit text"
+      >
+        ✏️
+      </button>
+      {lastSaved && (
+        <span className="ml-2 text-xs text-neutral-400 opacity-0 group-hover:opacity-100 transition-opacity">
+          (Last saved: {lastSaved.toLocaleTimeString()})
+        </span>
       )}
     </div>
   );

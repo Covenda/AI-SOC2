@@ -1,28 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getEdit, saveEdit, getAllEdits } from '@/lib/edits';
-import { getSession } from '@/lib/auth';
 
 // GET - Retrieve all edits or a specific edit
 export async function GET(request: NextRequest) {
   try {
-    const sessionId = request.cookies.get('sessionId')?.value;
-
-    if (!sessionId) {
-      return NextResponse.json(
-        { error: 'Not authenticated' },
-        { status: 401 }
-      );
-    }
-
-    const user = getSession(sessionId);
-
-    if (!user) {
-      return NextResponse.json(
-        { error: 'Invalid session' },
-        { status: 401 }
-      );
-    }
-
     const { searchParams } = new URL(request.url);
     const elementId = searchParams.get('elementId');
 
@@ -46,24 +27,6 @@ export async function GET(request: NextRequest) {
 // POST - Save or update an edit
 export async function POST(request: NextRequest) {
   try {
-    const sessionId = request.cookies.get('sessionId')?.value;
-
-    if (!sessionId) {
-      return NextResponse.json(
-        { error: 'Not authenticated' },
-        { status: 401 }
-      );
-    }
-
-    const user = getSession(sessionId);
-
-    if (!user) {
-      return NextResponse.json(
-        { error: 'Invalid session' },
-        { status: 401 }
-      );
-    }
-
     const { elementId, content } = await request.json();
 
     if (!elementId || content === undefined) {
@@ -73,7 +36,8 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const edit = saveEdit(elementId, content, user.id);
+    // Use 'anonymous' as userId since we removed authentication
+    const edit = saveEdit(elementId, content, 'anonymous');
 
     return NextResponse.json({
       success: true,

@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 
 export default function LoginPage() {
-  const [email, setEmail] = useState('');
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
@@ -42,14 +42,15 @@ export default function LoginPage() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ email, password }),
+        body: JSON.stringify({ username, password }),
       });
 
       const data = await response.json();
 
       if (response.ok) {
         setUser(data.user);
-        router.push('/');
+        // Refresh the page to update auth state
+        window.location.href = '/';
       } else {
         setError(data.error || 'Login failed');
       }
@@ -64,7 +65,7 @@ export default function LoginPage() {
     try {
       await fetch('/api/auth/logout', { method: 'POST' });
       setUser(null);
-      setEmail('');
+      setUsername('');
       setPassword('');
     } catch (error) {
       console.error('Logout error:', error);
@@ -77,7 +78,7 @@ export default function LoginPage() {
         <div className="max-w-md w-full bg-white rounded-lg shadow-lg p-8">
           <h1 className="text-2xl font-bold text-brand-navy mb-4">Already Logged In</h1>
           <p className="text-neutral-600 mb-6">
-            You are logged in as <strong>{user.email}</strong>
+            You are logged in as <strong>{user.username}</strong>
           </p>
           <div className="space-y-4">
             <Link
@@ -114,17 +115,17 @@ export default function LoginPage() {
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-neutral-700 mb-1">
-              Email
+            <label htmlFor="username" className="block text-sm font-medium text-neutral-700 mb-1">
+              Username
             </label>
             <input
-              id="email"
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              id="username"
+              type="text"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
               required
               className="w-full px-4 py-2 border border-neutral-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-orange"
-              placeholder="admin@covenda.com"
+              placeholder="admin"
             />
           </div>
 
@@ -157,7 +158,7 @@ export default function LoginPage() {
             <strong>Default credentials:</strong>
           </p>
           <p className="text-sm text-neutral-600">
-            Email: <code className="bg-white px-1 rounded">admin@covenda.com</code>
+            Username: <code className="bg-white px-1 rounded">admin</code>
           </p>
           <p className="text-sm text-neutral-600">
             Password: <code className="bg-white px-1 rounded">admin123</code>

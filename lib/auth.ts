@@ -3,7 +3,7 @@
 
 export interface User {
   id: string;
-  email: string;
+  username: string;
   name: string;
 }
 
@@ -28,30 +28,30 @@ export function deleteSession(sessionId: string): void {
 const users = new Map<string, { password: string; user: User }>();
 
 // Initialize with a default admin user
-users.set('admin@covenda.com', {
+users.set('admin', {
   password: 'admin123', // In production, hash this password
   user: {
     id: '1',
-    email: 'admin@covenda.com',
+    username: 'admin',
     name: 'Admin User',
   },
 });
 
-export function validateUser(email: string, password: string): User | null {
-  const userData = users.get(email);
+export function validateUser(username: string, password: string): User | null {
+  const userData = users.get(username);
   if (userData && userData.password === password) {
     return userData.user;
   }
   return null;
 }
 
-export function createUser(email: string, password: string, name: string): User {
+export function createUser(username: string, password: string, name: string): User {
   const user: User = {
     id: Date.now().toString(),
-    email,
+    username,
     name,
   };
-  users.set(email, { password, user });
+  users.set(username, { password, user });
   return user;
 }
 

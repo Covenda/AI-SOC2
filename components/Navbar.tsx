@@ -704,7 +704,7 @@ export default function Navbar() {
               {user ? (
                 <>
                   <div className="px-4 py-2 text-sm text-neutral-600">
-                    Logged in as: {user.email}
+                    Logged in as: {user.username}
                   </div>
                   <button
                     onClick={() => {
